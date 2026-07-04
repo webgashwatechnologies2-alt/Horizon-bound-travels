@@ -1,0 +1,277 @@
+@import "react-toastify/dist/ReactToastify.css";
+@import 'react-modal-video/css/modal-video.css';
+@import "swiper/css/bundle";
+
+/* ══════════════════════════════════════════
+   HERO BANNER SLIDER
+══════════════════════════════════════════ */
+
+/* Each slide has a fixed height wrapper */
+.tg-hero-slide-wrapper {
+  position: relative;
+  width: 100%;
+  height: 740px;
+  overflow: hidden;
+}
+
+@media (max-width: 575px) {
+  .tg-hero-slide-wrapper {
+    height: 600px;
+  }
+}
+
+/* Full-cover background image inside each slide */
+.tg-hero-slide-wrapper .tg-hero-thumb {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  animation: heroZoom 20s ease-in-out infinite;
+}
+
+@keyframes heroZoom {
+  0%   { transform: scale(1);    }
+  50%  { transform: scale(1.06); }
+  100% { transform: scale(1);    }
+}
+
+/* Dark gradient overlay for readability */
+.tg-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.35) 0%,
+    rgba(0,0,0,0.15) 40%,
+    rgba(0,0,0,0.5)  100%
+  );
+  z-index: 1;
+}
+
+/* Content sits above overlay */
+.tg-hero-slide-wrapper .tg-hero-content-area {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+}
+
+/* Slider height override */
+.tg-hero-slider-active {
+  height: 740px !important;
+}
+
+@media (max-width: 575px) {
+  .tg-hero-slider-active {
+    height: 600px !important;
+  }
+}
+
+/* ── Pagination dots ── */
+.tg-hero-dots-wrap {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+}
+
+.tg-hero-dots {
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.tg-hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.tg-hero-dot-active {
+  width: 28px;
+  background: #ff7c08;
+}
+
+/* ── Navigation arrows ── */
+.tg-hero-nav-wrap {
+  position: absolute;
+  right: 40px;
+  top: 59%;
+  transform: translateY(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .tg-hero-nav-wrap {
+    top: 90%;
+    right: 20px;
+  }
+}
+
+.tg-hero-nav-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--tg-theme-primary, #ff7c08);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tg-hero-nav-btn:hover {
+  background: var(--tg-theme-primary, #ff7c08);
+  color: #fff;
+}
+
+/* ── Hero Content ── */
+.tg-hero-content {
+  padding: 40px 0;
+}
+
+.tg-hero-subtitle {
+  font-weight: 400;
+  color: rgba(255,255,255,0.9);
+  text-transform: capitalize;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.tg-hero-title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 575px) {
+  .tg-hero-title {
+    font-size: 38px;
+  }
+}
+
+.tg-hero-para {
+  color: rgba(255,255,255,0.9);
+  font-size: 16px;
+  text-transform: capitalize;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ── Hero Price/Label badges ── */
+.tg-hero-price-wrap {
+  gap: 10px;
+}
+
+.tg-hero-price-wrap p {
+  font-size: 15px !important;
+  font-weight: 400;
+  color: rgba(255,255,255,0.9) !important;
+  background: rgba(255,255,255,0.15);
+  padding: 5px 16px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.3);
+  margin-bottom: 0 !important;
+}
+
+.tg-hero-price .hero-price {
+  font-size: 20px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.15);
+  padding: 5px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  display: inline-block;
+}
+
+/* ══════════════════════════════════════════
+   BOOKING FORM SECTION ALIGNMENT
+══════════════════════════════════════════ */
+
+/* Consistent label + input stacking */
+.tg-booking-form-parent-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Label above each field */
+.tg-booking-form-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 4px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+/* Consistent field height */
+.tg-booking-add-input-field,
+.tg-booking-add-input-date {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.tg-booking-add-input-date .input {
+  height: 48px !important;
+  line-height: 48px;
+}
+
+/* Tabs */
+.tg-booking-form-tabs .nav-tab {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.tg-booking-form-tabs .nav-tab::-webkit-scrollbar {
+  display: none;
+}
+
+.tg-booking-form-tabs .nav-tab button {
+  white-space: nowrap;
+  color: #F46B08 !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Search button alignment */
+.tg-booking-form-search-btn {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Mobile Logo Adjustment */
+@media (max-width: 991px) {
+  .logo img {
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: contain;
+  }
+}
