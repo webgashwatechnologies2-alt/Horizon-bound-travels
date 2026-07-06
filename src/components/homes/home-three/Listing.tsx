@@ -1,12 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Isotope from "isotope-layout";
 import Link from "next/link"
 import destination_data from "@/data/DestinationData";
-import { useDispatch } from "react-redux"
-import { addToWishlist } from "@/redux/features/wishlistSlice"
 
 import shape_1 from "@/assets/img/listing/about-shape.png"
 import shape_2 from "@/assets/img/listing/about-shape-2.png"
@@ -39,12 +36,6 @@ const Listing = () => {
    //    setSelectedFilter(key);
    // };
 
-   const dispatch = useDispatch();
-   // add to wishlist
-   const handleAddToWishlist = (item: any) => {
-      dispatch(addToWishlist(item));
-   };
-
    return (
       <div className="tg-listing-area tg-grey-bg pt-140 pb-110 p-relative z-index-9">
          <Image className="tg-listing-shape d-none d-lg-block" src={shape_1} alt="" />
@@ -75,13 +66,6 @@ const Listing = () => {
                                     {item.featured}
                                  </span>}
                            </Link>
-                           <div className="tg-listing-item-wishlist">
-                              <a onClick={() => handleAddToWishlist(item)} style={{ cursor: "pointer" }}>
-                                 <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.5167 16.3416C10.2334 16.4416 9.76675 16.4416 9.48341 16.3416C7.06675 15.5166 1.66675 12.075 1.66675 6.24165C1.66675 3.66665 3.74175 1.58331 6.30008 1.58331C7.81675 1.58331 9.15841 2.31665 10.0001 3.44998C10.8417 2.31665 12.1917 1.58331 13.7001 1.58331C16.2584 1.58331 18.3334 3.66665 18.3334 6.24165C18.3334 12.075 12.9334 15.5166 10.5167 16.3416Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                 </svg>
-                              </a>
-                           </div>
                         </div>
                         <div className="tg-listing-card-content">
                            <h4 className="tg-listing-card-title"><Link href={`/tour-details/${item.id}`}>{item.title}</Link></h4>

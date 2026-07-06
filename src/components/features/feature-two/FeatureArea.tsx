@@ -1,17 +1,13 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useCallback } from "react";
-import { useDispatch } from "react-redux";
-import { addToWishlist } from "@/redux/features/wishlistSlice";
+import { useState } from "react";
 import destination_data from "@/data/DestinationData";
 import FeatureTop from "./FeatureTop"
 import FeatureSidebar from "./FeatureSidebar";
 import ReactPaginate from "react-paginate";
 
 const FeatureArea = () => {
-   const dispatch = useDispatch();
    const [products, setProducts] = useState(destination_data);
    const [isListView, setIsListView] = useState(false);
 
@@ -29,13 +25,6 @@ const FeatureArea = () => {
       const newOffset = selected * itemsPerPage;
       setItemOffset(newOffset);
    };
-
-   const handleAddToWishlist = useCallback(
-      (item: any) => {
-         dispatch(addToWishlist(item));
-      },
-      [dispatch]
-   );
 
    const handleListViewClick = () => {
       setIsListView(true);
@@ -59,7 +48,7 @@ const FeatureArea = () => {
                         isListView={isListView}
                         handleListViewClick={handleListViewClick}
                         handleGridViewClick={handleGridViewClick}
-                     />
+                      />
                      <div className="tg-listing-grid-item">
                         <div className={`row list-card ${isListView ? 'list-card-open' : ''}`}>
                            {currentItems.map((item) => (
@@ -77,13 +66,6 @@ const FeatureArea = () => {
                                           </span>}
                                           {item.offer && <span className="tg-listing-item-price-discount offer-btm shape-2">{item.offer}</span>}
                                        </Link>
-                                       <div className="tg-listing-item-wishlist">
-                                          <a onClick={() => handleAddToWishlist(item)} style={{ cursor: "pointer" }}>
-                                             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.5167 16.3416C10.2334 16.4416 9.76675 16.4416 9.48341 16.3416C7.06675 15.5166 1.66675 12.075 1.66675 6.24165C1.66675 3.66665 3.74175 1.58331 6.30008 1.58331C7.81675 1.58331 9.15841 2.31665 10.0001 3.44998C10.8417 2.31665 12.1917 1.58331 13.7001 1.58331C16.2584 1.58331 18.3334 3.66665 18.3334 6.24165C18.3334 12.075 12.9334 15.5166 10.5167 16.3416Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                             </svg>
-                                          </a>
-                                       </div>
                                     </div>
                                     <div className="tg-listing-main-content">
                                        <div className="tg-listing-card-content">
