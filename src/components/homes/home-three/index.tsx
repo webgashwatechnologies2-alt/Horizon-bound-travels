@@ -11,6 +11,7 @@ import FooterThree from "@/layouts/footers/FooterThree"
 import Process from "./Process";
 import Counter from "./Counter"
 const Listing = dynamic(() => import("./Listing"), { ssr: false });
+const LeadPopup = dynamic(() => import("@/modals/LeadPopup"), { ssr: false });
 
 const HomeThree = () => {
    return (
@@ -28,6 +29,7 @@ const HomeThree = () => {
             <Testimonial />
          </main>
          <FooterThree />
+         <LeadPopup />
       </>
    )
 }

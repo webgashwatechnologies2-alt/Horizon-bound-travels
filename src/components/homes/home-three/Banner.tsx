@@ -149,7 +149,7 @@ const Banner = () => {
          </div>
 
          {/* Navigation Arrows */}
-         <div className="tg-hero-nav-wrap d-none d-sm-block">
+         <div className="tg-hero-nav-wrap d-none">
             <button
                className="tg-hero-nav-btn tg-hero-nav-prev"
                onClick={() => swiperRef.current?.slidePrev()}

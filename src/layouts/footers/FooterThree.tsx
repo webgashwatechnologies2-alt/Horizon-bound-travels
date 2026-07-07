@@ -10,7 +10,7 @@ const FooterThree = () => {
          <footer>
             <div className="tg-footer-area tg-footer-space include-bg" style={{ backgroundImage: `url(/assets/img/footer/footer.jpg)` }}>
                <div className="container">
-                  <div className="tg-footer-top mb-40">
+                  <div className="tg-footer-top mb-0">
                      <div className="row">
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                            <div className="tg-footer-widget mb-40">

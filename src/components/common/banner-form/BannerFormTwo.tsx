@@ -95,23 +95,35 @@ const BannerFormTwo = () => {
                   <ul className="scrool-bar scrool-height pr-5">
                      <li>
                         <i className="fa-regular fa-location-dot"></i>
-                        <span>Manali, Himachal Pradesh</span>
+                        <span>Himachal</span>
                      </li>
                      <li>
                         <i className="fa-regular fa-location-dot"></i>
-                        <span>Shimla, Himachal Pradesh</span>
+                        <span>Spiti</span>
                      </li>
                      <li>
                         <i className="fa-regular fa-location-dot"></i>
-                        <span>Rishikesh, Uttarakhand</span>
+                        <span>Leh-Ladakh</span>
                      </li>
                      <li>
                         <i className="fa-regular fa-location-dot"></i>
-                        <span>Nainital, Uttarakhand</span>
+                        <span>Kashmir</span>
                      </li>
                      <li>
                         <i className="fa-regular fa-location-dot"></i>
-                        <span>Mussoorie, Uttarakhand</span>
+                        <span>Uttarakhand</span>
+                     </li>
+                     <li>
+                        <i className="fa-regular fa-location-dot"></i>
+                        <span>Rajasthan</span>
+                     </li>
+                     <li>
+                        <i className="fa-regular fa-location-dot"></i>
+                        <span>Kerala</span>
+                     </li>
+                     <li>
+                        <i className="fa-regular fa-location-dot"></i>
+                        <span>Goa</span>
                      </li>
                   </ul>
                </div>
@@ -156,9 +168,12 @@ const BannerFormTwo = () => {
                   />
                </div>
             </div>
-            <div className="tg-booking-form-parent-inner tg-hero-quantity p-relative mr-15 mb-15">
+
+
+            <div ref={guestRef} className="tg-booking-form-parent-inner tg-hero-quantity p-relative mr-15 mb-15">
                <span className="tg-booking-form-title mb-5">Guest:</span>
-               <div ref={guestRef} onClick={() => setGuest((prev) => !prev)} className={`tg-booking-add-input-field tg-booking-quantity-toggle ${guest ? "active" : ""}`}>
+
+               <div onClick={() => setGuest((prev) => !prev)} className={`tg-booking-add-input-field tg-booking-quantity-toggle ${guest ? "active" : ""}`}>
                   <span className="location">
                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_53_98)">
@@ -185,7 +200,7 @@ const BannerFormTwo = () => {
                                     <path d="M7.30176 13V1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                  </svg>
                               </span>
-                              <input className="tg-quantity-input" type="text" defaultValue={item.count} />
+                              <input className="tg-quantity-input" type="text" value={item.count}  readOnly/>
                               <span onClick={() => handleDecrement(item.id)} className="decrement">
                                  <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 1H13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -200,6 +215,8 @@ const BannerFormTwo = () => {
                   </div>
                </div>
             </div>
+
+
             <div className="tg-booking-form-search-btn mb-15">
                <button className="bk-search-button" type="submit">Search
                   <span className="ml-5">

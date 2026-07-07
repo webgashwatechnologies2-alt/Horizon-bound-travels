@@ -2,7 +2,7 @@
 import NavMenu from "./Menu/NavMenu"
 import Link from "next/link"
 import Image from "next/image"
-import { useState } from "react";
+import React, { useState } from "react";
 import UseSticky from "@/hooks/UseSticky";
 import Offcanvas from "./Menu/Offcanvas";
 import Sidebar from "./Menu/Sidebar";
