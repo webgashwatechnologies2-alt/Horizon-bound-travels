@@ -14,7 +14,7 @@ const Sidebar = ({ sidebar, setSidebar }: SidebarProps) => {
                <button onClick={() => setSidebar(false)}><i className="fa-sharp fa-regular fa-xmark"></i></button>
             </div>
             <div className="offCanvas__logo mb-30">
-               <Link href="/"><Image src="/horizon-logo.png" alt="Horizon Bound Travels" width={150} height={150} /></Link>
+               <Link href="/"><Image src="/horizonlogo.jpeg" alt="Horizon Bound Travels" width={100} height={150} /></Link>
             </div>
             <div className="offCanvas__side-info mb-30">
                <div className="contact-list mb-30">
@@ -23,7 +23,7 @@ const Sidebar = ({ sidebar, setSidebar }: SidebarProps) => {
                </div>
                <div className="contact-list mb-30">
                   <h4>Phone Number</h4>
-                  <p>+91 82190-98536</p>
+                  <p>+91 89887-36000</p>
                </div>
                <div className="contact-list mb-30">
                   <h4>Email Address</h4>

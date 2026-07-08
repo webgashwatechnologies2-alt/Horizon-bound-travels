@@ -2620,7 +2620,7 @@ textarea {
   position: absolute;
   left: 0;
   top: 100%;
-  min-width: 230px;
+  min-width: 265px;
   background: var(--tg-common-white);
   margin: 0;
   -webkit-transform: scale(1, 0);
@@ -4411,7 +4411,7 @@ textarea {
 }
 .tg-listing-card-currency-amount {
   font-weight: 700;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 24px;
   text-transform: capitalize;
   color: var(--tg-common-white);

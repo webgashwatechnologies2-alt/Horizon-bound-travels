@@ -18,7 +18,14 @@ const NavMenu = () => {
         <ul className="navigation">
             {menu_data.map((menu) => (
                 <li key={menu.id} className={menu.has_dropdown ? "menu-item-has-children" : ""}>
-                    <Link href={menu.link} className={`${(isMenuItemActive(menu.link) || (menu.sub_menus && menu.sub_menus.some((sub_m) => sub_m.link && isSubMenuItemActive(sub_m.link)))) ? "active" : ""}`}>
+                    <Link
+                        href={menu.link}
+                        className={`${isMenuItemActive(menu.link) ||
+                            (menu.sub_menus && menu.sub_menus.some((sub_m) => sub_m.link && isSubMenuItemActive(sub_m.link)))
+                            ? "active"
+                            : ""
+                            }`}
+                    >
                         {menu.title}
                     </Link>
 
@@ -28,8 +35,13 @@ const NavMenu = () => {
                                 <ul className="sub-menu">
                                     {menu.sub_menus.map((sub_m, i) => (
                                         <li key={i}>
-                                            <Link href={sub_m.link} className={`${sub_m.link && isSubMenuItemActive(sub_m.link) ? "active" : ""}`}>
+                                            <Link
+                                                href={sub_m.link}
+                                                className={`${sub_m.link && isSubMenuItemActive(sub_m.link) ? "active" : ""}`}
+                                                style={sub_m.comingSoon ? { color: "#9ca3af" } : undefined}
+                                            >
                                                 {sub_m.title}
+                                                {sub_m.comingSoon && "Coming Soon"}
                                             </Link>
                                         </li>
                                     ))}

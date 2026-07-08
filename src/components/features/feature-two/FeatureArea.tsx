@@ -53,7 +53,7 @@ const FeatureArea = () => {
                         <div className={`row list-card ${isListView ? 'list-card-open' : ''}`}>
                            {currentItems.map((item) => (
                               <div key={item.id} className="col-xxl-4 col-xl-6 col-lg-6 col-md-6 tg-grid-full">
-                                 <div className="tg-listing-card-item mb-30">
+                                 <div className="tg-listing-card-item mb-30 h-100">
                                     <div className="tg-listing-card-thumb fix mb-15 p-relative">
                                        <Link href={`/tour-details/${item.id}`}>
                                           <Image className="tg-card-border w-100" src={item.thumb} alt="listing" style={{ height: "250px", objectFit: "cover" }} />

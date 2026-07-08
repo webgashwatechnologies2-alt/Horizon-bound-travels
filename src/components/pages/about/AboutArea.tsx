@@ -12,10 +12,11 @@ import thumb_3 from "@/assets/img/about/details/abt4.jpg"
 
 const AboutArea = () => {
    return (
-      <div className="tg-about-area p-relative z-index-1 pt-140 pb-105">
+      <div className="tg-about-area p-relative z-index-1 pt-100 pb-100">
          <Image className="tg-about-details-shape p-absolute d-none d-lg-block" src={shape_1} alt="shape" />
          <div className="container">
             <div className="row align-items-center">
+               {/* Image collage left column */}
                <div className="col-lg-6">
                   <div className="tg-about-details-left p-relative mb-15">
                      <Image className="tg-about-details-map p-absolute" src={shape_2} alt="map" />
@@ -38,15 +39,36 @@ const AboutArea = () => {
                      </div>
                   </div>
                </div>
+
+               {/* Professional content right column */}
                <div className="col-lg-6">
                   <div className="tg-chose-content mb-35 ml-60">
-                     <div className="tg-chose-section-title mb-30">
-                        <h5 className="tg-section-subtitle mb-15 wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".1s">Explore the world with us</h5>
-                        <h2 className="mb-15 text-capitalize wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">The perfect vacation<br /> come true with<br /> our Travel Agency</h2>
-                        <p className="text-capitalize wow fadeInUp mb-35" data-wow-delay=".5s" data-wow-duration=".9s">when an unknown printer took a galley of type and scrambled
-                           it to make a type specimen book. It has survived not only five
-                           centuries but also the leap into electronic typesetting<br />
-                           remaining essentially unchanged.</p>
+                     <div className="tg-chose-section-title">
+                        <h5 className="tg-section-subtitle mb-15 wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".1s">
+                           Where Journey Becomes Legacy
+                        </h5>
+                        <h2 className="mb-20 text-capitalize wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
+                           Horizon Bound Travels
+                        </h2>
+                        
+                        <p className="wow fadeInUp mb-20" data-wow-delay=".5s" data-wow-duration=".9s" style={{ textTransform: 'none', lineHeight: '1.7', fontSize: '15px' }}>
+                           Horizon Bound Travels is an elite travel management company dedicated to redefining the paradigm of global exploration. Our foundational philosophy is built on a singular directive: to elevate standard travel into profound, lifelong milestones.
+                        </p>
+                        
+                        <p className="wow fadeInUp mb-35" data-wow-delay=".6s" data-wow-duration=".9s" style={{ textTransform: 'none', lineHeight: '1.7', fontSize: '15px' }}>
+                           While our operational capabilities span international frontiers, our heritage and deepest expertise reside within India’s most iconic landscapes—most notably, the majestic realm of Himachal Pradesh. We specialize in architecting bespoke, immersive itineraries through the alpine sanctuaries of Manali, the spiritual and cultural epicenter of Dharamshala, and the timeless, stately ridges of Shimla.
+                        </p>
+
+                        {/* Styled Horizon Bound Promise quote block */}
+                        <div className="tg-about-promise-box wow fadeInUp mb-40" data-wow-delay=".7s" data-wow-duration=".9s">
+                           <h6 className="promise-title text-uppercase mb-10">
+                              <i className="fas fa-award me-2"></i> The Horizon Bound Promise
+                           </h6>
+                           <blockquote className="promise-quote mb-0 font-italic text-muted">
+                              &ldquo;Horizon Bound Travels operates not merely as an agency, but as your dedicated custodian on the road. We plan with meticulous rigor so that your dream itinerary unfolds seamlessly—rendering every step a profound discovery, an authentic connection, and a lifetime of invaluable memories.&rdquo;
+                           </blockquote>
+                        </div>
+
                         <div className="tg-chose-btn wow fadeInUp" data-wow-delay=".8s" data-wow-duration=".9s">
                            <Link href="/contact" className="tg-btn tg-btn-switch-animation">
                               <Button text="Book Your Trip" />

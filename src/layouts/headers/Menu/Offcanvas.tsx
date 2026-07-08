@@ -29,7 +29,7 @@ const Offcanvas = ({ offCanvas, setOffCanvas }: MobileSidebarProps) => {
             <nav className="tgmobile__menu-box">
                <div onClick={() => setOffCanvas(false)} className="close-btn"><i className="fa-solid fa-xmark"></i></div>
                <div className="nav-logo">
-                  <Link href="/"><Image src="/horizon-logo.png" alt="Horizon Bound Travels" width={150} height={150} style={{ objectFit: 'contain' }} /></Link>
+                  <Link href="/"><Image src="/horizonlogo.jpeg" alt="Horizon Bound Travels" width={150} height={150} style={{ objectFit: 'contain' }} /></Link>
                </div>
                <div className="tgmobile__search">
                   <form onSubmit={handleSubmit}>

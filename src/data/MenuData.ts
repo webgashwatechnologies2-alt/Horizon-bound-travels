@@ -1,4 +1,3 @@
-
 interface MenuItem {
     id: number;
     title: string;
@@ -7,6 +6,7 @@ interface MenuItem {
     sub_menus?: {
         link: string;
         title: string;
+        comingSoon?: boolean;   // ye line add karo
     }[];
 }
 
@@ -25,7 +25,7 @@ const menu_data: MenuItem[] = [
     },
     {
         id: 3,
-        title: "Destinations",
+        title: "Domestic",
         link: "/tour-grid-1",
         has_dropdown: true,
         sub_menus: [
@@ -64,9 +64,57 @@ const menu_data: MenuItem[] = [
         ],
     },
     {
+        id: 6,
+        title: "International",
+        link: "/",
+        has_dropdown: true,
+        sub_menus: [
+            {
+                link: "/",
+                title: "Europe - ",
+                comingSoon: true,
+            },
+            {
+                link: "/",
+                title: "Dubai - ",
+                comingSoon: true,
+            },
+            {
+                link: "/",
+                title: "Maldives - ",
+                comingSoon: true,
+            },
+            {
+                link: "/",
+                title: "Thailand - ",
+                comingSoon: true,
+            },
+            {
+                link: "/",
+                title: "Hong Kong - ",
+                comingSoon: true,
+            },
+            {
+                link: "/",
+                title: "Malaysia - ",
+                comingSoon: true,
+            },
+            {
+                link: "/",
+                title: "Singapore - ",
+                comingSoon: true,
+            },
+            {
+                link: "/",
+                title: "Mauritius - ",
+                comingSoon: true,
+            },
+        ],
+    },
+    {
         id: 4,
-        title: "bookings",
-        link: "/contact",
+        title: "Career",
+        link: "/career",
         has_dropdown: false,
     },
     {

@@ -3,17 +3,26 @@ import Image from "next/image"
 import Link from "next/link"
 
 import shape from "@/assets/img/location/shape-2.png"
+import himachalImg from "@/assets/img/listing/listing-3/tirthanvalley.jpg" 
+import KashmirImg from "@/assets/img/listing/listing-3/Kashmir.jpg"
+import listing5_img1 from "@/assets/img/listing/listing-3/lehimage.jpg"
+import imgKanyakumari from "@/assets/img/listing/listing-3/Kanyakumari.jpg"
+import listing3_img7 from "@/assets/img/listing/rajasthan-camel.jpg"
+import imgFamily from "@/assets/img/listing/listing-3/goanew.jpg"
+import listing5_img4 from "@/assets/img/listing/listing-3/uk.jpg"
+import imgspiti from "@/assets/img/listing/spt.jpg"
+
 
 const Location = () => {
    const destinations = [
-      { id: 1, name: "Himachal", tours: "06", thumb: destination_data[0].thumb },
-      { id: 2, name: "Kashmir", tours: "03", thumb: destination_data[12].thumb },
-      { id: 3, name: "Leh", tours: "03", thumb: destination_data[9].thumb },
-      { id: 4, name: "Kerala", tours: "03", thumb: destination_data[21].thumb },
-      { id: 5, name: "Rajasthan", tours: "03", thumb: destination_data[18].thumb },
-      { id: 6, name: "Goa", tours: "03", thumb: destination_data[24].thumb },
-      { id: 7, name: "Uttarakhand", tours: "03", thumb: destination_data[15].thumb },
-      { id: 8, name: "Spiti", tours: "03", thumb: destination_data[6].thumb },
+      { id: 1, name: "Himachal", tours: "06", thumb: himachalImg  },
+      { id: 2, name: "Kashmir", tours: "03", thumb: KashmirImg },
+      { id: 3, name: "Leh", tours: "03", thumb: listing5_img1 },
+      { id: 4, name: "Kerala", tours: "03", thumb: imgKanyakumari },
+      { id: 5, name: "Rajasthan", tours: "03", thumb: listing3_img7 },
+      { id: 6, name: "Goa", tours: "03", thumb: imgFamily },
+      { id: 7, name: "Uttarakhand", tours: "03", thumb: listing5_img4 },
+      { id: 8, name: "Spiti", tours: "03", thumb: imgspiti },
    ];
 
    return (

@@ -41,7 +41,7 @@ const page = async ({ params }: PageProps) => {
           <div className="row">
             {filteredPackages.map((pkg) => (
               <div key={pkg.id} className="col-xl-4 col-lg-6 col-md-6 mb-30">
-                <div className="tg-listing-card-item h-80">
+                <div className="tg-listing-card-item h-100">
                   <div className="tg-listing-card-thumb fix mb-15 p-relative">
                     <Link href={`/tour-details/${pkg.id}`}>
                       <Image className="tg-card-border w-100 h-100" src={pkg.thumb} alt={pkg.title} />
@@ -71,7 +71,7 @@ const page = async ({ params }: PageProps) => {
                       <div className="tg-listing-card-price-wrap price-bg d-flex align-items-center">
                         <span className="tg-listing-card-currency-amount mr-5">
                           {pkg.delete_price && <del className="tg-listing-card-currency-old">₹{pkg.delete_price}</del>}
-                          <span className="currency-symbol">₹</span>{pkg.price}
+                          <span className="currency-symbol"></span>{pkg.price}
                         </span>
                         {/* <span className="tg-listing-card-activity-person">/Person</span> */}
                       </div>

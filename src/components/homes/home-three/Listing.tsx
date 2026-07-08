@@ -89,7 +89,7 @@ const Listing = () => {
                            <div className="tg-listing-card-price-wrap price-bg d-flex align-items-center">
                               <span className="tg-listing-card-currency-amount mr-5">
                                  {item.delete_price && <del className="tg-listing-card-currency-old">₹{item.delete_price}</del>}
-                                 <span className="currency-symbol">₹</span>{item.price}
+                                 <span className="currency-symbol"></span>{item.price}
                               </span>
                               {/* <span className="tg-listing-card-activity-person">/Person</span> */}
                            </div>

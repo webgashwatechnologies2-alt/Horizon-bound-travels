@@ -45,8 +45,13 @@ const MobileMenu = () => {
                            <ul className="sub-menu" style={{ display: navTitle === menu.title ? "block" : "none" }}>
                               {menu.sub_menus.map((sub_m, i) => (
                                  <li key={i}>
-                                    <Link href={sub_m.link} className={`${sub_m.link && isSubMenuItemActive(sub_m.link) ? "active" : ""}`}>
+                                    <Link
+                                       href={sub_m.link}
+                                       className={`${sub_m.link && isSubMenuItemActive(sub_m.link) ? "active" : ""}`}
+                                       style={sub_m.comingSoon ? { color: "#9ca3af", fontSize: "12px" } : undefined}
+                                    >
                                        {sub_m.title}
+                                       {sub_m.comingSoon && "Coming Soon"}
                                     </Link>
                                  </li>
                               ))}

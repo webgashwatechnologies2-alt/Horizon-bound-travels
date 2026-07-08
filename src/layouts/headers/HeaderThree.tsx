@@ -28,7 +28,7 @@ const HeaderThree = () => {
                            >
                               <Link href="/">
                                  <Image
-                                    src="/horizon-logonew.webp"
+                                    src="/horizonlogolatest.png"
                                     alt="Horizon Bound Travels"
                                     width={150}
                                     height={150}
@@ -50,7 +50,7 @@ const HeaderThree = () => {
                               </span>
                               <div className="tg-header-contact-number d-none d-xl-block">
                                  <span>Call Us:</span>
-                                 <Link href="tel:+8219098536">+91 82190-98536</Link>
+                                 <Link href="tel:+8219098536">+91 89887-36000</Link>
                               </div>
                            </div>
                            <div className="tg-header-btn ml-20 d-none d-sm-block">

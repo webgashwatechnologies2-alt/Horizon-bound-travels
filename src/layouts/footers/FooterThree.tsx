@@ -15,7 +15,7 @@ const FooterThree = () => {
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                            <div className="tg-footer-widget mb-40">
                               <div className="tg-footer-logo mb-20">
-                                 <Link href="/"><Image src="/hzlogo.jpeg" alt="Horizon Bound Travels" width={150} height={150} /></Link>
+                                 <Link href="/"><Image src="/horizonlogo.jpeg" alt="Horizon Bound Travels" width={150} height={150} /></Link>
                               </div>
                               <p className="mb-20">
                                  Discover unforgettable journeys across Spiti, Kashmir, Ladakh, Goa, Kerala, and more with expertly planned tour packages.
@@ -69,7 +69,7 @@ const FooterThree = () => {
                                        <span className="mr-15">
                                           <i className="fa-sharp text-white fa-solid fa-phone"></i>
                                        </span>
-                                       +91 82190-98536
+                                       +91 89887-36000
                                     </Link>
                                  </li>
                                  <li className="d-flex">
@@ -92,6 +92,7 @@ const FooterThree = () => {
                               <ul>
                                  <li><Link href="/privacy-policy">Privacy Policy</Link></li>
                                  <li><Link href="/terms-conditions">Terms & conditions</Link></li>
+                                 <li><Link href="/vision-mission">Vision And Mission</Link></li>
                               </ul>
                            </div>
                         </div>
