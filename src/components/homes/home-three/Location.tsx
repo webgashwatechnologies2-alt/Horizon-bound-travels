@@ -1,4 +1,3 @@
-import destination_data from "@/data/DestinationData"
 import Image from "next/image"
 import Link from "next/link"
 
