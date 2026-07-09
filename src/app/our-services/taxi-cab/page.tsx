@@ -1,11 +1,10 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import FooterThree from "@/layouts/footers/FooterThree";
 import BreadCrumb from "@/components/common/BreadCrumb";
 import Wrapper from "@/layouts/Wrapper";
 import { toast } from "react-toastify";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import imgsedan from "@/assets/img/listing/listing-3/swiftcar.jpg"
 import imgSUV from "@/assets/img/listing/listing-3/innova-crysta.jpg"
 import imgsuvErtiga from "@/assets/img/listing/listing-3/ertiga.jpg"
@@ -22,6 +21,12 @@ const TaxiCabServicePage = () => {
     notes: ''
   });
 
+  // ✅ Bootstrap JS ko sirf browser mein load karo, server pe nahi
+  useEffect(() => {
+    // @ts-ignore
+    import('bootstrap/dist/js/bootstrap.bundle.min.js');
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -34,7 +39,6 @@ const TaxiCabServicePage = () => {
       return;
     }
 
-    // Simulate successful form submission
     toast.success("Taxi Booking Inquiry Submitted Successfully! Our executive will contact you shortly.");
     setFormData({
       name: '',
