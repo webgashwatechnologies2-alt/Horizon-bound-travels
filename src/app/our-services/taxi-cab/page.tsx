@@ -23,7 +23,7 @@ const TaxiCabServicePage = () => {
 
   // ✅ Bootstrap JS ko sirf browser mein load karo, server pe nahi
   useEffect(() => {
-    // @ts-ignore
+     // @ts-expect-error - no type declarations available for bootstrap JS bundle
     import('bootstrap/dist/js/bootstrap.bundle.min.js');
   }, []);
 
