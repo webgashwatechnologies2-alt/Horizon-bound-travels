@@ -46,11 +46,9 @@ const Offcanvas = ({ offCanvas, setOffCanvas }: MobileSidebarProps) => {
                </div>
                <div className="social-links">
                   <ul className="list-wrap">
-                     <li><Link href="#"><i className="fab fa-facebook-f"></i></Link></li>
-                     <li><Link href="#"><i className="fab fa-twitter"></i></Link></li>
-                     <li><Link href="#"><i className="fab fa-instagram"></i></Link></li>
+                     <li><Link href="https://www.facebook.com/profile.php?id=61591492783445"><i className="fab fa-facebook-f"></i></Link></li>
+                     <li><Link href="https://www.instagram.com/?hl=en"><i className="fab fa-instagram"></i></Link></li>
                      <li><Link href="#"><i className="fab fa-linkedin-in"></i></Link></li>
-                     <li><Link href="#"><i className="fab fa-youtube"></i></Link></li>
                   </ul>
                </div>
             </nav>

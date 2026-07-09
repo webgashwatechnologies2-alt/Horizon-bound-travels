@@ -112,6 +112,34 @@ const menu_data: MenuItem[] = [
         ],
     },
     {
+        id: 7,
+        title: "Our Services",
+        link: "/",
+        has_dropdown: true,
+        sub_menus: [
+            {
+                link: "/our-services/taxi-cab",
+                title: "Texi & Cab Service",
+            },
+            {
+                link: "/our-services/bus-volvo",
+                title: "Bus and  Volvo",
+            },
+            {
+                link: "/our-services/flight",
+                title: "Flight",
+            },
+            {
+                link: "/our-services/train",
+                title: "Train ",
+            },
+            {
+                link: "/our-services/hotel-reservations",
+                title: "Hotel Reservations",
+            },
+        ],
+    },
+    {
         id: 4,
         title: "Career",
         link: "/career",

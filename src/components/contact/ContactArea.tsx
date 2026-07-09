@@ -18,7 +18,7 @@ const ContactArea = () => {
                         <div className="tg-team-details-contact">
                            <div className="item">
                               <span>Phone :</span>
-                              <Link href="tel:+8219098536">+91 89887-36000</Link>
+                              <Link href="tel:+918988736000">+91 89887-36000</Link>
                            </div>
                            <div className="item">
                               <span>Website : </span>

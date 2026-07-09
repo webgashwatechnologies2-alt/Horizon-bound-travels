@@ -31,8 +31,9 @@ const FooterThree = () => {
                                  </form>
                               </div>
                               <div className="tg-footer-social">
-                                 <Link href="#"><i className="fa-brands fa-facebook-f"></i></Link>
-                                 <Link href="#"><i className="fa-brands fa-instagram"></i></Link>
+                                 <Link href="https://www.facebook.com/profile.php?id=61591492783445"><i className="fa-brands fa-facebook-f"></i></Link>
+                                 <Link href="https://www.instagram.com/?hl=en"><i className="fa-brands fa-instagram"></i></Link>
+                                 <Link href="/"><i className="fab fa-linkedin-in"></i></Link>
                               </div>
                            </div>
                         </div>

@@ -17,7 +17,7 @@ const banner_data = [
       link: "/destinations/uttarakhand"
    },
    {
-      image: "/assets/img/hero/herobaner1.jpg",
+      image: "/assets/img/hero/herobanernew.jpg",
       subtitle: "✦ Begin Your Journey",
       title: "Escape to the Mountains",
       description: "Discover majestic peaks, lush valleys, and snow-capped summits on an unforgettable mountain adventure.",

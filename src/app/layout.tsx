@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import "../styles/index.css";
 import type { Metadata } from "next";
+import Script from "next/script";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
@@ -37,6 +38,23 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+
+        {/* Tawk.to Live Chat Widget */}
+        <Script id="tawk-to-widget" strategy="afterInteractive">
+          {`
+            var Tawk_API = Tawk_API || {};
+            var Tawk_LoadStart = new Date();
+            (function () {
+              var s1 = document.createElement("script"),
+                  s0 = document.getElementsByTagName("script")[0];
+              s1.async = true;
+              s1.src = "https://embed.tawk.to/6a4f3d54a6558f1d451fd9af/1jt2of4ln";
+              s1.charset = "UTF-8";
+              s1.setAttribute("crossorigin", "*");
+              s0.parentNode.insertBefore(s1, s0);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   )

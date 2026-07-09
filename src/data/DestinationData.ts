@@ -1,6 +1,5 @@
 import { StaticImageData } from "next/image";
-
-import listing_img1 from "@/assets/img/listing/su/manali.jpg"
+import listing_img1 from "@/assets/img/listing/listing-3/chandertaalnew.jpg"
 import listing3_img1 from "@/assets/img/listing/spt.jpg"
 import listing3_img7 from "@/assets/img/listing/rajasthan-camel.jpg"
 import listing5_img1 from "@/assets/img/listing/listing-3/lehimage.jpg"
@@ -27,32 +26,22 @@ import imggoa from "@/assets/img/listing/listing-3/goaaroup.jpg"
 import imgBackpacking from "@/assets/img/listing/listing-3/Goanre.jpg"
 import imgshimlahoneymoon from "@/assets/img/listing/listing-3/Shimla-Manali-Honeymoon.jpg"
 import imgbirbilling from "@/assets/img/listing/listing-3/paragliding-in-bir-himachal.jpg"
-import imgDalhousie from "@/assets/img/listing/listing-3/dalhousie.jpg"
+import imgDalhousie from "@/assets/img/listing/listing-3/shimlaimage.jpg"
 import imgspitibike from "@/assets/img/listing/listing-3/bikespiti.jpg"
 import imgsmmnl from "@/assets/img/listing/listing-3/Shimla-Manali-Tour-Package.jpg"
-import imgdhrmdalhousie from "@/assets/img/listing/listing-3/khajjiar.jpg"
+import imgdhrmdalhousie from "@/assets/img/listing/listing-3/Dharamshalanew.jpg"
 import imgsppptvalley from "@/assets/img/listing/listing-3/sptneww.jpg"
-import imgkarsog from "@/assets/img/listing/listing-3/karsog-valley-view.jpg"
-import imgImla from "@/assets/img/listing/listing-3/vimla.jpg"
-import imgVimla from "@/assets/img/listing/listing-3/vimlanew.jpg"
-import imgvashnodevi1 from "@/assets/img/listing/listing-3/mata-vaishno-devi-darshan-tour-package.jpg"
+import imgkarsog from "@/assets/img/listing/listing-3/karsongimagenew.jpeg"
+import imgImla from "@/assets/img/listing/listing-3/vimlaaneww.jpeg"
+import imgShikariMata from "@/assets/img/listing/listing-3/shikarimata.jpg"
+import imgvashnodevi1 from "@/assets/img/listing/listing-3/newvashnodeviimage.jpg"
 import imgMajestic from "@/assets/img/listing/listing-3/mkashmir.jpg"
-import imgVaishnonew from "@/assets/img/listing/listing-3/Vaishno-Devi-and-Shiv-Khori-Tour-Package.jpg"
+import imgVaishnonew from "@/assets/img/listing/listing-3/vashnodeviimage.jpg"
 import imgFamily from "@/assets/img/listing/listing-3/goanew.jpg"
 import imgBackwater from "@/assets/img/listing/listing-3/The-Magical-Backwaters-of-Kerala.jpg"
 import imgRediscover from "@/assets/img/listing/listing-3/rediscover.jpg"
 import imgKanyakumari from "@/assets/img/listing/listing-3/Kanyakumari.jpg"
-
-
-
-
-
-
-
-
-
-
-
+import imgLadakh from "@/assets/img/listing/listing-3/ladakhnewimage.jpg"
 
 interface DayItinerary {
    day: string;
@@ -949,7 +938,7 @@ const destination_data: DestinationPackage[] = [
       time: "2 Nights / 3 Days",
       title: "Imla - Vimla Valley Tour From Shimla",
       location: "Imla & Vimla Valley, Shimla, Himachal Pradesh",
-      price: "Price On Request",
+      price: "Startng From ₹9,999",
       review: 4.7,
       total_review: "(22 Reviews)",
 
@@ -991,30 +980,33 @@ const destination_data: DestinationPackage[] = [
    {
       id: 36,
       destination: "himachal",
-      thumb: imgVimla,
-      tag: "New",
+      thumb: imgShikariMata,
+      tag: "Popular",
       time: "2 Nights / 3 Days",
-      title: "Imla - Vimla Valley Tour From Mandi",
-      location: "Imla & Vimla Valley, Mandi, Himachal Pradesh",
-      price: "Price On Request",
-      review: 4.7,
-      total_review: "(22 Reviews)",
+      title: "Shikari Mata Temple Tour Package From Mandi",
+      location: "Shikari Mata Temple, Janjehli Valley, Mandi, Himachal Pradesh",
+      price: "Starting From ₹8,599",
+      review: 4.8,
+      total_review: "(28 Reviews)",
 
       itinerary: [
          {
             day: "Day 1",
-            title: "Mandi to Imla Valley",
-            description: "Start your journey from Mandi and drive to the beautiful Imla Valley. Check in to your accommodation and spend the evening exploring the peaceful surroundings and nearby villages."
+            title: "Mandi to Janjehli",
+            description:
+               "Arrive in Mandi and drive to the beautiful Janjehli Valley. Check in to your hotel and spend the evening exploring the peaceful surroundings, local markets, and scenic mountain views."
          },
          {
             day: "Day 2",
-            title: "Vimla Valley Exploration",
-            description: "Enjoy breakfast before exploring the scenic landscapes of Vimla Valley, local temples, forests, apple orchards, and traditional Himachali villages. Spend quality time in nature."
+            title: "Shikari Mata Temple दर्शन & Sightseeing",
+            description:
+               "After breakfast, drive to the base point and enjoy a short trek or local transport to the famous Shikari Mata Temple. Seek blessings at the temple, admire the panoramic Himalayan views, and visit nearby meadows and forests before returning to Janjehli."
          },
          {
             day: "Day 3",
-            title: "Return to Mandi",
-            description: "After breakfast, check out from the hotel and return to Mandi with unforgettable memories of your valley getaway."
+            title: "Janjehli to Mandi",
+            description:
+               "After breakfast, check out from the hotel and drive back to Mandi with wonderful memories of your spiritual and nature-filled journey."
          }
       ],
 
@@ -1022,6 +1014,7 @@ const destination_data: DestinationPackage[] = [
          "2 Nights accommodation",
          "Daily Breakfast & Dinner",
          "Private vehicle for sightseeing",
+         "Visit to Shikari Mata Temple",
          "All sightseeing as per itinerary",
          "Driver allowance, toll tax & parking"
       ],
@@ -1029,17 +1022,12 @@ const destination_data: DestinationPackage[] = [
       exclusions: [
          "Personal expenses",
          "Lunch",
-         "Entry tickets",
+         "Temple donations",
          "Travel insurance",
          "Adventure activities",
          "Anything not mentioned in inclusions"
       ]
    },
-
-
-
-
-
 
 
 
@@ -1052,7 +1040,7 @@ const destination_data: DestinationPackage[] = [
       time: "10 Days",
       title: "Best of Spiti Valley Tour Package",
       location: "Spiti Valley, Himachal Pradesh",
-      price: "Price On Request",
+      price: "Startng From ₹23,999",
       review: 4.9,
       total_review: "(67 Reviews)",
 
@@ -1133,7 +1121,7 @@ const destination_data: DestinationPackage[] = [
       time: "9 Days",
       title: "Chandigarh to Spiti Bike Expedition",
       location: "Spiti Valley, Himachal Pradesh",
-      price: "Price On Request",
+      price: "Startng From ₹25,799",
       review: 4.8,
       total_review: "(41 Reviews)",
 
@@ -1215,7 +1203,7 @@ const destination_data: DestinationPackage[] = [
       time: "12 Days",
       title: "Kinnaur Spiti Road Trip",
       location: "Kinnaur & Spiti Valley, Himachal Pradesh",
-      price: "Price On Request",
+      price: "Startng From ₹22,500",
       review: 4.9,
       total_review: "(35 Reviews)",
 
@@ -1499,7 +1487,7 @@ const destination_data: DestinationPackage[] = [
    {
       id: 37,
       destination: "leh",
-      thumb: imgSrinagar,
+      thumb: imgLadakh,
       tag: "Bestseller",
       time: "6 Nights / 7 Days",
       title: "Rediscover Ladakh",
@@ -1751,7 +1739,7 @@ const destination_data: DestinationPackage[] = [
       ]
    },
    {
-      id: 37,
+      id: 50,
       destination: "kashmir",
       thumb: imgVaishnonew,
       tag: "Spiritual",
@@ -1835,7 +1823,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Days",
       title: "Kedarnath Group Tour from Haridwar with Rishikesh Stay",
       location: "Haridwar, Kedarnath & Rishikesh, Uttarakhand",
-      price: "Price On Request",
+      price: "Startng From ₹20,500",
       review: 4.7,
       total_review: "(91 Reviews)",
 
@@ -1892,7 +1880,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Days",
       title: "Escape to Uttarakhand | From Sacred Streams to Alpine Dreams",
       location: "Haridwar, Rishikesh & Auli, Uttarakhand",
-      price: "Price On Request",
+      price: "Startng From ₹18,599",
       review: 4.8,
       total_review: "(54 Reviews)",
 
@@ -1954,7 +1942,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Days",
       title: "Dehradun, Haridwar, Rishikesh & Mussoorie Winter Special",
       location: "Dehradun, Haridwar, Rishikesh & Mussoorie, Uttarakhand",
-      price: "Price On Request",
+      price: "Startng From ₹22,999",
       review: 4.9,
       total_review: "(38 Reviews)",
 
@@ -2023,7 +2011,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Days",
       title: "Vacation In Rajasthan",
       location: "Jaipur, Udaipur, Jodhpur & Jaisalmer, Rajasthan",
-      price: "Price On Request",
+      price: "Startng From ₹19,500",
       review: 4.8,
       total_review: "(73 Reviews)",
 
@@ -2092,7 +2080,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Days",
       title: "Deserts Of Rajasthan With Bikaner",
       location: "Jaipur, Bikaner, Jaisalmer & Jodhpur, Rajasthan",
-      price: "Price On Request",
+      price: "Startng From ₹16,500",
       review: 4.7,
       total_review: "(48 Reviews)",
 
@@ -2162,7 +2150,7 @@ const destination_data: DestinationPackage[] = [
       time: "8 Days",
       title: "Udaipur Mount Abu Tour",
       location: "Udaipur & Mount Abu, Rajasthan",
-      price: "Price On Request",
+      price: "Startng From ₹21,499",
       review: 4.9,
       total_review: "(41 Reviews)",
       itinerary: [
