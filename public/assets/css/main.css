@@ -4411,7 +4411,7 @@ textarea {
 }
 .tg-listing-card-currency-amount {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 11.5px;
   line-height: 24px;
   text-transform: capitalize;
   color: var(--tg-common-white);
@@ -4440,7 +4440,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0px 0px 0px 12px;
-  width: 220px;
+  width: 400px;
 }
 .tg-listing-card-content {
   padding: 0px 18px 14px 25px;
@@ -4451,12 +4451,14 @@ textarea {
 .tg-listing-rating-icon {
   color: var(--tg-common-yellow);
   font-size: 14px;
+  display: none;
 }
 .tg-listing-rating-percent {
   font-size: 13px;
   line-height: 24px;
   text-transform: capitalize;
   color: var(--tg-common-black);
+  display: none;
 }
 .tg-listing-item-price-discount {
   position: absolute;

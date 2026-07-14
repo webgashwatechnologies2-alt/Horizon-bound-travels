@@ -300,7 +300,7 @@ const TourDetailsPage = async ({ params }: PageProps) => {
                       <p className="mb-5" style={{ fontSize: '14px', color: 'var(--tg-grey-4)' }}>Starting From</p>
                       <div className="d-flex align-items-center justify-content-center">
                         <span style={{ fontSize: '24px', fontWeight: '700', color: 'var(--tg-theme-primary)' }}></span>
-                        <span style={{ fontSize: '25px', fontWeight: '700', color: 'var(--tg-theme-primary)', marginLeft: '5px' }}>{pkg.price}</span>
+                        <span style={{ fontSize: '20px', fontWeight: '700', color: 'var(--tg-theme-primary)', marginLeft: '5px' }}>{pkg.price}</span>
                       </div>
                       {pkg.delete_price && (
                         <del style={{ color: 'var(--tg-grey-4)', fontSize: '14px' }}>₹{pkg.delete_price}</del>

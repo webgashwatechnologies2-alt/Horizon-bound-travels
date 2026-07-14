@@ -14,7 +14,7 @@ import imgspiti from "@/assets/img/listing/spt.jpg"
 
 const Location = () => {
    const destinations = [
-      { id: 1, name: "Himachal", tours: "06", thumb: himachalImg  },
+      { id: 1, name: "Himachal", tours: "16", thumb: himachalImg  },
       { id: 2, name: "Kashmir", tours: "03", thumb: KashmirImg },
       { id: 3, name: "Leh", tours: "03", thumb: listing5_img1 },
       { id: 4, name: "Kerala", tours: "03", thumb: imgKanyakumari },

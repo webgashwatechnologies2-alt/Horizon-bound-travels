@@ -13,7 +13,7 @@ const DestinationHero = ({ destination }: DestinationHeroProps) => {
   leh : "/assets/img/hero/tu/ladakhbanner.jpg",
   goa: "/assets/img/hero/tu/Goa-India.jpg",
   rajasthan: "/assets/img/hero/tu/rajsthan.jpg",
-  kerala: "/assets/img/hero/tu/keralaimage.jpg",
+  kerala: "/assets/img/hero/tu/kashmirbaner.jpeg",
   default: "/assets/img/hero/tu/default.jpg",
 };
 

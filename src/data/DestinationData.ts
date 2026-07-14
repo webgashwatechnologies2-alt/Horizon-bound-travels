@@ -1,14 +1,14 @@
 import { StaticImageData } from "next/image";
-import listing_img1 from "@/assets/img/listing/listing-3/chandertaalnew.jpg"
+import listing_img1 from "@/assets/img/listing/listing-3/chandertaaalnew.jpeg"
 import listing3_img1 from "@/assets/img/listing/spt.jpg"
 import listing3_img7 from "@/assets/img/listing/rajasthan-camel.jpg"
 import listing5_img1 from "@/assets/img/listing/listing-3/lehimage.jpg"
 import listing5_img4 from "@/assets/img/listing/listing-3/uk.jpg"
 import listing5_img8 from "@/assets/img/listing/listing-3/munarnew.jpg"
 import listing_imggoa from "@/assets/img/listing/listing-3/goa.jpg"
-import imgkullunew from "@/assets/img/listing/listing-3/tirthanvalley.jpg"
+import imgkullunew from "@/assets/img/listing/listing-3/jibhi-tirthan.jpeg"
 import imhgheavhm from "@/assets/img/listing/listing-3/Shimla-During-Monsoon.jpg"
-import imgdharamshala from "@/assets/img/listing/listing-3/dshand.jpg"
+import imgdharamshala from "@/assets/img/listing/listing-3/dharmashanreimage.jpeg"
 import imghimchal from "@/assets/img/listing/listing-3/sptvalley.jpg"
 import imgtvalley from "@/assets/img/listing/listing-3/jibhiimage.jpg"
 import imgbike from "@/assets/img/listing/listing-3/sptbike.jpg"
@@ -24,8 +24,8 @@ import imgKerala from "@/assets/img/listing/listing-3/keralaimage.jpg"
 import imgMunnar from "@/assets/img/listing/listing-3/mur.jpg"
 import imggoa from "@/assets/img/listing/listing-3/goaaroup.jpg"
 import imgBackpacking from "@/assets/img/listing/listing-3/Goanre.jpg"
-import imgshimlahoneymoon from "@/assets/img/listing/listing-3/Shimla-Manali-Honeymoon.jpg"
-import imgbirbilling from "@/assets/img/listing/listing-3/paragliding-in-bir-himachal.jpg"
+import imgshimlahoneymoon from "@/assets/img/listing/listing-3/honeymoon.jpeg"
+import imgbirbilling from "@/assets/img/listing/listing-3/birbillingnew.jpeg"
 import imgDalhousie from "@/assets/img/listing/listing-3/shimlaimage.jpg"
 import imgspitibike from "@/assets/img/listing/listing-3/bikespiti.jpg"
 import imgsmmnl from "@/assets/img/listing/listing-3/Shimla-Manali-Tour-Package.jpg"
@@ -79,7 +79,7 @@ const destination_data: DestinationPackage[] = [
       time: " 7 Nights / 8 Days",
       title: "Manali Chandratal Kaza",
       location: "Shimla & Manali, Himachal Pradesh",
-      price: "Startng From ₹32,199",
+      price: "Startng From ₹32,199/Adult",
       review: 4.8,
       total_review: "(45 Reviews)",
 
@@ -153,7 +153,7 @@ const destination_data: DestinationPackage[] = [
       time: "2 Nights / 3 Days",
       title: "Tirthan Valley Tour Package",
       location: "Kullu & Manali, Himachal Pradesh",
-      price: "Startng From ₹5,799",
+      price: "Startng From ₹5,799/Adult",
       review: 4.7,
       total_review: "(38 Reviews)",
 
@@ -202,7 +202,7 @@ const destination_data: DestinationPackage[] = [
       time: " 5 Nights / 6 Days",
       title: "Shimla Kullu Manali Honeymoon Package",
       location: "Shimla, Manali & Dharamshala, Himachal Pradesh",
-      price: "Startng From ₹21,099",
+      price: "Startng From ₹21,099/Adult",
       review: 4.9,
       total_review: "(52 Reviews)",
 
@@ -265,7 +265,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Dharamshala Dalhousie Tour",
       location: "Amritsar, Dalhousie & Dharamshala",
-      price: "Startng From ₹9,999",
+      price: "Startng From ₹9,999/Adult",
       review: 4.6,
       total_review: "(31 Reviews)",
 
@@ -316,7 +316,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Spiti Valley Tour Package From Manali",
       location: "Shimla, Manali & Kasol, Himachal Pradesh",
-      price: "Startng From ₹26,699",
+      price: "Startng From ₹26,699/Adult",
       review: 4.8,
       total_review: "(28 Reviews)",
 
@@ -383,7 +383,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Jibhi, Tirthan Valley Tour Package",
       location: "Tirthan Valley & Jibhi, Himachal Pradesh",
-      price: "Startng From ₹7,799",
+      price: "Startng From ₹7,799/Adult",
       review: 4.7,
       total_review: "(22 Reviews)",
 
@@ -435,7 +435,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Manali Shimla Honeymoon Package",
       location: "Shimla & Manali, Himachal Pradesh",
-      price: "Startng From ₹27,199",
+      price: "Startng From ₹27,199/Adult",
       review: 4.8,
       total_review: "(36 Reviews)",
 
@@ -503,7 +503,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Bir Billing With Barot Valley Tour Plan",
       location: "Bir Billing & Barot Valley, Himachal Pradesh",
-      price: "Startng From ₹13,099",
+      price: "Startng From ₹13,099/Adult",
       review: 4.8,
       total_review: "(28 Reviews)",
 
@@ -547,10 +547,6 @@ const destination_data: DestinationPackage[] = [
          "Anything not mentioned in inclusions"
       ]
    },
-
-
-
-
    {
       id: 28,
       destination: "himachal",
@@ -559,7 +555,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Shimla Manali Dalhousie Package From Delhi",
       location: "Shimla, Manali & Dalhousie, Himachal Pradesh",
-      price: "Startng From ₹16,799",
+      price: "Startng From ₹16,799/Adult",
       review: 4.8,
       total_review: "(34 Reviews)",
 
@@ -632,7 +628,7 @@ const destination_data: DestinationPackage[] = [
       time: "8 Nights / 9 Days",
       title: "Spiti Valley Bike Trip",
       location: "Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹34,699",
+      price: "Startng From ₹34,699/Adult",
       review: 4.9,
       total_review: "(48 Reviews)",
 
@@ -701,9 +697,6 @@ const destination_data: DestinationPackage[] = [
          "Anything not mentioned under inclusions"
       ]
    },
-
-
-
    {
       id: 30,
       destination: "himachal",
@@ -712,7 +705,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Shimla Manali Tour Package",
       location: "Shimla & Manali, Himachal Pradesh",
-      price: "Startng From ₹18,799",
+      price: "Startng From ₹18,799/Adult",
       review: 4.8,
       total_review: "(42 Reviews)",
 
@@ -766,7 +759,6 @@ const destination_data: DestinationPackage[] = [
          "Anything not mentioned under inclusions"
       ]
    },
-
    {
       id: 31,
       destination: "himachal",
@@ -775,7 +767,7 @@ const destination_data: DestinationPackage[] = [
       time: "4 Nights / 5 Days",
       title: "Dharamshala Dalhousie Honeymoon Tour",
       location: "Dharamshala & Dalhousie, Himachal Pradesh",
-      price: "Startng From ₹34,199",
+      price: "Startng From ₹34,199/Adult",
       review: 4.9,
       total_review: "(30 Reviews)",
 
@@ -832,7 +824,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Spiti Valley Tour Package From Shimla",
       location: "Shimla & Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹16,199",
+      price: "Startng From ₹16,199/Adult",
       review: 4.9,
       total_review: "(40 Reviews)",
 
@@ -876,7 +868,6 @@ const destination_data: DestinationPackage[] = [
          "Anything not mentioned under inclusions"
       ]
    },
-
    {
       id: 33,
       destination: "himachal",
@@ -885,10 +876,9 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Karsog Valley Tour from Shimla",
       location: "Karsog Valley, Himachal Pradesh",
-      price: "Startng From ₹14,999",
+      price: "Startng From ₹14,999/Adult",
       review: 4.8,
       total_review: "(27 Reviews)",
-
       itinerary: [
          {
             day: "Day 1",
@@ -929,7 +919,6 @@ const destination_data: DestinationPackage[] = [
          "Anything not mentioned under inclusions"
       ]
    },
-
    {
       id: 35,
       destination: "himachal",
@@ -938,7 +927,7 @@ const destination_data: DestinationPackage[] = [
       time: "2 Nights / 3 Days",
       title: "Imla - Vimla Valley Tour From Shimla",
       location: "Imla & Vimla Valley, Shimla, Himachal Pradesh",
-      price: "Startng From ₹9,999",
+      price: "Startng From ₹9,999/Adult",
       review: 4.7,
       total_review: "(22 Reviews)",
 
@@ -985,7 +974,7 @@ const destination_data: DestinationPackage[] = [
       time: "2 Nights / 3 Days",
       title: "Shikari Mata Temple Tour Package From Mandi",
       location: "Shikari Mata Temple, Janjehli Valley, Mandi, Himachal Pradesh",
-      price: "Starting From ₹8,599",
+      price: "Starting From ₹8,599/Adult",
       review: 4.8,
       total_review: "(28 Reviews)",
 
@@ -1028,9 +1017,6 @@ const destination_data: DestinationPackage[] = [
          "Anything not mentioned in inclusions"
       ]
    },
-
-
-
    // Spiti - 3 packages
    {
       id: 7,
@@ -1298,7 +1284,7 @@ const destination_data: DestinationPackage[] = [
       time: "4 Nights / 5 Days",
       title: "Majestic Ladakh Escape",
       location: "Leh, Nubra Valley & Pangong Lake",
-      price: "Startng From ₹ 5,899",
+      price: "Startng From ₹ 5,899/Person Twin Sharing",
       review: 4.9,
       total_review: "(89 Reviews)",
 
@@ -1356,7 +1342,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Grand Ladakh Expedition",
       location: "Leh, Sham Valley, Nubra Valley & Pangong Lake",
-      price: "Startng From ₹35,999",
+      price: "Startng From ₹35,999/Person Twin Sharing",
       review: 4.8,
       total_review: "(56 Reviews)",
 
@@ -1429,7 +1415,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Ladakh Bliss",
       location: "Leh, Nubra Valley & Pangong Lake",
-      price: "Startng From ₹ 19,299",
+      price: "Startng From ₹ 19,299/Person Twin Sharing",
       review: 4.9,
       total_review: "(34 Reviews)",
 
@@ -1492,7 +1478,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Rediscover Ladakh",
       location: "Leh, Nubra Valley & Pangong Lake",
-      price: "Startng From ₹22,599",
+      price: "Startng From ₹22,599/Person Twin Sharing",
       review: 4.9,
       total_review: "(34 Reviews)",
 
@@ -1569,7 +1555,7 @@ const destination_data: DestinationPackage[] = [
       time: "2 Nights / 3 Days",
       title: "Vaishnodevi Darshan",
       location: "Katra & Vaishno Devi Shrine, Jammu",
-      price: "Startng From ₹5,899",
+      price: "Startng From ₹5,899/Person Twin Sharing",
       review: 4.8,
       total_review: "(78 Reviews)",
 
@@ -1619,7 +1605,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Majestic Kashmir Escape",
       location: "Srinagar, Gulmarg, Pahalgam & Sonmarg",
-      price: "Startng From ₹17,899",
+      price: "Startng From ₹17,899/Person Twin Sharing",
       review: 4.9,
       total_review: "(95 Reviews)",
 
@@ -1693,7 +1679,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Kashmir Bliss Getaway",
       location: "Srinagar, Gulmarg & Pahalgam",
-      price: "Startng From ₹9,999",
+      price: "Startng From ₹9,999/Person Twin Sharing",
       review: 4.9,
       total_review: "(62 Reviews)",
 
@@ -1746,7 +1732,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Vaishno Devi & Enchanting Kashmir Tour",
       location: "Jammu, Katra, Srinagar, Gulmarg, Pahalgam & Sonmarg",
-      price: "Startng From ₹19,999",
+      price: "Startng From ₹19,999/Person Twin Sharing",
       review: 4.9,
       total_review: "(62 Reviews)",
 
@@ -2215,7 +2201,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Majestic Munnar",
       location: "Kochi, Munnar, Thekkady & Alleppey",
-      price: "Starting From ₹10,099",
+      price: "Starting From ₹10,099/Person",
       review: 4.8,
       total_review: "(86 Reviews)",
 
@@ -2276,7 +2262,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Majestic Kerala",
       location: "Munnar, Thekkady, Alleppey & Kochi",
-      price: "Starting From ₹19,599",
+      price: "Starting From ₹19,599/Person With Twin Sharing",
       review: 4.9,
       total_review: "(67 Reviews)",
 
@@ -2338,7 +2324,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Kerala Bliss",
       location: "Munnar, Thekkady, Alleppey, Kovalam & Trivandrum",
-      price: "Starting From ₹12,599",
+      price: "Starting From ₹12,599/Person",
       review: 4.8,
       total_review: "(39 Reviews)",
 
@@ -2405,7 +2391,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Backwater Escape",
       location: "Munnar, Thekkady, Alleppey, Kovalam & Trivandrum",
-      price: "Starting From ₹23,099",
+      price: "Starting From ₹23,099/Person With Twin Sharing",
       review: 4.8,
       total_review: "(39 Reviews)",
 
@@ -2472,7 +2458,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Rediscover Kerala",
       location: "Munnar, Thekkady, Alleppey, Kovalam & Trivandrum",
-      price: "Starting From ₹19,299",
+      price: "Starting From ₹19,299/Person With Twin Sharing",
       review: 4.8,
       total_review: "(39 Reviews)",
 
@@ -2539,7 +2525,7 @@ const destination_data: DestinationPackage[] = [
       time: "9 Nights / 10 Days",
       title: "Grand Kerala with Kanyakumari",
       location: "Munnar, Thekkady, Alleppey, Kovalam & Trivandrum",
-      price: "Starting From ₹33,099",
+      price: "Starting From ₹33,099/Person With Twin Sharing",
       review: 4.8,
       total_review: "(39 Reviews)",
 
@@ -2608,7 +2594,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Goa Package For Friends",
       location: "North Goa & South Goa",
-      price: "Startng From ₹12,999",
+      price: "Startng From ₹12,999/Adult",
       review: 4.7,
       total_review: "(112 Reviews)",
 
@@ -2660,7 +2646,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Goa Package For Couple",
       location: "North Goa & South Goa",
-      price: "Starting From ₹18,499",
+      price: "Starting From ₹18,499/Adult",
       review: 4.8,
       total_review: "(78 Reviews)",
 
@@ -2723,7 +2709,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Goa Holiday Package",
       location: "North Goa & South Goa",
-      price: "Starting From ₹9,999",
+      price: "Starting From ₹9,999/Adult",
       review: 4.7,
       total_review: "(45 Reviews)",
 
@@ -2790,7 +2776,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Family Holiday Package",
       location: "North Goa & South Goa",
-      price: "Starting From ₹15,999",
+      price: "Starting From ₹15,999/Adult",
       review: 4.7,
       total_review: "(45 Reviews)",
 
