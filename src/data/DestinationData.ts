@@ -4,24 +4,24 @@ import listing3_img1 from "@/assets/img/listing/spt.jpg"
 import listing3_img7 from "@/assets/img/listing/rajasthan-camel.jpg"
 import listing5_img1 from "@/assets/img/listing/listing-3/lehimage.jpg"
 import listing5_img4 from "@/assets/img/listing/listing-3/uk.jpg"
-import listing5_img8 from "@/assets/img/listing/listing-3/munarnew.jpg"
+import listing5_img8 from "@/assets/img/listing/listing-3/MajesticMunnar.jpeg"
 import listing_imggoa from "@/assets/img/listing/listing-3/goa.jpg"
 import imgkullunew from "@/assets/img/listing/listing-3/jibhi-tirthan.jpeg"
 import imhgheavhm from "@/assets/img/listing/listing-3/Shimla-During-Monsoon.jpg"
 import imgdharamshala from "@/assets/img/listing/listing-3/dharmashanreimage.jpeg"
 import imghimchal from "@/assets/img/listing/listing-3/sptvalley.jpg"
-import imgtvalley from "@/assets/img/listing/listing-3/jibhiimage.jpg"
-import imgbike from "@/assets/img/listing/listing-3/sptbike.jpg"
+import imgtvalley from "@/assets/img/listing/listing-3/Jibhi-TirthanValley-Tour-Package.jpeg"
+import imgbike from "@/assets/img/listing/listing-3/Chandigarh-To-Spiti-Bike-Expedition.jpeg"
 import imgknrroad from "@/assets/img/listing/listing-3/knrroad.jpg"
-import imgPangong from "@/assets/img/listing/listing-3/panjonglake.jpg"
+import imgPangong from "@/assets/img/listing/listing-3/Grand-Ladakh-Expedition.jpeg"
 import imgSrinagar from "@/assets/img/listing/listing-3/srngr.jpg"
 import imgEscape from "@/assets/img/listing/listing-3/Kashmir.jpg"
-import imguk from "@/assets/img/listing/listing-3/rishikesh1.jpg"
+import imguk from "@/assets/img/listing/listing-3/escapetouttarakhand.jpeg"
 import imgHaridwar from "@/assets/img/listing/listing-3/hd.jpg"
 import imgDeserts from "@/assets/img/listing/listing-3/laxmi.jpg"
 import imgUdaipur from "@/assets/img/listing/listing-3/Udaipur.jpg"
 import imgKerala from "@/assets/img/listing/listing-3/keralaimage.jpg"
-import imgMunnar from "@/assets/img/listing/listing-3/mur.jpg"
+import imgMunnar from "@/assets/img/listing/listing-3/KeralaBliss.jpeg"
 import imggoa from "@/assets/img/listing/listing-3/goaaroup.jpg"
 import imgBackpacking from "@/assets/img/listing/listing-3/Goanre.jpg"
 import imgshimlahoneymoon from "@/assets/img/listing/listing-3/honeymoon.jpeg"
@@ -29,7 +29,7 @@ import imgbirbilling from "@/assets/img/listing/listing-3/birbillingnew.jpeg"
 import imgDalhousie from "@/assets/img/listing/listing-3/shimlaimage.jpg"
 import imgspitibike from "@/assets/img/listing/listing-3/bikespiti.jpg"
 import imgsmmnl from "@/assets/img/listing/listing-3/Shimla-Manali-Tour-Package.jpg"
-import imgdhrmdalhousie from "@/assets/img/listing/listing-3/Dharamshalanew.jpg"
+import imgdhrmdalhousie from "@/assets/img/listing/listing-3/Dharamshala-Dalhousie-Honeymoon-Tour.jpeg"
 import imgsppptvalley from "@/assets/img/listing/listing-3/sptneww.jpg"
 import imgkarsog from "@/assets/img/listing/listing-3/karsongimagenew.jpeg"
 import imgImla from "@/assets/img/listing/listing-3/vimlaaneww.jpeg"
@@ -77,7 +77,7 @@ const destination_data: DestinationPackage[] = [
       thumb: listing_img1,
       tag: "Popular",
       time: " 7 Nights / 8 Days",
-      title: "Manali Chandratal Kaza",
+      title: "Manali Chandratal Kaza Safari ",
       location: "Shimla & Manali, Himachal Pradesh",
       price: "Startng From ₹32,199/Adult",
       review: 4.8,
@@ -202,7 +202,7 @@ const destination_data: DestinationPackage[] = [
       time: " 5 Nights / 6 Days",
       title: "Shimla Kullu Manali Honeymoon Package",
       location: "Shimla, Manali & Dharamshala, Himachal Pradesh",
-      price: "Startng From ₹21,099/Adult",
+      price: "Startng From ₹21,499/Adult",
       review: 4.9,
       total_review: "(52 Reviews)",
 
@@ -503,7 +503,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Bir Billing With Barot Valley Tour Plan",
       location: "Bir Billing & Barot Valley, Himachal Pradesh",
-      price: "Startng From ₹13,099/Adult",
+      price: "Startng From ₹13,499/Adult",
       review: 4.8,
       total_review: "(28 Reviews)",
 
@@ -972,9 +972,9 @@ const destination_data: DestinationPackage[] = [
       thumb: imgShikariMata,
       tag: "Popular",
       time: "2 Nights / 3 Days",
-      title: "Shikari Mata Temple Tour Package From Mandi",
+      title: "Shikari Mata & Kamrunag Temple Tour Package From Mandi ",
       location: "Shikari Mata Temple, Janjehli Valley, Mandi, Himachal Pradesh",
-      price: "Starting From ₹8,599/Adult",
+      price: "Starting From ₹8,999/Adult",
       review: 4.8,
       total_review: "(28 Reviews)",
 
@@ -1023,10 +1023,10 @@ const destination_data: DestinationPackage[] = [
       destination: "spiti",
       thumb: listing3_img1,
       tag: "Adventure",
-      time: "10 Days",
+      time: "9 Nights / 10 Days",
       title: "Best of Spiti Valley Tour Package",
       location: "Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹23,999",
+      price: "Startng From ₹23,999/ Adult",
       review: 4.9,
       total_review: "(67 Reviews)",
 
@@ -1104,10 +1104,10 @@ const destination_data: DestinationPackage[] = [
       id: 8,
       destination: "spiti",
       thumb: imgbike,
-      time: "9 Days",
-      title: "Chandigarh to Spiti Bike Expedition",
+      time: "8 Nights / 9 Days",
+      title: "Chandigarh To Spiti Bike Expedition",
       location: "Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹25,799",
+      price: "Startng From ₹25,799/ Adult",
       review: 4.8,
       total_review: "(41 Reviews)",
 
@@ -1186,10 +1186,10 @@ const destination_data: DestinationPackage[] = [
       destination: "spiti",
       thumb: imgknrroad,
       tag: "Featured",
-      time: "12 Days",
+      time: "11 Nights / 12 Days",
       title: "Kinnaur Spiti Road Trip",
       location: "Kinnaur & Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹22,500",
+      price: "Startng From ₹22,500/ Adult",
       review: 4.9,
       total_review: "(35 Reviews)",
 
@@ -1555,7 +1555,7 @@ const destination_data: DestinationPackage[] = [
       time: "2 Nights / 3 Days",
       title: "Vaishnodevi Darshan",
       location: "Katra & Vaishno Devi Shrine, Jammu",
-      price: "Startng From ₹5,899/Person Twin Sharing",
+      price: "Starting From ₹5,899/Person Twin Sharing",
       review: 4.8,
       total_review: "(78 Reviews)",
 
@@ -1605,7 +1605,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Majestic Kashmir Escape",
       location: "Srinagar, Gulmarg, Pahalgam & Sonmarg",
-      price: "Startng From ₹17,899/Person Twin Sharing",
+      price: "Starting From ₹17,899/Person Twin Sharing",
       review: 4.9,
       total_review: "(95 Reviews)",
 
@@ -1679,7 +1679,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Kashmir Bliss Getaway",
       location: "Srinagar, Gulmarg & Pahalgam",
-      price: "Startng From ₹9,999/Person Twin Sharing",
+      price: "Starting From ₹9,999/Person Twin Sharing",
       review: 4.9,
       total_review: "(62 Reviews)",
 
@@ -1732,7 +1732,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Vaishno Devi & Enchanting Kashmir Tour",
       location: "Jammu, Katra, Srinagar, Gulmarg, Pahalgam & Sonmarg",
-      price: "Startng From ₹19,999/Person Twin Sharing",
+      price: "Starting From ₹19,999/Person Twin Sharing",
       review: 4.9,
       total_review: "(62 Reviews)",
 
@@ -1806,10 +1806,10 @@ const destination_data: DestinationPackage[] = [
       destination: "uttarakhand",
       thumb: listing5_img4,
       tag: "Spiritual",
-      time: "5 Days",
+      time: "4 Night / 5 Days",
       title: "Kedarnath Group Tour from Haridwar with Rishikesh Stay",
       location: "Haridwar, Kedarnath & Rishikesh, Uttarakhand",
-      price: "Startng From ₹20,500",
+      price: "Startng From ₹20,500 / Adult",
       review: 4.7,
       total_review: "(91 Reviews)",
 
@@ -1863,10 +1863,10 @@ const destination_data: DestinationPackage[] = [
       id: 17,
       destination: "uttarakhand",
       thumb: imguk,
-      time: "6 Days",
+      time: "5 Night / 6 Days ",
       title: "Escape to Uttarakhand | From Sacred Streams to Alpine Dreams",
       location: "Haridwar, Rishikesh & Auli, Uttarakhand",
-      price: "Startng From ₹18,599",
+      price: "Startng From  ₹18,599/ Adult",
       review: 4.8,
       total_review: "(54 Reviews)",
 
@@ -1925,10 +1925,10 @@ const destination_data: DestinationPackage[] = [
       destination: "uttarakhand",
       thumb: imgHaridwar,
       tag: "Adventure",
-      time: "7 Days",
+      time: "6 Night / 7 Days",
       title: "Dehradun, Haridwar, Rishikesh & Mussoorie Winter Special",
       location: "Dehradun, Haridwar, Rishikesh & Mussoorie, Uttarakhand",
-      price: "Startng From ₹22,999",
+      price: "Startng From ₹22,999/ Adult",
       review: 4.9,
       total_review: "(38 Reviews)",
 
@@ -1994,10 +1994,10 @@ const destination_data: DestinationPackage[] = [
       destination: "rajasthan",
       thumb: listing3_img7,
       tag: "Royal",
-      time: "7 Days",
+      time: "6 Nights / 7 Days",
       title: "Vacation In Rajasthan",
       location: "Jaipur, Udaipur, Jodhpur & Jaisalmer, Rajasthan",
-      price: "Startng From ₹19,500",
+      price: "Startng From ₹19,500 / Adult",
       review: 4.8,
       total_review: "(73 Reviews)",
 
@@ -2063,10 +2063,10 @@ const destination_data: DestinationPackage[] = [
       id: 20,
       destination: "rajasthan",
       thumb: imgDeserts,
-      time: "7 Days",
+      time: "6 Nights / 7 Days",
       title: "Deserts Of Rajasthan With Bikaner",
       location: "Jaipur, Bikaner, Jaisalmer & Jodhpur, Rajasthan",
-      price: "Startng From ₹16,500",
+      price: "Startng From  ₹16,500 / Adult",
       review: 4.7,
       total_review: "(48 Reviews)",
 
@@ -2133,10 +2133,10 @@ const destination_data: DestinationPackage[] = [
       destination: "rajasthan",
       thumb: imgUdaipur,
       tag: "Heritage",
-      time: "8 Days",
+      time: "7 Nights / 8 Days",
       title: "Udaipur Mount Abu Tour",
       location: "Udaipur & Mount Abu, Rajasthan",
-      price: "Startng From ₹21,499",
+      price: "Startng From  ₹21,499 / Adult",
       review: 4.9,
       total_review: "(41 Reviews)",
       itinerary: [
@@ -2391,7 +2391,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Backwater Escape",
       location: "Munnar, Thekkady, Alleppey, Kovalam & Trivandrum",
-      price: "Starting From ₹23,099/Person With Twin Sharing",
+      price: "Starting From ₹23,499/Person With Twin Sharing",
       review: 4.8,
       total_review: "(39 Reviews)",
 
@@ -2525,7 +2525,7 @@ const destination_data: DestinationPackage[] = [
       time: "9 Nights / 10 Days",
       title: "Grand Kerala with Kanyakumari",
       location: "Munnar, Thekkady, Alleppey, Kovalam & Trivandrum",
-      price: "Starting From ₹33,099/Person With Twin Sharing",
+      price: "Starting From ₹33,499/Person With Twin Sharing",
       review: 4.8,
       total_review: "(39 Reviews)",
 

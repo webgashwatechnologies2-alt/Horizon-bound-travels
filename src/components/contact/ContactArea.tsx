@@ -22,7 +22,7 @@ const ContactArea = () => {
                            </div>
                            <div className="item">
                               <span>Website : </span>
-                              <Link href="#">www.info.com</Link>
+                              <Link href="https://horizonboundtravels.com">horizonboundtravels.com</Link>
                            </div>
                            <div className="item">
                               <span>E-mail : </span>
@@ -30,7 +30,7 @@ const ContactArea = () => {
                            </div>
                            <div className="item">
                               <span>Address :</span>
-                              <Link href="#"> Karsog District Mandi Himachal Pradesh 175011 </Link>
+                              <Link href="https://www.google.com/maps/search/?api=1&query=Karsog+District+Mandi+Himachal+Pradesh+175011"> Karsog District Mandi Himachal Pradesh 175011 </Link>
                            </div>
                         </div>
                      </div>

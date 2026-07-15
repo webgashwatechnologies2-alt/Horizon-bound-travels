@@ -39,6 +39,77 @@ export default function RootLayout({
           {children}
         </Providers>
 
+
+        <div
+          style={{
+            position: "fixed",
+            bottom: "145px",
+            right: "30px",
+            zIndex: 9999,
+            display: "flex",
+            flexDirection: "column",
+            gap: "12px",
+          }}
+        >
+          {/* WhatsApp Button */}
+          <a
+            href="https://wa.me/+918988736000"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp"
+            style={{
+              width: "55px",
+              height: "55px",
+              borderRadius: "50%",
+              backgroundColor: "#25D366",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+              textDecoration: "none",
+              
+            }}
+          >
+            <i
+              className="fab fa-whatsapp"
+              style={{ color: "#fff", fontSize: "28px" }}
+            ></i>
+          </a>
+
+          {/* Call Button */}
+          <a
+            href="tel:+918988736000"
+            aria-label="Call Us"
+            style={{
+              width: "55px",
+              height: "55px",
+              borderRadius: "50%",
+              backgroundColor: "#0d6efd",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+              textDecoration: "none",
+              animation: "pulse 2s infinite",
+            }}
+          >
+            <i
+              className="fas fa-phone-alt"
+              style={{ color: "#fff", fontSize: "22px" }}
+            ></i>
+          </a>
+        </div>
+
+        <style>{`
+          @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(13,110,253,0.6); }
+            70% { box-shadow: 0 0 0 12px rgba(13,110,253,0); }
+            100% { box-shadow: 0 0 0 0 rgba(13,110,253,0); }
+          }
+        `}</style>
+
+
+
         {/* Tawk.to Live Chat Widget */}
         <Script id="tawk-to-widget" strategy="afterInteractive">
           {`

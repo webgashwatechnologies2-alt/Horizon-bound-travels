@@ -8,68 +8,68 @@ import Link from "next/link"
 
 const banner_data = [
    {
-      image: "/assets/img/hero/herobanerthree.jpg",
+      image: "/assets/img/hero/tu/himachalpradesh.jpeg",
       subtitle: "✦ Adventure Awaits You",
       title: "Unleash the Explorer Within",
       description: "Traverse mystical high-altitude deserts, ancient monasteries, and thrilling mountain passes.",
       price: "Adventure Tour",
       label: "Experience",
-      link: "/destinations/uttarakhand"
+      link: "/destinations/himachal"
    },
    {
-      image: "/assets/img/hero/herobanernew.jpg",
+      image: "/assets/img/hero/Rajasthanimage.jpg",
       subtitle: "✦ Begin Your Journey",
       title: "Escape to the Mountains",
       description: "Discover majestic peaks, lush valleys, and snow-capped summits on an unforgettable mountain adventure.",
       price: "Mountain Adventure",
       label: "Experience",
-      link: "/destinations/himachal"
+      link: "/destinations/rajasthan"
    },
    {
-      image: "/assets/img/hero/herobaner2.jpg",
+      image: "/assets/img/hero/herobanerthree.jpg",
       subtitle: "✦ Travel with Wonder",
       title: "Journey to Paradise",
       description: "Experience breathtaking beauty, serene lakes, and pristine landscapes that leave you speechless.",
       price: "Family Friendly",
       label: "Perfect For",
-      link: "/destinations/himachal"
+      link: "/destinations/uttarakhand"
    },
    
    {
-      image: "/assets/img/hero/herobanerfour.jpg",
+      image: "/assets/img/hero/goanew.jpg",
       subtitle: "✦ Find Your Serenity",
       title: "Relax in Serene Escapes",
       description: "Enjoy peaceful valleys, flowing rivers, lush forests, and breathtaking Himalayan landscapes.",
       price: "Nature Escape",
       label: "Theme",
-      link: "/destinations/uttarakhand"
+      link: "/destinations/goa"
    },
    {
-      image: "/assets/img/hero/herobanerfive.jpg",
+      image: "/assets/img/hero/kashmirheroimage.jpg",
       subtitle: "✦ Discover Hidden Gems",
       title: "Explore Hidden Wonders",
       description: "Discover charming hill towns, scenic trails, ancient temples, and unforgettable mountain views.",
       price: "Local Experiences",
       label: "Highlights",
-      link: "/destinations/uttarakhand"
+      link: "/destinations/kashmir"
    },
    {
-      image: "/assets/img/hero/herobanersix.jpg",
+      image: "/assets/img/hero/tu/keralaherobaner.jpeg",
       subtitle: "✦ Breathe the Fresh Air",
       title: "Nature's Grand Canvas",
       description: "Reconnect with nature through peaceful valleys, pine forests, and breathtaking Himalayan vistas.",
       price: "All Seasons",
       label: "Best Time",
-      link: "/destinations/himachal"
+      link: "/destinations/kerala"
    },
    {
-      image: "/assets/img/hero/herobanerseven.jpg",
+      image: "/assets/img/hero/tu/ladakahhero.jpeg",
       subtitle: "✦ Walk Sacred Paths",
       title: "Embark on Spiritual Trails",
       description: "Seek peace and adventure along holy riverbanks, ancient shrines, and pristine alpine pathways.",
       price: "Pilgrimage & Nature",
       label: "Speciality",
-      link: "/destinations/uttarakhand"
+      link: "/destinations/leh"
    },
 ];
 

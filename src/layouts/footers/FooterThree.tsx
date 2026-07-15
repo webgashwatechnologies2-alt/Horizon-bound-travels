@@ -66,7 +66,7 @@ const FooterThree = () => {
                                     </Link>
                                  </li>
                                  <li>
-                                    <Link className="d-flex" href="tel:+1238889999">
+                                    <Link className="d-flex" href="tel:+918988736000">
                                        <span className="mr-15">
                                           <i className="fa-sharp text-white fa-solid fa-phone"></i>
                                        </span>
