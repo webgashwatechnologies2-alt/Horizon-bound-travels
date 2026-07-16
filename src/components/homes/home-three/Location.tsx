@@ -15,11 +15,11 @@ import imgspiti from "@/assets/img/listing/spt.jpg"
 const Location = () => {
    const destinations = [
       { id: 1, name: "Himachal", tours: "16", thumb: himachalImg  },
-      { id: 2, name: "Kashmir", tours: "03", thumb: KashmirImg },
-      { id: 3, name: "Leh", tours: "03", thumb: listing5_img1 },
-      { id: 4, name: "Kerala", tours: "03", thumb: imgKanyakumari },
+      { id: 2, name: "Kashmir", tours: "04", thumb: KashmirImg },
+      { id: 3, name: "Leh", tours: "04", thumb: listing5_img1 },
+      { id: 4, name: "Kerala", tours: "06", thumb: imgKanyakumari },
       { id: 5, name: "Rajasthan", tours: "03", thumb: listing3_img7 },
-      { id: 6, name: "Goa", tours: "03", thumb: imgFamily },
+      { id: 6, name: "Goa", tours: "04", thumb: imgFamily },
       { id: 7, name: "Uttarakhand", tours: "03", thumb: listing5_img4 },
       { id: 8, name: "Spiti", tours: "03", thumb: imgspiti },
    ];
@@ -31,7 +31,7 @@ const Location = () => {
             <div className="row">
                <div className="col-lg-12">
                   <div className="tg-location-section-title text-center mb-30">
-                     <h5 className="tg-section-subtitle mb-15 wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">Next Adventure Destination</h5>
+                     <h5 className="tg-section-subtitle mb-15 wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">Next Adventure Destination...</h5>
                      <h2 className="mb-15 text-capitalize wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".9s">Popular Indian Destinations <br />Explore Incredible India</h2>
                      <p className="text-capitalize wow fadeInUp" data-wow-delay=".6s" data-wow-duration=".9s">Discover the beauty of India with our curated tour packages<br />
                         from mountains to beaches</p>
