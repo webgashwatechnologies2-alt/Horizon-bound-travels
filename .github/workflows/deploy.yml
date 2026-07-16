@@ -29,6 +29,18 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
+      - name: Check build output
+        run: |
+          echo "Current Directory:"
+          pwd
+          echo "OUT:"
+          ls -la out
+          echo "_NEXT:"
+          ls -la out/_next
+          echo "STATIC:"
+          ls -la out/_next/static
+          find out/_next/static
+
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -37,4 +49,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
           server-dir: ./
-          # server-dir: ./public_html/
+          dangerous-clean-slate: false
+          log-level: verbose
