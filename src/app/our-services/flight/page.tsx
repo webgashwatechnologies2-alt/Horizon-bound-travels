@@ -5,6 +5,7 @@ import FooterThree from "@/layouts/footers/FooterThree";
 import BreadCrumb from "@/components/common/BreadCrumb";
 import Wrapper from "@/layouts/Wrapper";
 import { toast } from "react-toastify";
+import { sendLead } from "@/utils/leadSender";
 
 const FlightServicePage = () => {
   const [formData, setFormData] = useState({
@@ -25,27 +26,45 @@ const FlightServicePage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone || !formData.fromAirport || !formData.toAirport || !formData.depDate) {
       toast.error("Please fill in all required fields.");
       return;
     }
     
-    // Simulate successful form submission
-    toast.success("Flight Booking Inquiry Submitted Successfully! Our ticketing desk will find the best fares and contact you shortly.");
-    setFormData({
-      name: '',
-      phone: '',
-      fromAirport: '',
-      toAirport: '',
-      tripType: 'One Way',
-      depDate: '',
-      retDate: '',
-      cabinClass: 'Economy',
-      passengers: '1',
-      notes: ''
-    });
+    try {
+      await sendLead({
+        form_type: "Flight Reservation Inquiry",
+        name: formData.name,
+        phone: formData.phone,
+        from_airport: formData.fromAirport,
+        to_airport: formData.toAirport,
+        trip_type: formData.tripType,
+        departure_date: formData.depDate,
+        return_date: formData.retDate,
+        cabin_class: formData.cabinClass,
+        passengers_count: formData.passengers,
+        special_notes: formData.notes
+      });
+
+      toast.success("Flight Booking Inquiry Submitted Successfully! Our ticketing desk will find the best fares and contact you shortly.");
+      setFormData({
+        name: '',
+        phone: '',
+        fromAirport: '',
+        toAirport: '',
+        tripType: 'One Way',
+        depDate: '',
+        retDate: '',
+        cabinClass: 'Economy',
+        passengers: '1',
+        notes: ''
+      });
+    } catch (error) {
+      console.error("Flight inquiry submit error:", error);
+      toast.error("Failed to submit inquiry. Please try again later.");
+    }
   };
 
   const categories = [

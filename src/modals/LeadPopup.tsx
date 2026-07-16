@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react";
 import { toast } from "react-toastify";
-import emailjs from "@emailjs/browser";
+import { sendLead } from "@/utils/leadSender";
 import styles from "./LeadPopup.module.css";
 
 interface FormErrors {
@@ -88,31 +88,31 @@ const LeadPopup = () => {
 
     setIsSubmitting(true);
 
-    if (formRef.current) {
-      // Try sending with the project's EmailJS service (with fallback)
-      emailjs.sendForm('themedox', 'template_vvhaqp9', formRef.current, 'QOBCxT0bzNKEs-CwW')
-        .then(() => {
-          toast.success("Thank you! Your travel enquiry has been sent successfully. Our expert will contact you shortly.", {
-            position: "top-center",
-            autoClose: 5000,
-          });
-          setIsSubmitting(false);
-          setFormData({ name: "", email: "", phone: "", destination: "", travelers: "1" });
-          handleClose();
-        })
-        .catch(() => {
-          // Fallback success
-          toast.success("Enquiry received! Our travel experts will get in touch with you soon.", {
-            position: "top-center",
-            autoClose: 5000,
-          });
-          setIsSubmitting(false);
-          setFormData({ name: "", email: "", phone: "", destination: "", travelers: "1" });
-          handleClose();
+    sendLead({
+      form_type: "Lead Popup Enquiry",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      destination: formData.destination,
+      travelers: formData.travelers,
+    })
+      .then(() => {
+        toast.success("Thank you! Your travel enquiry has been sent successfully. Our expert will contact you shortly.", {
+          position: "top-center",
+          autoClose: 5000,
         });
-    } else {
-      setIsSubmitting(false);
-    }
+        setIsSubmitting(false);
+        setFormData({ name: "", email: "", phone: "", destination: "", travelers: "1" });
+        handleClose();
+      })
+      .catch((error) => {
+        console.error("Popup form error:", error);
+        toast.error("Failed to send enquiry. Please try again or contact us directly.", {
+          position: "top-center",
+          autoClose: 5000,
+        });
+        setIsSubmitting(false);
+      });
   };
 
   return (

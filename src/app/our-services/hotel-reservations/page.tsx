@@ -5,6 +5,7 @@ import FooterThree from "@/layouts/footers/FooterThree";
 import BreadCrumb from "@/components/common/BreadCrumb";
 import Wrapper from "@/layouts/Wrapper";
 import { toast } from "react-toastify";
+import { sendLead } from "@/utils/leadSender";
 
 const HotelServicePage = () => {
   const [formData, setFormData] = useState({
@@ -25,27 +26,45 @@ const HotelServicePage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone || !formData.destination || !formData.checkIn || !formData.checkOut) {
       toast.error("Please fill in all required fields.");
       return;
     }
     
-    // Simulate successful form submission
-    toast.success("Hotel Booking Inquiry Submitted! Our accommodation planner will check room inventories and contact you.");
-    setFormData({
-      name: '',
-      phone: '',
-      destination: '',
-      checkIn: '',
-      checkOut: '',
-      rooms: '1',
-      guests: '2',
-      hotelCat: 'Premium (4 Star)',
-      mealPlan: 'MAP (Breakfast + Dinner)',
-      notes: ''
-    });
+    try {
+      await sendLead({
+        form_type: "Hotel Reservation Inquiry",
+        name: formData.name,
+        phone: formData.phone,
+        destination: formData.destination,
+        check_in_date: formData.checkIn,
+        check_out_date: formData.checkOut,
+        rooms_count: formData.rooms,
+        guests_count: formData.guests,
+        hotel_category: formData.hotelCat,
+        meal_plan: formData.mealPlan,
+        special_notes: formData.notes
+      });
+
+      toast.success("Hotel Booking Inquiry Submitted! Our accommodation planner will check room inventories and contact you.");
+      setFormData({
+        name: '',
+        phone: '',
+        destination: '',
+        checkIn: '',
+        checkOut: '',
+        rooms: '1',
+        guests: '2',
+        hotelCat: 'Premium (4 Star)',
+        mealPlan: 'MAP (Breakfast + Dinner)',
+        notes: ''
+      });
+    } catch (error) {
+      console.error("Hotel inquiry submit error:", error);
+      toast.error("Failed to submit inquiry. Please try again later.");
+    }
   };
 
   const stays = [

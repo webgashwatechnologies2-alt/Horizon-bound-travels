@@ -5,6 +5,7 @@ import FooterThree from "@/layouts/footers/FooterThree";
 import BreadCrumb from "@/components/common/BreadCrumb";
 import Wrapper from "@/layouts/Wrapper";
 import { toast } from "react-toastify";
+import { sendLead } from "@/utils/leadSender";
 import imgsedan from "@/assets/img/listing/listing-3/swiftcar.jpg"
 import imgSUV from "@/assets/img/listing/listing-3/innova-crysta.jpg"
 import imgsuvErtiga from "@/assets/img/listing/listing-3/ertiga.jpg"
@@ -32,23 +33,39 @@ const TaxiCabServicePage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone || !formData.pickup || !formData.drop || !formData.date) {
       toast.error("Please fill in all required fields.");
       return;
     }
 
-    toast.success("Taxi Booking Inquiry Submitted Successfully! Our executive will contact you shortly.");
-    setFormData({
-      name: '',
-      phone: '',
-      date: '',
-      pickup: '',
-      drop: '',
-      cabType: 'SUV (Innova Crysta)',
-      notes: ''
-    });
+    try {
+      await sendLead({
+        form_type: "Taxi Booking Inquiry",
+        name: formData.name,
+        phone: formData.phone,
+        travel_date: formData.date,
+        pickup_location: formData.pickup,
+        drop_location: formData.drop,
+        cab_type: formData.cabType,
+        special_notes: formData.notes
+      });
+
+      toast.success("Taxi Booking Inquiry Submitted Successfully! Our executive will contact you shortly.");
+      setFormData({
+        name: '',
+        phone: '',
+        date: '',
+        pickup: '',
+        drop: '',
+        cabType: 'SUV (Innova Crysta)',
+        notes: ''
+      });
+    } catch (error) {
+      console.error("Taxi inquiry submit error:", error);
+      toast.error("Failed to submit inquiry. Please try again later.");
+    }
   };
 
   const fleet = [

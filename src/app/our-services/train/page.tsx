@@ -5,6 +5,7 @@ import FooterThree from "@/layouts/footers/FooterThree";
 import BreadCrumb from "@/components/common/BreadCrumb";
 import Wrapper from "@/layouts/Wrapper";
 import { toast } from "react-toastify";
+import { sendLead } from "@/utils/leadSender";
 import imgVandeBharat from "@/assets/img/listing/listing-3/Vande_Bharat.jpg"
 import imgKalka from "@/assets/img/hero/herobaner2.jpg"
 import imgSuperfast from "@/assets/img/listing/listing-3/HanoitoSapaSleeperTrainTicket.jpg"
@@ -28,25 +29,41 @@ const TrainServicePage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone || !formData.fromStation || !formData.toStation || !formData.date) {
       toast.error("Please fill in all required fields.");
       return;
     }
     
-    // Simulate successful form submission
-    toast.success("Train Reservation Inquiry Submitted! Our ticketing desk will check availability and get back to you.");
-    setFormData({
-      name: '',
-      phone: '',
-      fromStation: '',
-      toStation: '',
-      date: '',
-      coachClass: 'AC Chair Car (CC)',
-      passengers: '1',
-      notes: ''
-    });
+    try {
+      await sendLead({
+        form_type: "Train Reservation Inquiry",
+        name: formData.name,
+        phone: formData.phone,
+        from_station: formData.fromStation,
+        to_station: formData.toStation,
+        travel_date: formData.date,
+        coach_class: formData.coachClass,
+        passengers_count: formData.passengers,
+        special_notes: formData.notes
+      });
+
+      toast.success("Train Reservation Inquiry Submitted! Our ticketing desk will check availability and get back to you.");
+      setFormData({
+        name: '',
+        phone: '',
+        fromStation: '',
+        toStation: '',
+        date: '',
+        coachClass: 'AC Chair Car (CC)',
+        passengers: '1',
+        notes: ''
+      });
+    } catch (error) {
+      console.error("Train inquiry submit error:", error);
+      toast.error("Failed to submit inquiry. Please try again later.");
+    }
   };
 
   const trainTypes = [

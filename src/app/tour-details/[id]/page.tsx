@@ -4,6 +4,7 @@ import FooterThree from "@/layouts/footers/FooterThree";
 import destination_data from "@/data/DestinationData";
 import Image from "next/image";
 import Link from "next/link";
+import BookForm from "@/components/forms/BookForm";
 
 interface PageProps {
   params: Promise<{
@@ -307,60 +308,7 @@ const TourDetailsPage = async ({ params }: PageProps) => {
                       )}
                     </div>
 
-                    <form className="mb-20">
-                      <div className="mb-15">
-                        <label style={{ display: 'block', marginBottom: '8px', fontWeight: '500' }}>Your Name</label>
-                        <input type="text" placeholder="Enter your name" style={{
-                          width: '100%',
-                          padding: '12px',
-                          border: '1px solid var(--tg-border-1)',
-                          borderRadius: '6px',
-                          fontSize: '14px'
-                        }} />
-                      </div>
-                      <div className="mb-15">
-                        <label style={{ display: 'block', marginBottom: '8px', fontWeight: '500' }}>Email</label>
-                        <input type="email" placeholder="Enter your email" style={{
-                          width: '100%',
-                          padding: '12px',
-                          border: '1px solid var(--tg-border-1)',
-                          borderRadius: '6px',
-                          fontSize: '14px'
-                        }} />
-                      </div>
-                      <div className="mb-15">
-                        <label style={{ display: 'block', marginBottom: '8px', fontWeight: '500' }}>Phone</label>
-                        <input type="tel" placeholder="Enter your phone" style={{
-                          width: '100%',
-                          padding: '12px',
-                          border: '1px solid var(--tg-border-1)',
-                          borderRadius: '6px',
-                          fontSize: '14px'
-                        }} />
-                      </div>
-                      <div className="mb-20">
-                        <label style={{ display: 'block', marginBottom: '8px', fontWeight: '500' }}>Travel Date</label>
-                        <input type="date" style={{
-                          width: '100%',
-                          padding: '12px',
-                          border: '1px solid var(--tg-border-1)',
-                          borderRadius: '6px',
-                          fontSize: '14px'
-                        }} />
-                      </div>
-                      <button type="submit" className="tg-btn w-100" style={{
-                        background: 'var(--tg-theme-primary)',
-                        color: '#fff',
-                        padding: '14px',
-                        borderRadius: '6px',
-                        fontSize: '16px',
-                        fontWeight: '600',
-                        cursor: 'pointer',
-                        border: 'none'
-                      }}>
-                        Enquire Now
-                      </button>
-                    </form>
+                    <BookForm packageTitle={pkg.title} />
 
                     <div className="tg-package-contact" style={{ textAlign: 'center' }}>
                       <p style={{ marginBottom: '10px', color: 'var(--tg-grey-4)' }}>Need help?</p>

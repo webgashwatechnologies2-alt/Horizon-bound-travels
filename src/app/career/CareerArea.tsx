@@ -2,6 +2,7 @@
 import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import { toast } from 'react-toastify';
+import { sendLead } from '@/utils/leadSender';
 import shape_1 from "@/assets/img/banner/banner-2/shape.png";
 
 // Define the Designation interface
@@ -177,24 +178,49 @@ const CareerArea = () => {
 
       setIsSubmitting(true);
 
-      // Simulate API submission
-      setTimeout(() => {
-         setIsSubmitting(false);
-         toast.success("Application submitted successfully! Our HR team will contact you soon.");
-         // Reset state
-         setFormData({
-            fullName: "",
-            email: "",
-            phone: "",
-            experience: "",
-            message: ""
-         });
-         setSelectedDesignation("");
-         setCvFile(null);
-         if (fileInputRef.current) {
-            fileInputRef.current.value = "";
+      // Read CV file as base64 and submit
+      const reader = new FileReader();
+      reader.readAsDataURL(cvFile);
+      reader.onload = async () => {
+         const base64Data = reader.result as string;
+         try {
+            await sendLead({
+               form_type: "Job Application Submission",
+               full_name: formData.fullName,
+               email: formData.email,
+               phone: formData.phone,
+               designation: selectedDesignation,
+               experience: formData.experience,
+               message: formData.message,
+               cv_file_name: cvFile.name,
+               cv_file_data: base64Data
+            });
+
+            toast.success("Application submitted successfully! Our HR team will contact you soon.");
+            // Reset state
+            setFormData({
+               fullName: "",
+               email: "",
+               phone: "",
+               experience: "",
+               message: ""
+            });
+            setSelectedDesignation("");
+            setCvFile(null);
+            if (fileInputRef.current) {
+               fileInputRef.current.value = "";
+            }
+         } catch (error) {
+            console.error("Career application submit error:", error);
+            toast.error("Failed to submit application. Please try again later.");
+         } finally {
+            setIsSubmitting(false);
          }
-      }, 2000);
+      };
+      reader.onerror = () => {
+         toast.error("Failed to read CV file. Please try again.");
+         setIsSubmitting(false);
+      };
    };
 
    return (

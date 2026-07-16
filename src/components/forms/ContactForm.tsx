@@ -3,8 +3,7 @@ import { toast } from 'react-toastify';
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
-import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { sendLead } from '@/utils/leadSender';
 
 interface FormData {
    user_name: string;
@@ -26,25 +25,26 @@ const ContactForm = () => {
 
    const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
 
-   const form = useRef<HTMLFormElement>(null);
-
-   const sendEmail = () => {
-      if (form.current) {
-         emailjs.sendForm('themedox', 'template_vvhaqp9', form.current, 'QOBCxT0bzNKEs-CwW')
-            .then(() => {
-               toast.success('Message sent successfully', { position: 'top-center' });
-               reset();
-            })
-            .catch(() => {
-               toast.error('Failed to send message. Please try again.', { position: 'top-center' });
-            });
-      } else {
-         toast.error('Form reference is null.', { position: 'top-center' });
-      }
+   const sendEmail = (data: FormData) => {
+      sendLead({
+         form_type: "Contact Form Submission",
+         name: data.user_name,
+         email: data.user_email,
+         website: data.web,
+         message: data.message,
+      })
+         .then(() => {
+            toast.success('Message sent successfully', { position: 'top-center' });
+            reset();
+         })
+         .catch((error) => {
+            console.error("Contact form submit error:", error);
+            toast.error('Failed to send message. Please try again.', { position: 'top-center' });
+         });
    };
 
    return (
-      <form ref={form} onSubmit={handleSubmit(sendEmail)} id="contact-form">
+      <form onSubmit={handleSubmit(sendEmail)} id="contact-form">
          <div className="row">
             <div className="col-lg-6 mb-25">
                <input className="input" type="text" {...register("user_name")} placeholder="Name" />

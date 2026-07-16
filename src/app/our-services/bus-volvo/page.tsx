@@ -5,6 +5,7 @@ import FooterThree from "@/layouts/footers/FooterThree";
 import BreadCrumb from "@/components/common/BreadCrumb";
 import Wrapper from "@/layouts/Wrapper";
 import { toast } from "react-toastify";
+import { sendLead } from "@/utils/leadSender";
 import imgVolvo from "@/assets/img/listing/listing-3/volvo-ac-bus.jpg"
 import imgVolvonew from "@/assets/img/listing/listing-3/non-ac-luxury-bus.jpg"
 import imgLuxury from "@/assets/img/listing/listing-3/Luxurymini.jpeg"
@@ -27,25 +28,41 @@ const BusVolvoServicePage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone || !formData.fromCity || !formData.toCity || !formData.date) {
       toast.error("Please fill in all required fields.");
       return;
     }
     
-    // Simulate successful form submission
-    toast.success("Bus Booking Inquiry Submitted Successfully! Our reservation desk will reach out shortly.");
-    setFormData({
-      name: '',
-      phone: '',
-      date: '',
-      fromCity: '',
-      toCity: '',
-      busType: 'Volvo AC Multi-Axle (Semi-Sleeper)',
-      seats: '2',
-      notes: ''
-    });
+    try {
+      await sendLead({
+        form_type: "Bus Booking Inquiry",
+        name: formData.name,
+        phone: formData.phone,
+        travel_date: formData.date,
+        from_city: formData.fromCity,
+        to_city: formData.toCity,
+        bus_type: formData.busType,
+        seats_count: formData.seats,
+        special_notes: formData.notes
+      });
+
+      toast.success("Bus Booking Inquiry Submitted Successfully! Our reservation desk will reach out shortly.");
+      setFormData({
+        name: '',
+        phone: '',
+        date: '',
+        fromCity: '',
+        toCity: '',
+        busType: 'Volvo AC Multi-Axle (Semi-Sleeper)',
+        seats: '2',
+        notes: ''
+      });
+    } catch (error) {
+      console.error("Bus inquiry submit error:", error);
+      toast.error("Failed to submit inquiry. Please try again later.");
+    }
   };
 
   const busFleet = [
