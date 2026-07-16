@@ -56,37 +56,58 @@ export const sendLead = async (data: LeadData): Promise<boolean> => {
 
   if (service === "web3forms") {
     try {
-      const key = EMAIL_CONFIG.WEB3FORMS_ACCESS_KEY;
-      if (!key || key === "YOUR_WEB3FORMS_ACCESS_KEY") {
-        throw new Error("Web3Forms access key is not configured in src/config/emailConfig.ts");
+      const infoKey = EMAIL_CONFIG.WEB3FORMS_INFO_KEY;
+      const salesKey = EMAIL_CONFIG.WEB3FORMS_SALES_KEY;
+
+      const keysToSend: string[] = [];
+      if (infoKey && infoKey !== "YOUR_WEB3FORMS_INFO_KEY") {
+        keysToSend.push(infoKey);
+      }
+      if (salesKey && salesKey !== "YOUR_WEB3FORMS_SALES_KEY") {
+        keysToSend.push(salesKey);
       }
 
-      // Format payload for Web3Forms
-      const payload = {
-        access_key: key,
-        subject: `New Horizon Bound Lead: ${data.form_type}`,
-        from_name: "Horizon Bound Travels Website",
-        ...data,
-      };
+      if (keysToSend.length === 0) {
+        throw new Error("No Web3Forms access keys are configured in src/config/emailConfig.ts");
+      }
 
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json",
-        },
-        body: JSON.stringify(payload),
+      // Exclude base64 raw data from JSON API text email to keep it clean
+      const payloadData = { ...data };
+      if (payloadData.cv_file_data) {
+        delete payloadData.cv_file_data;
+      }
+
+      // Send to all configured keys in parallel
+      const sendPromises = keysToSend.map(async (key) => {
+        const payload = {
+          access_key: key,
+          subject: `New Horizon Bound Lead: ${data.form_type}`,
+          from_name: "Horizon Bound Travels Website",
+          ...payloadData,
+        };
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        if (!result || !result.success) {
+          throw new Error(result?.message || "Web3Forms submission failed");
+        }
+        return true;
       });
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-
-      const result = await response.json();
-      if (result && result.success) {
-        return true;
-      }
-      throw new Error(result?.message || "Web3Forms submission failed");
+      await Promise.all(sendPromises);
+      return true;
     } catch (error) {
       console.error("Web3Forms dispatch error:", error);
       throw error;

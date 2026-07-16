@@ -32,7 +32,7 @@ const Sidebar = ({ sidebar, setSidebar }: SidebarProps) => {
             </div>
             <div className="offCanvas__social-icon mt-30">
                <Link href="https://www.facebook.com/profile.php?id=61591492783445"><i className="fab fa-facebook-f"></i></Link>
-               <Link href="https://www.instagram.com/?hl=en"><i className="fab fa-instagram"></i></Link>
+               <Link href="https://www.instagram.com/horizonboundtravels/?hl=en"><i className="fab fa-instagram"></i></Link>
                <Link href="/"><i className="fab fa-linkedin-in"></i></Link>
             </div>
          </div>

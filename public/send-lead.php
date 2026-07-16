@@ -4,8 +4,22 @@
  * Uses PHPMailer to send emails to info@horizonboundtravels.com and sales@horizonboundtravels.com.
  */
 
-// Allow CORS for local testing if needed
-header("Access-Control-Allow-Origin: *");
+// Allow CORS only for specific trusted origins
+$allowedOrigins = [
+    'https://horizonboundtravels.com',
+    'https://www.horizonboundtravels.com',
+    'http://localhost:3000'
+];
+
+$httpOrigin = $_SERVER['HTTP_ORIGIN'] ?? '';
+
+if (in_array($httpOrigin, $allowedOrigins)) {
+    header("Access-Control-Allow-Origin: " . $httpOrigin);
+} else {
+    // Default fallback to main domain
+    header("Access-Control-Allow-Origin: https://horizonboundtravels.com");
+}
+
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json; charset=UTF-8");
@@ -47,18 +61,25 @@ if (!file_exists($phpMailerAutoload)) {
 
 require_once $phpMailerAutoload;
 
+// Load SMTP password configuration securely from git-ignored file
+$mailConfig = __DIR__ . '/mail-config.php';
+if (!file_exists($mailConfig)) {
+    http_response_code(500);
+    echo json_encode(["status" => "error", "message" => "Security Configuration file (mail-config.php) is missing."]);
+    exit;
+}
+require_once $mailConfig;
+
 $mail = new PHPMailer;
 
-// SMTP configuration (optional, if default mail() is disabled on host)
-/*
+// Enable SMTP configuration for Hostinger (required to send authenticated emails)
 $mail->isSMTP();
-$mail->Host = 'mail.horizonboundtravels.com';
+$mail->Host = 'smtp.hostinger.com';                  // Hostinger SMTP host
 $mail->SMTPAuth = true;
-$mail->Username = 'info@horizonboundtravels.com';
-$mail->Password = 'your_email_password';
-$mail->SMTPSecure = 'ssl'; // or tls
-$mail->Port = 465; // or 587
-*/
+$mail->Username = 'info@horizonboundtravels.com';       // Your Hostinger email
+$mail->Password = SMTP_PASSWORD;                     // Loaded from mail-config.php
+$mail->SMTPSecure = 'ssl';                           // Hostinger secure protocol
+$mail->Port = 465;                                   // Hostinger SSL port
 
 // Set From and Recipient emails
 $mail->setFrom('info@horizonboundtravels.com', 'Horizon Bound Travels Website');
@@ -93,11 +114,11 @@ foreach ($input as $key => $value) {
     if ($key === 'form_type' || $key === 'cv_file_data') {
         continue;
     }
-    
+
     $cleanKey = ucwords(str_replace(['_', '-'], ' ', $key));
     $cleanVal = is_array($value) ? implode(', ', $value) : $value;
     $cleanVal = nl2br(htmlspecialchars($cleanVal));
-    
+
     $body .= "<tr style='border-bottom: 1px solid #eeeeee;'>";
     $body .= "<td style='padding: 8px; width: 180px; font-weight: bold; color: #555555;'>" . $cleanKey . ":</td>";
     $body .= "<td style='padding: 8px; color: #333333;'>" . $cleanVal . "</td>";
