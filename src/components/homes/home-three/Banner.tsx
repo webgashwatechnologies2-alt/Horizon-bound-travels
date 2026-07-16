@@ -66,7 +66,7 @@ const banner_data = [
       image: "/assets/img/hero/tu/ladakahhero.jpeg",
       subtitle: "✦ Walk Sacred Paths",
       title: "Embark on Spiritual Trails",
-      description: "Seek peace and adventure along holy riverbanks, ancient shrines, and pristine alpine pathways.",
+      description: "Seek peace and adventure along holy riverbanks, ancient shrines, and pristine alpine pathways...",
       price: "Pilgrimage & Nature",
       label: "Speciality",
       link: "/destinations/leh"
