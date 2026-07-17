@@ -26,7 +26,7 @@ const ContactArea = () => {
                            </div>
                            <div className="item">
                               <span>E-mail : </span>
-                              <Link href="mailto:info@gmail.com">info@gmail.com</Link>
+                              <Link href="mailto: info@horizonboundtravels.com">info@horizonboundtravels.com</Link>
                            </div>
                            <div className="item">
                               <span>Address :</span>
