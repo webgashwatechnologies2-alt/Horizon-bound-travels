@@ -22,11 +22,11 @@ const ContactArea = () => {
                            </div>
                            <div className="item">
                               <span>Website : </span>
-                              <Link href="https://horizonboundtravels.com">horizonboundtravels.com</Link>
+                              <Link href="https://horizonboundtravels.com"  style={{ textTransform: "lowercase" }}   >horizonboundtravels.com</Link>
                            </div>
                            <div className="item">
                               <span>E-mail : </span>
-                              <Link href="mailto: info@horizonboundtravels.com">info@horizonboundtravels.com</Link>
+                              <Link href="mailto: info@horizonboundtravels.com"  style={{ textTransform: "lowercase" }}>info@horizonboundtravels.com</Link>
                            </div>
                            <div className="item">
                               <span>Address :</span>
