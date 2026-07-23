@@ -101,10 +101,10 @@ const PayNowArea = () => {
           <div className="col-lg-10 text-center">
             <div className="tg-section-title-wrapper mb-20">
               <span className="tg-section-subtitle text-primary text-uppercase fw-semibold tracking-wider">
-                <i className="fa-solid fa-shield-halved me-2"></i> 100% Verified & Secure Payment
+                <i className="fa-solid fa-shield-halved me-2"></i> 100% Verified & Secure Payment.
               </span>
               <h2 className="tg-section-title mt-10 fs-36 font-heading fw-bold">
-                Official Payment Details for Horizon Bound Travels
+                Official Payment Details for Horizon Bound Travels.
               </h2>
             </div>
             <p className="lead text-muted max-w-700 mx-auto fs-16">
@@ -226,7 +226,7 @@ const PayNowArea = () => {
                 <div className="row g-2 mt-2">
                   <div className="col-12">
                     <div className="p-2 border rounded text-center bg-white">
-                      <small className="text-muted d-block">Account Type</small>
+                      <small className="text-muted d-block">Account Type </small>
                       <strong className="text-dark small">{bankDetails.accountType}</strong>
                     </div>
                   </div>
