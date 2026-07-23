@@ -2,28 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { toast } from "react-toastify";
-import { sendLead } from "@/utils/leadSender";
 
 const PayNowArea = () => {
   const [copiedField, setCopiedField] = useState<string | null>(null);
-
-  // Form state for payment confirmation
-  const [formData, setFormData] = useState({
-    fullName: "",
-    phone: "",
-    email: "",
-    bookingId: "",
-    amount: "",
-    utr: "",
-    paymentMethod: "UPI / QR Code",
-    paymentDate: "",
-    remarks: "",
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
 
   const bankDetails = {
     accountName: "Horizon Bound Travels",
@@ -32,7 +14,6 @@ const PayNowArea = () => {
     ifscCode: "CBIN0284737",
     accountType: "Current Account",
     branch: "Main Branch",
-    upiId: "4119067699@cbin",
   };
 
   const handleCopy = (text: string, label: string) => {
@@ -44,55 +25,6 @@ const PayNowArea = () => {
     }, 2500);
   };
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.fullName || !formData.phone || !formData.amount || !formData.utr) {
-      toast.error("Please fill in all required fields marked with *");
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    try {
-      const payload = {
-        form_type: "Payment Confirmation Slip",
-        fullName: formData.fullName,
-        phone: formData.phone,
-        email: formData.email || "N/A",
-        bookingId: formData.bookingId || "N/A",
-        amountPaid: `₹${formData.amount}`,
-        utr_transaction_id: formData.utr,
-        paymentMethod: formData.paymentMethod,
-        paymentDate: formData.paymentDate || new Date().toISOString().split("T")[0],
-        remarks: formData.remarks || "No additional remarks",
-      };
-
-      await sendLead(payload);
-      setSubmitted(true);
-      toast.success("Payment details submitted successfully! Our team will verify and send your confirmation shortly.");
-    } catch (error) {
-      console.error("Payment confirmation error:", error);
-      toast.error("Failed to submit payment details. Please contact us directly on WhatsApp or phone.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  // Construct UPI link for QR Code
-  const upiLink = `upi://pay?pa=${bankDetails.upiId}&pn=${encodeURIComponent(
-    bankDetails.accountName
-  )}&cu=INR`;
-  const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(
-    upiLink
-  )}&color=0b2545&bgcolor=ffffff`;
-
   return (
     <section className="tg-pay-now-area pt-100 pb-120 p-relative z-index-1 bg-light-subtle">
       <div className="container">
@@ -101,10 +33,10 @@ const PayNowArea = () => {
           <div className="col-lg-10 text-center">
             <div className="tg-section-title-wrapper mb-20">
               <span className="tg-section-subtitle text-primary text-uppercase fw-semibold tracking-wider">
-                <i className="fa-solid fa-shield-halved me-2"></i> 100% Verified & Secure Payment.
+                <i className="fa-solid fa-shield-halved me-2"></i> 100% Verified & Secure Payment
               </span>
               <h2 className="tg-section-title mt-10 fs-36 font-heading fw-bold">
-                Official Payment Details for Horizon Bound Travels.
+                Official Payment Details for Horizon Bound Travels
               </h2>
             </div>
             <p className="lead text-muted max-w-700 mx-auto fs-16">
@@ -226,7 +158,7 @@ const PayNowArea = () => {
                 <div className="row g-2 mt-2">
                   <div className="col-12">
                     <div className="p-2 border rounded text-center bg-white">
-                      <small className="text-muted d-block">Account Type </small>
+                      <small className="text-muted d-block">Account Type</small>
                       <strong className="text-dark small">{bankDetails.accountType}</strong>
                     </div>
                   </div>
@@ -236,7 +168,6 @@ const PayNowArea = () => {
           </div>
         </div>
 
-      
         {/* Need Assistance & WhatsApp Help Banner */}
         <div className="row justify-content-center mt-50">
           <div className="col-lg-10">
