@@ -158,8 +158,9 @@
   font-weight: 700;
   font-size: 64px;
   color: #fff;
-  border-bottom: 4px solid #fff;
-  display: inline-block;
+  border-bottom: 4px solid #ffffff !important;
+  display: inline-block !important;
+  padding-bottom: 6px;
   margin-bottom: 16px;
 }
 

@@ -43,6 +43,7 @@ const FooterThree = () => {
                                  <li><Link href="/">Home</Link></li>
                                  <li><Link href="/about">About Us</Link></li>
                                  <li><Link href="/tour-grid-1">Destinations</Link></li>
+                                 <li><Link href="/pay-now">Pay Now</Link></li>
                                  <li><Link href="/contact"> Contact Us</Link></li>
                               </ul>
                            </div>

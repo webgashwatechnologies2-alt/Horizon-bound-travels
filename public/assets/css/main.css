@@ -3455,7 +3455,9 @@ textarea {
   }
 }
 .tg-hero-tu-wrapper .tg-hero-title {
-  border: none;
+  border-bottom: 4px solid #ffffff;
+  padding-bottom: 6px;
+  display: inline-block;
   font-size: 60px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {

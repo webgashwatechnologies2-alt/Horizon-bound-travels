@@ -54,7 +54,7 @@ const HeaderThree = () => {
                               </div>
                            </div>
                            <div className="tg-header-btn ml-20 d-none d-sm-block">
-                              <Link className="tg-btn-header" href="/">
+                              <Link className="tg-btn-header" href="/pay-now">
                                  Pay Now
                               </Link>
                            </div>
