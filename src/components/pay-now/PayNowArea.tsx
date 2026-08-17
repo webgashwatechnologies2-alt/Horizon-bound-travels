@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { toast } from "react-toastify";
+import scannerimg from "@/assets/img/scanner/horizon-scanner.jpg"
 
 const PayNowArea = () => {
   const [copiedField, setCopiedField] = useState<string | null>(null);
@@ -40,13 +41,40 @@ const PayNowArea = () => {
               </h2>
             </div>
             <p className="lead text-muted max-w-700 mx-auto fs-16">
-              Make quick, hassle-free, and safe payments directly into our official bank account. 
+              Make quick, hassle-free, and safe payments directly into our official bank account.
               We support IMPS, NEFT, RTGS, UPI, Google Pay, PhonePe, and Paytm.
             </p>
           </div>
         </div>
 
-        <div className="row g-4 justify-content-center">
+        <div className="row g-4 justify-content-center align-items-stretch">
+          {/* Left Side - Image Section */}
+          <div className="col-lg-6 col-md-12">
+            <div
+              className="card border-0 shadow-lg h-100 rounded-4 overflow-hidden position-relative"
+              style={{ minHeight: "400px" }}
+            >
+              <img
+                src={scannerimg.src}
+                alt="Secure Bank Transfer"
+                className="w-100 h-100"
+                style={{ objectFit: "cover" }}
+              />
+              {/* Optional overlay text on image */}
+              <div
+                className="position-absolute bottom-0 start-0 w-100 p-4"
+                style={{
+                  background: "linear-gradient(to top, rgba(0,0,0,0.7), transparent)",
+                }}
+              >
+                <h5 className="text-white fw-bold mb-1">Secure & Trusted Payments</h5>
+                <p className="text-white-50 mb-0 fs-14">
+                  Your transaction details are encrypted and 100% safe with us.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Bank Account Details Card */}
           <div className="col-lg-6 col-md-12">
             <div
@@ -114,9 +142,8 @@ const PayNowArea = () => {
                     </span>
                     <button
                       type="button"
-                      className={`btn btn-sm ${
-                        copiedField === "Account Number" ? "btn-success" : "btn-primary"
-                      } px-3 rounded-pill shadow-sm transition-all`}
+                      className={`btn btn-sm ${copiedField === "Account Number" ? "btn-success" : "btn-primary"
+                        } px-3 rounded-pill shadow-sm transition-all`}
                       onClick={() => handleCopy(bankDetails.accountNumber, "Account Number")}
                     >
                       <i className={`fa-solid ${copiedField === "Account Number" ? "fa-check" : "fa-copy"} me-1`}></i>
@@ -143,9 +170,8 @@ const PayNowArea = () => {
                     </span>
                     <button
                       type="button"
-                      className={`btn btn-sm ${
-                        copiedField === "IFSC Code" ? "btn-success" : "btn-outline-primary"
-                      } px-3 rounded-pill transition-all`}
+                      className={`btn btn-sm ${copiedField === "IFSC Code" ? "btn-success" : "btn-outline-primary"
+                        } px-3 rounded-pill transition-all`}
                       onClick={() => handleCopy(bankDetails.ifscCode, "IFSC Code")}
                     >
                       <i className={`fa-solid ${copiedField === "IFSC Code" ? "fa-check" : "fa-copy"} me-1`}></i>

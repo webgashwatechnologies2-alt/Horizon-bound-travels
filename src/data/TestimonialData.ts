@@ -41,7 +41,7 @@ const testi_data: DataType[] = [
    {
       id: 4,
       page:"home_2",
-      avatar: avatar_2,
+      avatar: avatar_1,
       name: "Neha Sharma",
       designation: "Traveller, Kerala Trip",
       desc: "Our Kerala backwaters tour with Horizon Bound Travels was refreshing and well organized. The houseboat stay, local cuisine, and scenic routes made it an unforgettable family holiday.",
