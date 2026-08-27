@@ -15,9 +15,18 @@ const DestinationHero = ({ destination }: DestinationHeroProps) => {
     rajasthan: "/assets/img/hero/tu/rajsthan.jpg",
     kerala: "/assets/img/hero/tu/kashmirbaner.jpeg",
     default: "/assets/img/hero/tu/default.jpg",
+    dubai: "/assets/img/listing/listing-3/dbhero.jpg",
+    maldives: "/assets/img/listing/listing-3/maldives.jpg",
+    "hong-kong": "/assets/img/listing/listing-3/hkbaner.jpg",
+    mauritius: "/assets/img/listing/listing-3/mauritius.jpg",
+    malaysia: "/assets/img/listing/listing-3/mylsiahero.jpg",
+    vietnam: "/assets/img/listing/listing-3/vthero.jpg",
+    thailand: "/assets/img/listing/listing-3/thailandhero.jpg",
+    singapore: "/assets/img/listing/listing-3/spurhero.jpg",
+    bali: "/assets/img/listing/listing-3/balihero.jpg",
+    europe: "/assets/img/listing/listing-3/europerhero.jpg",
 };
 
-// destination slug ko lowercase me convert kar lo
 const heroImage =
   heroImages[destinationName?.toLowerCase()] || heroImages.default;
   

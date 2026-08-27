@@ -43,6 +43,26 @@ import imgRediscover from "@/assets/img/listing/listing-3/rediscover.jpg"
 import imgKanyakumari from "@/assets/img/listing/listing-3/Kanyakumari.jpg"
 import imgLadakh from "@/assets/img/listing/listing-3/ladakhnewimage.jpg"
 
+import imgDubai from "@/assets/img/listing/listing-3/dubaihero.webp"
+import imgDubai2 from "@/assets/img/listing/listing-3/traffic-street-dubai.webp"
+import imgDubai3 from "@/assets/img/listing/listing-3/dubai3.webp"
+import imgDubai4 from "@/assets/img/listing/listing-3/dubainew.webp"
+import imgMaldives from "@/assets/img/listing/listing-3/Holidays-in-Maldives.webp"
+import imgHongkong from "@/assets/img/listing/listing-3/hnkg.webp"
+import imgmauritius from "@/assets/img/listing/listing-3/Mauritius.webp"
+import imgMalaysia from "@/assets/img/listing/listing-3/Mauritius.webp"
+import imgMalaysia2 from "@/assets/img/listing/listing-3/ml2.webp"
+import imgvietnam from "@/assets/img/listing/listing-3/vtnm.webp"
+import imghanoi from "@/assets/img/listing/listing-3/hanoi.webp"
+import imghanlog from "@/assets/img/listing/listing-3/halong.webp"
+import imgthailand from "@/assets/img/listing/listing-3/thailandhero.jpg"
+import imgsingapore from "@/assets/img/listing/listing-3/singapore.webp"
+import imgsingapore2 from "@/assets/img/listing/listing-3/sp2.webp"
+import imgsingapore3 from "@/assets/img/listing/listing-3/merlion-statue.webp"
+import imgbali from "@/assets/img/listing/listing-3/MountBaturSunriseTrekking.webp"
+import imgeurope from "@/assets/img/listing/listing-3/epnew.webp"
+
+
 interface DayItinerary {
    day: string;
    title: string;
@@ -76,8 +96,8 @@ const destination_data: DestinationPackage[] = [
       destination: "himachal",
       thumb: listing_img1,
       tag: "Popular",
-      time: " 7 Nights / 8 Days",
-      title: "Manali Chandratal Kaza Safari ",
+      time: "7 Nights / 8 Days",
+      title: "Manali Chandratal Kaza Safari",
       location: "Shimla & Manali, Himachal Pradesh",
       price: "Startng From ₹32,199/Adult",
       review: 4.8,
@@ -2840,6 +2860,1204 @@ const destination_data: DestinationPackage[] = [
          "Travel insurance",
          "Anything not mentioned under 'Inclusions'"
       ]
+   },
+   ///////Inernational tours////////////
+   {
+      id: 46,
+      destination: "dubai",
+      thumb: imgDubai,
+      tag: "Adventure",
+      time: "4 Nights / 5 Days",
+      title: "Dubai Highlights Tour",
+      location: "Dubai, UAE",
+      price: "28000/- per person X 2 Adults",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival into Dubai - Check-in - Evening Dhow Cruise ",
+            description:
+               "You will be met by our representative at the Airport Arrival Terminal. Our representative will be holding a signage card with your Name written on it. You will then be escorted to waiting vehicle for transfer to hotel. Dubai Creek is an integral part of the city's history. It divides the city into two sections, Bur Dubai and Deira. Both the sides of the Dubai Creek boasts of some of the best exquisite buildings of the city. Therefore, a trip to the Creek is a must. However, rather than walking on the coast, go on a dhow cruise to turn your sightseeing into a unique experience.The dhow is a traditional Bedouin boat that was used for trade and transportation. Today, these dhows have been converted into restaurants that have a lower (airconditioned) and upper (open-air) decks. You are offered a welcome drink on arrival and are also served delicious barbecued dishes once the dhow sets on sail. "
+         },
+         {
+            day: "Day 2",
+            title: "Desert Safari ",
+            description:
+               "The Evening Desert Safari is a must-do for any adventure seekers visiting Dubai. Convenient round trip transportation will pick you up from your hotel and take you out to explore the Arabian desert. Test your balancing skills in an exhilarating sand boarding experience or try out the other many fun activities available for you to do including camel riding, dune bashing and henna painting. Take time to look around and take pictures, this tour is a great opportunity to capture breathtaking views of the desert during sunset. End the night with belly dancing show under the stars while indulging in a delicious BBQ dinner with unlimited soft drinks and shisha smoking (at extra cost). "
+         },
+         {
+            day: "Day 3",
+            title: "Morning Half Day City Tour ",
+            description:
+               "Embark on a 4-hour Dubai Half-Day City Tour that seamlessly blends the city's historic charm with its modern marvels. Begin by exploring heritage-rich neighborhoods such as Deira and Bur Dubai, where you'll pass by the Gold Souk, Spice Souk, Al Ghubaiba Historical and Heritage Site, Meena Bazaar, Al Fahidi Neighborhood, and Al Seef, offering a glimpse into Dubai's trading past and cultural heritage. Pause for a 15-minute photo opportunity at the Dubai Frame, a cultural landmark symbolizing the connection between the city's rich past and its ambitious future. Drive along Sheikh Zayed Road, flanked by towering skyscrapers and iconic structures, including the World Trade Centre. Take a 15-minute break to admire and photograph the Museum of the Future, an architectural and engineering marvel showcasing innovative design. Pass by the world's tallest building, the Burj Khalifa, and the scenic Dubai Water Canal, capturing the essence of modern Dubai. Observe the opulence of luxury car showrooms featuring brands like Ferrari and Lamborghini. Enjoy a 15-minute photo session at the Burj Al Arab, renowned as one of the world's most luxurious hotels. Drive through the man-made island of Palm Jumeirah and pass by the luxurious Atlantis The Palm resort, epitomizing Dubai's architectural innovation. Conclude with a 15-minute stop at The Cresent, Palm Jumeirah, an extraordinary seafront showcasing the city's modernity and waterfront development. On the way back, pass by the Mall of the Emirates, home to Ski Dubai, and admire the world-famous skyline along Sheikh Zayed Road. Please note that photo stops are subject to time availability and government authority permissions. This tour is designed to provide a snapshot of Dubai's key highlights, offering a balanced perspective of its historical roots and contemporary achievements"
+         },
+         {
+            day: "Day 4",
+            title: "Burj Khalifa ",
+            description:
+               "Transfer to Dubai Mall, one of the largest malls in the world and home to over 1200 stores. Later proceed to the Top of Burj Khalifa, World's Tallest Tower. Burj Khalifa visit begins in the reception area on the lower ground level of The Dubai Mall. Here and throughout your journey, you will be entertained and informed by a multi-media presentation that chronicles Dubai's exotic history and the fascinating story of Burj Khalifa. Begin your vertical ascent to the observation deck in a high-speed elevator, travelling at 10 metres per second. As the doors open on the 124th Floor, floor-to-ceiling glass walls provide a breathtaking unobstructed 360-degree view of the city, desert & ocean. Spend half an hour at the top and then come down, and at 7 pm watch the Dubai Fountains come alive. There is a 10 minute show every 20 minutes and its lovely to watch the largest fountain in the world. "
+         },
+         {
+            day: "Day 5",
+            title: "Departure from Dubai ",
+            description:
+               "You will be picked up from Hotel's lobby at the time confirmed. Please be available at the lobby 15 minutes before the time given and you will be transferred to the airport for your flight. "
+         },
+      ],
+
+      inclusions: [
+         "4 nights in Dubai ",
+         "Stay at Admiral Plaza Hotel (3 star)  ",
+         ".Room Included - Superior Room, Superior Room, ",
+         ".Half Board  ",
+         "One-way Transfer from Airport to Dubai Hotel - Private from Dubai International Airport ",
+         "Dhow Cruise with Dinner - Creek Cruise - 3 Star Experience with Two Way Private Transfers (Tickets Included) ",
+         "Desert Safari with Dune Bashing, Belly Dancing and Barbeque Dinner - Ticket With Private Transfers - Exclusive 4x4 Vehicle with Deluxe Camp ",
+         "Half Day Dubai City Tour - Private Vehicle ",
+         "Top of Burj Khalifa - Non Prime Hours Ticket With Two Way Private Transfers - 124th Floor (Between 7 am - 12:30 PM or 7.30 PM- 11 pm slot) ",
+         "One-way Transfer from Dubai Hotel to Airport - Private to Dubai International Airport ",
+
+      ],
+
+      exclusions: [
+         "Airfare , ",
+         "Gst (05%) , ",
+         "Visa , ",
+         "Tcs (02%) , ",
+         "Lunch , ",
+         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
+      ]
+   },
+   {
+      id: 64,
+      destination: "dubai",
+      thumb: imgDubai2,
+      tag: "Adventure",
+      time: "5 Nights / 6 Days",
+      title: "Dubai Grand Highlights & Adventure Tour",
+      location: "Dubai, UAE",
+      price: "₹32500/- Per Person X 2 Adults",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival into Dubai - Check-in ",
+            description:
+               "You will be met by our representative at the Airport Arrival Terminal. Our representative will be holding a signage card with your Name written on it. You will then be escorted to waiting vehicle for transfer to hotel. "
+         },
+         {
+            day: "Day 2",
+            title: " Morning Half Day City Tour - Evening Dhow Cruise ",
+            description:
+               "Embark on a 4-hour Dubai Half-Day City Tour that seamlessly blends the city's historic charm with its modern marvels. Begin by exploring heritage-rich neighborhoods such as Deira and Bur Dubai, where you'll pass by the Gold Souk, Spice Souk, Al Ghubaiba Historical and Heritage Site, Meena Bazaar, Al Fahidi Neighborhood, and Al Seef, offering a glimpse into Dubai's trading past and cultural heritage. Pause for a 15-minute photo opportunity at the Dubai Frame, a cultural landmark symbolizing the connection between the city's rich past and its ambitious future. Drive along Sheikh Zayed Road, flanked by towering skyscrapers and iconic structures, including the World Trade Centre. Take a 15-minute break to admire and photograph the Museum of the Future, an architectural and engineering marvel showcasing innovative design. Pass by the world's tallest building, the Burj Khalifa, and the scenic Dubai Water Canal, capturing the essence of modern Dubai. Observe the opulence of luxury car showrooms featuring brands like Ferrari and Lamborghini. Enjoy a 15-minute photo session at the Burj Al Arab, renowned as one of the world's most luxurious hotels. Drive through the man-made island of Palm Jumeirah and pass by the luxurious Atlantis The Palm resort, epitomizing Dubai's architectural innovation. Conclude with a 15-minute stop at The Cresent, Palm Jumeirah, an extraordinary seafront showcasing the city's modernity and waterfront development. On the way back, pass by the Mall of the Emirates, home to Ski Dubai, and admire the world-famous skyline along Sheikh Zayed Road. Please note that photo stops are subject to time availability and government authority permissions. This tour is designed to provide a snapshot of Dubai's key highlights, offering a balanced perspective of its historical roots and contemporary achievements. Dubai Creek is an integral part of the city's history. It divides the city into two sections, Bur Dubai and Deira. Both the sides of the Dubai Creek boasts of some of the best exquisite buildings of the city. Therefore, a trip to the Creek is a must. However, rather than walking on the coast, go on a dhow cruise to turn your sightseeing into a unique experience.The dhow is a traditional Bedouin boat that was used for trade and transportation. Today, these dhows have been converted into restaurants that have a lower (airconditioned) and upper (open-air) decks. You are offered a welcome drink on arrival and are also served delicious barbecued dishes once the dhow sets on sail. "
+         },
+         {
+            day: "Day 3",
+            title: "Desert Safari",
+            description:
+               "The Evening Desert Safari is a must-do for any adventure seekers visiting Dubai. Convenient round trip transportation will pick you up from your hotel and take you out to explore the Arabian desert. Test your balancing skills in an exhilarating sand boarding experience or try out the other many fun activities available for you to do including camel riding, dune bashing and henna painting. Take time to look around and take pictures, this tour is a great opportunity to capture breathtaking views of the desert during sunset. End the night with belly dancing show under the stars while indulging in a delicious BBQ dinner with unlimited soft drinks and shisha smoking (at extra cost). "
+         },
+         {
+            day: "Day 4",
+            title: "Burj Khalifa",
+            description:
+               "Transfer to Dubai Mall, one of the largest malls in the world and home to over 1200 stores. Later proceed to the Top of Burj Khalifa, World's Tallest Tower. Burj Khalifa visit begins in the reception area on the lower ground level of The Dubai Mall. Here and throughout your journey, you will be entertained and informed by a multi-media presentation that chronicles Dubai's exotic history and the fascinating story of Burj Khalifa. Begin your vertical ascent to the observation deck in a high-speed elevator, travelling at 10 metres per second. As the doors open on the 124th Floor, floor-to-ceiling glass walls provide a breathtaking unobstructed 360-degree view of the city, desert & ocean. Spend half an hour at the top and then come down, and at 7 pm watch the Dubai Fountains come alive. There is a 10 minute show every 20 minutes and its lovely to watch the largest fountain in the world.  "
+         },
+         {
+            day: "Day 5",
+            title: "Butterfly Garden",
+            description:
+               "Proceed for a visit to Dubai Butterfly Garden claimed to be the “World’s Largest Covered Butterfly Garden” consists of ten custom built domes around 6,673 sq.m. Each dome is filled with thousands of beautifully winged creatures, featuring 15,000 butterflies of around over 50 varieties of butterfly in different sizes and colors flying around the visitors. Dubai Butterfly Garden gives you the opportunity to see how butterflies evolve through each stage. "
+         },
+         {
+            day: "Day 6",
+            title: "Departure from Dubai ",
+            description:
+               "You will be picked up from Hotel's lobby at the time confirmed. Please be available at the lobby 15 minutes before the time given and you will be transferred to the airport for your flight. "
+         },
+      ],
+
+      inclusions: [
+         "Dubai ",
+         "5 nights in Dubai ",
+         "Stay at Citymax Bur Dubai (3 star) ",
+         "Bed and Breakfast ",
+         "One-way Transfer from Airport to Dubai Hotel - Private from Dubai International Airport ",
+         "Half Day Dubai City Tour - Private Vehicle",
+         "Dhow Cruise with Dinner - Creek Cruise - 3 Star Experience with Two Way Private Transfers (Tickets Included) ",
+         "Desert Safari with Dune Bashing, Belly Dancing and Barbeque Dinner - Ticket With Private Transfers - Exclusive 4x4 Vehicle with Deluxe Camp",
+         "Top of Burj Khalifa - Non Prime Hours Ticket With Two Way Private Transfers - 124th Floor (Between 7 am - 12:30 PM or 7.30 PM- 11 pm slot) ",
+         "Butterfly Garden - Tickets Only ",
+         "One-way Transfer from Dubai Hotel to Airport - Private to Dubai International Airport ",
+
+      ],
+
+      exclusions: [
+         "Airfare , ",
+         "Gst (05%) , ",
+         "Lunch & Dinner   , ",
+         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
+      ]
+   },
+   {
+      id: 65,
+      destination: "dubai",
+      thumb: imgDubai3,
+      tag: "Adventure",
+      time: "6 Nights / 7 Days",
+      title: "Dubai & Abu Dhabi Ultimate Experience",
+      location: "Dubai, UAE",
+      price: "₹32500/- Per Person X 2 Adults",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival into Dubai - Check-in - Marina Dhow Cruise  ",
+            description:
+               "You will be met by our representative at the Airport Arrival Terminal. Our representative will be holding a signage card with your Name written on it. You will then be escorted to waiting vehicle for transfer to hotel. A daily evening two hour cruise along the man made Dubai Marina for sightseeing of luxurious and modern landmarks which have soured Dubai in the shape of sky touching towers for residential and commercial purpose over the past decade. This cruise is also accompanied by complimentary International Buffet dinner from a five star hotel, soft drinks, mineral water & live entertainment - tanoura dance show. The dhows are fully insured, safety fitted and fully air-conditioned for your safety and enjoyment. Ladies and gents washrooms as well as an open air upper deck are also part of the dhow structure. You can not miss these dhows and you find them elegantly gliding the Marina Promenade and into the open sea where the splendid Palm Island floats in front of you. "
+         },
+         {
+            day: "Day 2",
+            title: " Burj Khalifa - Morning Half Day City Tour ",
+            description:
+               "The Burj Khalifa is an iconic structure. Known to be the tallest building in the world, it is one of the most popular spots in Dubai. With this tour, you not only get the opportunity to enter the building but also visit the Observation Deck on the 124th floor and get a 360 degree view of the entire city. The tour begins with a multimedia presentation that gives you a glimpse of the history of Dubai as well as the story of the development of Burj Khalifa. After that, you would be whisked away to the 124th floor in the fastest elevator you have ever been. The Observation Deck is completely covered in glass, making it easier to view the city. You can get a closer look at the other iconic buildings through the viewing telescopes placed everywhere on the floor. For the brave ones, there is also the open-air terrace! At the end of the tour, you also get to visit The Cafe on the ground floor where you would be treated with a beverage of your choice. Embark on a 4-hour Dubai Half-Day City Tour that seamlessly blends the city's historic charm with its modern marvels. Begin by exploring heritage-rich neighborhoods such as Deira and Bur Dubai, where you'll pass by the Gold Souk, Spice Souk, Al Ghubaiba Historical and Heritage Site, Meena Bazaar, Al Fahidi Neighborhood, and Al Seef, offering a glimpse into Dubai's trading past and cultural heritage. Pause for a 15-minute photo opportunity at the Dubai Frame, a cultural landmark symbolizing the connection between the city's rich past and its ambitious future. Drive along Sheikh Zayed Road, flanked by towering skyscrapers and iconic structures, including the World Trade Centre. Take a 15-minute break to admire and photograph the Museum of the Future, an architectural and engineering marvel showcasing innovative design. Pass by the world's tallest building, the Burj Khalifa, and the scenic Dubai Water Canal, capturing the essence of modern Dubai. Observe the opulence of luxury car showrooms featuring brands like Ferrari and Lamborghini. Enjoy a 15-minute photo session at the Burj Al Arab, renowned as one of the world's most luxurious hotels. Drive through the man-made island of Palm Jumeirah and pass by the luxurious Atlantis The Palm resort, epitomizing Dubai's architectural innovation. Conclude with a 15-minute stop at The Cresent, Palm Jumeirah, an extraordinary seafront showcasing the city's modernity and waterfront development. On the way back, pass by the Mall of the Emirates, home to Ski Dubai, and admire the world-famous skyline along Sheikh Zayed Road. Please note that photo stops are subject to time availability and government authority permissions. This tour is designed to provide a snapshot of Dubai's key highlights, offering a balanced perspective of its historical roots and contemporary achievements.  "
+         },
+         {
+            day: "Day 3",
+            title: "Desert Safari ",
+            description:
+               "The Evening Desert Safari is a must-do for any adventure seekers visiting Dubai. Convenient round trip transportation will pick you up from your hotel and take you out to explore the Arabian desert. Test your balancing skills in an exhilarating sand boarding experience or try out the other many fun activities available for you to do including camel riding, dune bashing and henna painting. Take time to look around and take pictures, this tour is a great opportunity to capture breathtaking views of the desert during sunset. End the night with belly dancing show under the stars while indulging in a delicious BBQ dinner with unlimited soft drinks and shisha smoking (at extra cost).  "
+         },
+         {
+            day: "Day 4",
+            title: "Abu Dhabi Grand Mosque Visit + Ferrari Theme Park with Transfers ",
+            description:
+               "Proceed for full day tour of Abu Dhabi with Ferrari Theme Park. We start our Abu Dhbai City tour in the morning and our journey will start from Dubai will take you past the Jebel Ali Port, the largest man-made port in the entire world on the road to Abu Dhabi. On arrival at Abu Dhabi head to the Sheikh Zayed Grand Mosque, to admire the white marble courtyards and prayer rooms of this vast, modern masterpiece. Please ensure proper dress code while visiting. In the afternoon visit Ferrari World. Ferrari World is Situated on the Yas island, FWAD has a surface area of 200,000 square meters, all under cover, which makes it the biggest indoor park in the world. There are over 20 attractions for visitors to enjoy, from the must futuristic such as Formula Rossa, the worlds fastest rollercoaster, which can accelerate its cars from 0 to 240 kmh in the same time as a Formula 1 car, to the four dimensional Speed of Magic. Return back to hotel in the evening.  "
+         },
+         {
+            day: "Day 5",
+            title: "Visit to Museum of Future",
+            description:
+               "The Museum of the future is as unique as it sounds and offers the visitors extraordinary sensory and visual experiences while being educational. The best part about this place is that unlike other museums, you do not have to be cautious about what you touch. On the other hand, this is an interactive museum and the more you touch and engage with the exhibits, the more fun you would have.  "
+         },
+         {
+            day: "Day 6",
+            title: "Miracle Garden and Global Village  ",
+            description:
+               "Get lost in a one-of-a-kind world of wonderment at Dubai Miracle Garden. Located in Al Barsha South, the park is home to the world’s biggest flower garden with over 45 million blooming flowers across 72,000 square metres showcased in a variety of immense sculptures and designs. Feast your eyes on blooming pyramids, stars, igloos, and hearts. Marvel at the record-breaking wall of flowers, or take a stroll under a ceiling of colorful umbrellas. Bursting with vibrant displays, the park feels more like an immersive art exhibit than a tourist attraction. You’ll leave knowing you’ve truly witnessed a miracle: a mega garden in the middle of a desert. Proceed for Global Village in the afternoon. Global Village is the largest seasonal cultural extravaganza in the region that offers visitors an amazing array of festivals, shopping and entertainment in an open-air theme park. This entertainment and shopping destination is open from November through to April and hosts over 70 participating countries presented in over 36 pavilions, with more than 50 fun rides and 26 restaurants offering food from around the world. "
+         },
+         {
+            day: "Day 7",
+            title: "Departure from Dubai",
+            description:
+               "You will be picked up from Hotel's lobby at the time confirmed. Please be available at the lobby 15 minutes before the time given and you will be transferred to the airport for your flight.  "
+         },
+      ],
+
+      inclusions: [
+         "Dubai ",
+         "6 nights in Dubai  ",
+         "Stay at Grand Excelsior Hotel Bur Dubai (4 star) ",
+         "Room Included - Deluxe, Deluxe, Deluxe, ",
+         "Bed and Breakfast ",
+         "No Extra Bed ",
+         "One-way Transfer from Airport to Dubai Hotel - Private from Dubai International Airport",
+         "Dhow Cruise with Dinner - Marina Cruise - 3 Star Experience with Private Transfers ",
+         "Top of Burj Khalifa - 124th Floor (Non-Prime Hours Ticket)(Between 10:00 AM - 7:00 PM slot) with Cafe Treat and Ticket With Two Way Private Transfers ",
+         "Half Day Dubai City Tour - Private Vehicle ",
+         "Desert Safari with Dune Bashing, Belly Dancing and Barbeque Dinner - Ticket With Private Transfers - Exclusive 4x4 Vehicle with Deluxe Camp",
+         "Abu Dhabi Tour with Ferrari World From Dubai - Private - General Ticket with Grand Mosque Visit And Meal",
+         "Visit to Museum of Future - Private Transfers with Entry Ticket (Subject to Availability) ",
+         "Miracle Garden and Global Village - Tickets with Three Way Private Transfers  ",
+         "One-way Transfer from Dubai Hotel to Airport - Private to Dubai International Airport ",
+      ],
+
+      exclusions: [
+         "Airfare , ",
+         "Visa  , ",
+         "Gst (05%) , ",
+         "Tcs (02%) , ",
+         "Lunch & Dinner   , ",
+         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
+      ]
+   },
+   {
+      id: 66,
+      destination: "dubai",
+      thumb: imgDubai4,
+      tag: "Adventure",
+      time: "6 Nights / 7 Days",
+      title: "Dubai & Abu Dhabi Ultimate Adventure & Attractions",
+      location: "Dubai, UAE",
+      price: "₹32500/- Per Person X 2 Adults",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival into Dubai - Check-in - Marina Dhow Cruise  ",
+            description:
+               "You will be met by our representative at the Airport Arrival Terminal. Our representative will be holding a signage card with your Name written on it. You will then be escorted to waiting vehicle for transfer to hotel. A daily evening two hour cruise along the man made Dubai Marina for sightseeing of luxurious and modern landmarks which have soured Dubai in the shape of sky touching towers for residential and commercial purpose over the past decade. This cruise is also accompanied by complimentary International Buffet dinner from a five star hotel, soft drinks, mineral water & live entertainment - tanoura dance show. The dhows are fully insured, safety fitted and fully air-conditioned for your safety and enjoyment. Ladies and gents washrooms as well as an open air upper deck are also part of the dhow structure. You can not miss these dhows and you find them elegantly gliding the Marina Promenade and into the open sea where the splendid Palm Island floats in front of you. "
+         },
+         {
+            day: "Day 2",
+            title: " Burj Khalifa - Morning Half Day City Tour ",
+            description:
+               "The Burj Khalifa is an iconic structure. Known to be the tallest building in the world, it is one of the most popular spots in Dubai. With this tour, you not only get the opportunity to enter the building but also visit the Observation Deck on the 124th floor and get a 360 degree view of the entire city. The tour begins with a multimedia presentation that gives you a glimpse of the history of Dubai as well as the story of the development of Burj Khalifa. After that, you would be whisked away to the 124th floor in the fastest elevator you have ever been. The Observation Deck is completely covered in glass, making it easier to view the city. You can get a closer look at the other iconic buildings through the viewing telescopes placed everywhere on the floor. For the brave ones, there is also the open-air terrace! At the end of the tour, you also get to visit The Cafe on the ground floor where you would be treated with a beverage of your choice. Embark on a 4-hour Dubai Half-Day City Tour that seamlessly blends the city's historic charm with its modern marvels. Begin by exploring heritage-rich neighborhoods such as Deira and Bur Dubai, where you'll pass by the Gold Souk, Spice Souk, Al Ghubaiba Historical and Heritage Site, Meena Bazaar, Al Fahidi Neighborhood, and Al Seef, offering a glimpse into Dubai's trading past and cultural heritage. Pause for a 15-minute photo opportunity at the Dubai Frame, a cultural landmark symbolizing the connection between the city's rich past and its ambitious future. Drive along Sheikh Zayed Road, flanked by towering skyscrapers and iconic structures, including the World Trade Centre. Take a 15-minute break to admire and photograph the Museum of the Future, an architectural and engineering marvel showcasing innovative design. Pass by the world's tallest building, the Burj Khalifa, and the scenic Dubai Water Canal, capturing the essence of modern Dubai. Observe the opulence of luxury car showrooms featuring brands like Ferrari and Lamborghini. Enjoy a 15-minute photo session at the Burj Al Arab, renowned as one of the world's most luxurious hotels. Drive through the man-made island of Palm Jumeirah and pass by the luxurious Atlantis The Palm resort, epitomizing Dubai's architectural innovation. Conclude with a 15-minute stop at The Cresent, Palm Jumeirah, an extraordinary seafront showcasing the city's modernity and waterfront development. On the way back, pass by the Mall of the Emirates, home to Ski Dubai, and admire the world-famous skyline along Sheikh Zayed Road. Please note that photo stops are subject to time availability and government authority permissions. This tour is designed to provide a snapshot of Dubai's key highlights, offering a balanced perspective of its historical roots and contemporary achievements.  "
+         },
+         {
+            day: "Day 3",
+            title: "Desert Safari ",
+            description:
+               "The Evening Desert Safari is a must-do for any adventure seekers visiting Dubai. Convenient round trip transportation will pick you up from your hotel and take you out to explore the Arabian desert. Test your balancing skills in an exhilarating sand boarding experience or try out the other many fun activities available for you to do including camel riding, dune bashing and henna painting. Take time to look around and take pictures, this tour is a great opportunity to capture breathtaking views of the desert during sunset. End the night with belly dancing show under the stars while indulging in a delicious BBQ dinner with unlimited soft drinks and shisha smoking (at extra cost).  "
+         },
+         {
+            day: "Day 4",
+            title: "Abu Dhabi Grand Mosque Visit + Ferrari Theme Park with Transfers ",
+            description:
+               "Proceed for full day tour of Abu Dhabi with Ferrari Theme Park. We start our Abu Dhbai City tour in the morning and our journey will start from Dubai will take you past the Jebel Ali Port, the largest man-made port in the entire world on the road to Abu Dhabi. On arrival at Abu Dhabi head to the Sheikh Zayed Grand Mosque, to admire the white marble courtyards and prayer rooms of this vast, modern masterpiece. Please ensure proper dress code while visiting. In the afternoon visit Ferrari World. Ferrari World is Situated on the Yas island, FWAD has a surface area of 200,000 square meters, all under cover, which makes it the biggest indoor park in the world. There are over 20 attractions for visitors to enjoy, from the must futuristic such as Formula Rossa, the worlds fastest rollercoaster, which can accelerate its cars from 0 to 240 kmh in the same time as a Formula 1 car, to the four dimensional Speed of Magic. Return back to hotel in the evening.  "
+         },
+         {
+            day: "Day 5",
+            title: "Visit to Museum of Future",
+            description:
+               "The Museum of the future is as unique as it sounds and offers the visitors extraordinary sensory and visual experiences while being educational. The best part about this place is that unlike other museums, you do not have to be cautious about what you touch. On the other hand, this is an interactive museum and the more you touch and engage with the exhibits, the more fun you would have.  "
+         },
+         {
+            day: "Day 6",
+            title: "Miracle Garden and Global Village  ",
+            description:
+               "Get lost in a one-of-a-kind world of wonderment at Dubai Miracle Garden. Located in Al Barsha South, the park is home to the world’s biggest flower garden with over 45 million blooming flowers across 72,000 square metres showcased in a variety of immense sculptures and designs. Feast your eyes on blooming pyramids, stars, igloos, and hearts. Marvel at the record-breaking wall of flowers, or take a stroll under a ceiling of colorful umbrellas. Bursting with vibrant displays, the park feels more like an immersive art exhibit than a tourist attraction. You’ll leave knowing you’ve truly witnessed a miracle: a mega garden in the middle of a desert. Proceed for Global Village in the afternoon. Global Village is the largest seasonal cultural extravaganza in the region that offers visitors an amazing array of festivals, shopping and entertainment in an open-air theme park. This entertainment and shopping destination is open from November through to April and hosts over 70 participating countries presented in over 36 pavilions, with more than 50 fun rides and 26 restaurants offering food from around the world. "
+         },
+         {
+            day: "Day 7",
+            title: "Departure from Dubai",
+            description:
+               "You will be picked up from Hotel's lobby at the time confirmed. Please be available at the lobby 15 minutes before the time given and you will be transferred to the airport for your flight.  "
+         },
+      ],
+
+      inclusions: [
+         "Dubai ",
+         "6 nights in Dubai ",
+         "Stay at Citymax Bur Dubai (3 star) ",
+         "Bed and Breakfast ",
+         "One-way Transfer from Airport to Dubai Hotel - Private from Dubai International Airport ",
+         "Half Day Dubai City Tour - Private Vehicle",
+         "Dhow Cruise with Dinner - Creek Cruise - 3 Star Experience with Two Way Private Transfers (Tickets Included) ",
+         "Desert Safari with Dune Bashing, Belly Dancing and Barbeque Dinner - Ticket With Private Transfers - Exclusive 4x4 Vehicle with Deluxe Camp",
+         "Top of Burj Khalifa - Non Prime Hours Ticket With Two Way Private Transfers - 124th Floor (Between 7 am - 12:30 PM or 7.30 PM- 11 pm slot) ",
+         "Butterfly Garden - Tickets Only ",
+         "One-way Transfer from Dubai Hotel to Airport - Private to Dubai International Airport ",
+
+      ],
+
+      exclusions: [
+         "Airfare , ",
+         "Gst (05%) , ",
+         "Lunch & Dinner   , ",
+         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
+      ]
+   },
+   {
+      id: 48,
+      destination: "maldives",
+      thumb: imgMaldives,
+      tag: "Leisure",
+      time: "3 Nights / 4 Days",
+      title: "Maldives 4 Days & 3 Nights – Tropical Leisure Escape",
+      location: "Maldives",
+      price: "₹92000/- Per Person X 2 adulTs",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival in Maldives",
+            description:
+               "Welcome to Maldives - Indian Ocean's most sought-after beach escape, an archipelago of 1,190 coral islands south west of Sri Lanka. Upon arrival at Male Airport, get transferred to your hotel/resort by speedboat or seaplane (if included as part of the inclusions). "
+         },
+         {
+            day: "Day 2",
+            title: "Day at Leisure",
+            description:
+               "After an appetizing breakfast, you are free to relax on the beach or try some water activities like snorkelling, scuba diving, windsurfing, canoeing etc (at extra price).   "
+         },
+         {
+            day: "Day 3",
+            title: "..",
+            description:
+               ".. "
+         },
+         {
+            day: "Day 4",
+            title: "Departure from Maldives ",
+            description:
+               "Enjoy a hearty breakfast and check-out from the hotel/resort as you embark on your journey back home. You will be transferred (if transfers are included as part of the inclusions) to Male International Airport to catch your flight back home. "
+         },
+      ],
+
+      inclusions: [
+         "3 nights in Maldives ",
+         "3 nights in Maldives ",
+         ".All Inclusive  ",
+      ],
+
+      exclusions: [
+         "Airfare , ",
+         "Gst (05%) , ",
+         "Tcs (02%)  , ",
+         "Tcs (02%)  ",
+      ]
+   },
+   {
+      id: 52,
+      destination: "hong-kong",
+      thumb: imgHongkong,
+      tag: "Leisure",
+      time: "6 Nights / 7 Days",
+      title: "Hong Kong 7 Days & 6 Nights – City & Leisure Escape",
+      location: "Hong Kong",
+      price: "₹79,000/- per person X 9 Adults / ₹21,500/- per child X 3",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival at Hong Kong ",
+            description:
+               "Upon arrival at Hong Kong, you will be met and transferred to your hotel. Reach the hotel and check-in.  "
+         },
+         {
+            day: "Day 2",
+            title: "Day Trip to Macau from Hong Kong ",
+            description:
+               "Day trip to Macau from Hong Kong by catamaran or jetfoil. Explore evocative UNESCO World Heritage Sites like the Ruins of St Paul and the A-Ma Temple Drive along the Guia Circuit where the Macau Grand Prix is held. See modern developments like the Macau Tower, the 11th highest tower in the world. Visit Macau Casino and try your hand at a card table. Enjoy a delectable lunch in a local Macau restaurant Hotel pickup and drop-off included "
+         },
+         {
+            day: "Day 3",
+            title: "Hong Kong City Tour ",
+            description:
+               "Your Hong Kong experience starts with iconic Peak Tram to Victoria Peak for excellent views of the city. Discover Hong Kong from an elevated perspective at the Peak. Then cruise along the harbour on the famous Star Ferry. Stroll along the Avenue of Stars to admire the Victoria Harbour & Hong Kong Famous sky scrappers & Old Clock Tower. Lastly visit the world's second tallest building ( ICC ) "
+         },
+         {
+            day: "Day 4",
+            title: "Full Day Disneyland ",
+            description:
+               "Make the most of your Hong Kong Disneyland adventure with this package that includes admission. Experience the magic of characters coming to life with your full-day pass to all of the theme lands. Visit four amazing lands: Fantasyland, Adventureland, Tomorrowland and Toystoryland. Enjoy shops, eateries and entertainment on Main Street, USA "
+         },
+         {
+            day: "Day 5",
+            title: "Full Day Ocean Park Tour - Tickets Only ",
+            description:
+               "The Ocean Park Tour Ticket provides one-day access to all attractions and experiences at Ocean Park Hong Kong. "
+         },
+         {
+            day: "Day 6",
+            title: "Day Free for Shopping",
+            description:
+               "Today after breakfast you can proceed for some shopping in Hong Kong. The best places to find global designer brands and luxury stores are in malls, such as the IFC and the Landmark in Central, Times Square in Causeway Bay, Pacific Place in Admiralty, and Harbour City in Tsim Sha Tsui. Some of these shops, such as Prada, have outlets at Horizon Plaza in Ap Lei Chau selling off-season items at discounted prices. For something a little more unique, there are cool independent shops opened by local designers and retailers in Sheung Wan, Wan Chai and Tsim Sha Tsui. For a truly local shopping experience, the minimalls in Tsim Sha Tsui are teeming with all things young and trendy, both locally designed or imported from the mainland or Korea. In the evening you can head to the night markets of Temple Street and Ladies Street to do bargain shopping. Overnight stay at hote"
+         },
+         {
+            day: "Day 7",
+            title: "Departure from Hong Kong ",
+            description:
+               "Today check out from your hotel and you will be transferred to the airport to catch your flight. "
+         },
+      ],
+
+      inclusions: [
+         "6 nights in Hong Kong ",
+         "6 nights in Hong Kong ",
+         ".Room Included - Superior City View Room Double Or Twin, Superior City View Room Double Or Twin, Superior City View Room Double Or Twin, Superior City View Room Double Or Twin, ",
+         ".Bed And Breakfast ",
+         ".Non-refundable",
+         "Hong Kong Airport to Hotel Transfers - Private Vehicle ",
+         "Day trip to Macau - with Sightseeing & Return Ferry Tickets from Hong Kong ",
+         "Hong Kong City Tour - Private Day Tour, including (1 way Peak Tram, Victoria Peak) ",
+         "Full Day Disneyland Tour - Tickets Only ",
+         "Ocean Park Tour - Tickets Only ",
+         "Hong Kong Hotel To Airport Transfers - Private Vehicle ",
+      ],
+
+      exclusions: [
+         "Airfare , ",
+         "Gst (05%) , ",
+         "Visa   , ",
+         "Tcs (02%) , ",
+         "Lunch & Dinner , ",
+         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
+      ]
+   },
+   {
+      id: 56,
+      destination: "mauritius",
+      thumb: imgmauritius,
+      tag: "Leisure",
+      time: "6 Nights / 7 Days",
+      title: "Mauritius 7 Days & 6 Nights – Tropical Leisure Escape",
+      location: "Mauritius",
+      price: "₹90000/- PeR PeRson X 4 adults / 28000/- PeR child",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival at Mauritius",
+            description:
+               "Representative who will assist you with the transfer to the hotel in Mauritius where you check-in. Rest of the day is at leisure to explore this beautiful city on your own. Mauritius, a sparkling crystal in the turquoise waters of the Indian Ocean, will fascinate you. The contrast of colours, cultures and tastes makes the island so charming that the scene is set for an unforgettable holiday. Mauritius, a melting pot where past and present are smoothly blended together, offers an essential beauty that will compel to return to its shores time and time again. Overnight at Mauritius"
+         },
+         {
+            day: "Day 2",
+            title: " Full Day Catamaran West Coast - Dolphins Encounter ",
+            description:
+               "Full day Catamaran cruise, Dolphins Expedition, BBQ Lunch, Unlimited Drinks, Sail by Benitier Island & Snorkel by Crystal Rock "
+         },
+         {
+            day: "Day 3",
+            title: "Full day catamaran cruise ",
+            description:
+               "sail by the 3 northern island - Gunners Coin Island, Flat Island & Gabriel Island, BBQ lunch on boat, unlimited drinks and snorkeling "
+         },
+         {
+            day: "Day 4",
+            title: "Crocodile Park and Gris Gris Beach",
+            description:
+               "The Crocodile & Giant Tortoises Park which is home to various species of animals, reptiles and plants is set in a beautiful rain forested valley with natural freshwater springs, full of prawns and fish. As part of your visit to the Crocodile & Giant Tortoises Park, the park’s guides will guide you through some unforgettable walks, and you will stroll through luxuriant greenery where banana trees, palm trees and giant bamboos provide shade for the crocodiles and the giant tortoises. During your stay in the park you can also experience a firsthand unique encounter with the giant tortoises, and get a rare chance to feed, pet and play with them. Also thousands of Nile crocodiles and giant tortoises are found in the park and you can watch them in maximum safety. "
+         },
+         {
+            day: "Day 5",
+            title: " Visit a La Rhumerie & Rum Tasting and visit chamarel 7 coloured earth ",
+            description:
+               "Overnight stay at Manisa Hotel "
+         },
+         {
+            day: "Day 6",
+            title: "North Island Tour ",
+            description:
+               "After breakfast, proceed on a panoramic city tour of Port Louis, the capital of Mauritius, via the Citadel & its surrounding area. View the Champ de Mars race course, inaugurated in 1812, it the oldest horse-racing club in the Southern Hemisphere, and one of the oldest in the world. Afterwards drive to Le Caudan/Port Louis Waterfront, with some 170 shops, it is a must shopping stop. Drive back to hotel. "
+         },
+         {
+            day: "Day 7",
+            title: "Departure from Mauritius",
+            description:
+               "Check-out from your hotel and transfer to airport"
+         },
+      ],
+
+      inclusions: [
+         "6 nights in Mauritius ",
+         "6 nights in Mauritius ",
+         ".Room Included - Double room, Double room, ",
+         ".Bed and Breakfast ",
+         "One Way Airport Transfer From Mauritius Airport to Mauritius Hotel - Private Transfers ",
+         "Full Day Catamaran West Coast - Dolphins Encounter - Private Transfers ",
+         "Full Day Catamaran North Island Cruise - Shared ",
+         "Visit Gris Gris Beach and Crocodile Park - Private Transfers ",
+         "Visit a La Rhumerie & Rum Tasting and visit chamarel 7 coloured earth - Private Transfers ",
+         "North Island Tour - Private Transfers ",
+         "One Way Transfer from Mauritius Hotel to Mauritius Airport - Private Transfers ",
+      ],
+
+      exclusions: [
+         "Airfare , ",
+         "Gst (05%) , ",
+         "Visa   , ",
+         "Tcs (02%) , ",
+         "Lunch & Dinner , ",
+         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
+      ]
+   },
+   {
+      id: 58,
+      destination: "malaysia",
+      thumb: imgMalaysia,
+      tag: "Leisure",
+      time: "6 Nights / 7 Days",
+      title: "Malaysia 7 Days & 6 Nights – Kuala Lumpur & Langkawi Escape",
+      location: "Kuala Lumpur & Langkawi",
+      price: "₹41500/- Per person X 5 Adults / ₹9500 /- Per Child X 4 Child",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival in Kuala Lumpur – Check-in",
+            description: "Our airport representative will be waiting at the arrival hall to greet and welcome you. Proceed to the arrival hall after completing immigration and baggage formalities. Pick up from KLIA 1 or KLIA 2 and transfer to your Kuala Lumpur hotel. Explore the vibrant city of Kuala Lumpur, Malaysia's federal capital and largest city. Valid for pickups between 6:00 AM and 11:00 PM. Pickups between 11:00 PM and 6:00 AM will attract an additional surcharge."
+         },
+
+         {
+            day: "Day 2",
+            title: "Kuala Lumpur City Sightseeing",
+            description: "Pick up from your KL hotel and proceed for a Kuala Lumpur City Tour with KL Tower Observation Deck. Visit KL Tower, Merdeka Square, National Mosque, King Palace, National Monument, Sultan Abdul Samad Building and the Malayan Railway Administration Building. Enjoy a stop at Beryl's Chocolate Kingdom, where you can explore and sample a variety of Malaysian chocolates. After the sightseeing tour, return to your hotel."
+         },
+
+         {
+            day: "Day 3",
+            title: "Batu Caves – Full-Day Genting Highlands Tour",
+            description: "After breakfast, depart for Genting Highlands. En route, make a short photo stop at Batu Caves, a famous limestone hill and Hindu shrine dedicated to Lord Murugan. Continue to Genting Skyway Lower Station and board the cable car to Genting Highlands. Enjoy the cool climate, entertainment and attractions before returning to your Kuala Lumpur hotel."
+         },
+
+         {
+            day: "Day 4",
+            title: "Kuala Lumpur to Langkawi – Flight Transfer",
+            description: "After breakfast, check out from your Kuala Lumpur hotel and transfer to KLIA 1 or KLIA 2 for your flight to Langkawi. Upon arrival at Langkawi International Airport, our driver will meet you at the arrival hall and transfer you to your beach or city hotel. Langkawi, known as the Jewel of Kedah, is famous for its beautiful beaches, lush landscapes and scenic attractions. Overnight stay at Hotel Grand Continental Langkawi or similar."
+         },
+
+         {
+            day: "Day 5",
+            title: "Langkawi Full-Day Island Tour with Lunch",
+            description: "Enjoy a full-day private tour of Langkawi covering some of the island's popular attractions. Visit Atma Alam Batik Art Village, Eagle Square, Kuah Town for duty-free shopping and Underwater World Langkawi (entrance ticket not included). Enjoy lunch at an Indian restaurant. Continue to Oriental Village and Langkawi SkyCab (ticket not included) before returning to your hotel."
+         },
+
+         {
+            day: "Day 6",
+            title: "Langkawi Mangrove Tour & Sunset Cruise",
+            description: "After breakfast, enjoy a private transfer from your beach or city hotel to the mangrove tour jetty. Later in the evening, experience a beautiful sunset cruise with cocktails and dinner. Enjoy scenic views of the Andaman Sea along with opportunities to spot wildlife. Relax in the saltwater jacuzzi and enjoy a BBQ dinner and salad bar onboard. Return to your hotel for an overnight stay."
+         },
+
+         {
+            day: "Day 7",
+            title: "Departure from Langkawi",
+            description: "After breakfast, check out from your hotel. You will be transferred to Langkawi International Airport for your return flight back home."
+         }
+      ],
+
+      inclusions: [
+         "Kuala Lumpur",
+         "3 nights accommodation in Kuala Lumpur",
+         "Stay at Howard Johnson By Wyndham Kuala Lumpur or similar",
+         "One-way transfer from Kuala Lumpur Airport to Hotel – On your own",
+         "Kuala Lumpur City Tour with Private Transfers and KL Tower Observation Deck Ticket",
+         "Full-Day Genting Highlands Tour including two-way Cable Car by Private Vehicle, excluding lunch, with en-route Batu Caves photo stop",
+         "One-way private transfer from Kuala Lumpur Hotel to Airport, available between 6:00 AM and 11:00 PM",
+
+         "Langkawi",
+         "3 nights accommodation in Langkawi",
+         "Stay at Hotel Grand Continental Langkawi or similar – Premium Double Bed Room with Breakfast",
+         "One-way private transfer from Langkawi Airport to Beach or City Hotel",
+         "Langkawi Full-Day Island Tour with Lunch",
+         "Langkawi Sunset Dinner Cruise with Private Transfers"
+      ],
+
+      exclusions: [
+         "Airfare",
+         "GST (5%)",
+         "Visa",
+         "TCS (5%)",
+         "Lunch & Dinner except where specifically mentioned in inclusions",
+         "Personal expenses such as shopping, phone calls, laundry, etc."
+      ]
+   },
+   {
+      id: 59,
+      destination: "malaysia",
+      thumb: imgMalaysia2,
+      tag: "Leisure",
+      time: "6 Nights / 7 Days",
+      title:
+         "Malaysia 7 Days & 6 Nights – Kuala Lumpur, Genting & Langkawi Adventure Escape",
+      location: "Kuala Lumpur & Langkawi",
+      price: "₹37000/- Per Person X 2 Adults",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival in Kuala Lumpur – Check-in",
+            description:
+               "Arrive in Kuala Lumpur and complete the check-in formalities at your hotel. Overnight stay at Hotel Sentral Kuala Lumpur."
+         },
+
+         {
+            day: "Day 2",
+            title:
+               "Kuala Lumpur City Sightseeing & Half-Day Kuala Lumpur Night Tour",
+            description:
+               "Pick up from your Kuala Lumpur hotel and proceed for the city sightseeing tour. Visit the iconic Petronas Twin Towers for a photo stop. The observation deck ticket is not included. Continue to Merdeka Square, one of Kuala Lumpur's most historic and picturesque landmarks. Visit the National Mosque (Masjid Negara), known for its distinctive architecture and beautiful surroundings. Proceed to the King Palace (Istana Negara), the official royal residence of Malaysia, and see the National Monument, which commemorates those who lost their lives during Malaysia's struggle for freedom. Visit the Sultan Abdul Samad Building, a historic Moorish-style landmark located opposite Merdeka Square. Pass by the Malayan Railway Administration Building, an architectural landmark combining Eastern and Western design elements. Continue to Beryl's Chocolate Kingdom, where you can explore a wide variety of chocolates and enjoy complimentary samples. After the city tour, return to the hotel. Later, embark on a Kuala Lumpur Night Tour featuring an outside view of the Petronas Twin Towers, Lake Symphony at KLCC, the historic Malayan Railway Administration Building, Sri Maha Mariamman Temple and Chinatown Market. Conclude the evening with panoramic city views from KL Tower. KL Tower Observation Deck ticket is included. After the tour, return to your hotel."
+         },
+
+         {
+            day: "Day 3",
+            title: "Batu Caves – Full-Day Genting Highlands Tour with Cable Car",
+            description:
+               "After breakfast, depart for Genting Highlands. En route, make a short photo stop at Batu Caves, a famous limestone hill and Hindu shrine dedicated to Lord Murugan. Continue to Genting Skyway Lower Station and board the cable car to the peak. The cable car journey takes approximately 15 minutes and is subject to weather conditions. Enjoy the cool climate, entertainment and attractions of Genting Highlands before returning to your hotel in Kuala Lumpur."
+         },
+
+         {
+            day: "Day 4",
+            title: "Transfer from Kuala Lumpur to Langkawi by Flight",
+            description:
+               "Check out from your Kuala Lumpur hotel and transfer to KLIA 1 or KLIA 2 for your flight to Langkawi. Upon arrival at Langkawi International Airport, our driver will be waiting at the arrival hall to greet and welcome you. Transfer to your Langkawi beach or city hotel. Langkawi, known as the Jewel of Kedah, is an archipelago of 99 islands in the Andaman Sea, famous for its beautiful beaches, lush greenery and scenic mountain landscapes."
+         },
+
+         {
+            day: "Day 5",
+            title: "Half-Day Water Activities – Jet Ski, Parasailing & Banana Boat",
+            description:
+               "Get ready for an exciting half-day of water activities in Langkawi. Enjoy thrilling experiences on the Andaman Sea, including jet skiing, parasailing and a banana boat ride. Whether you prefer high-speed adventure or a relaxing view of the sea from above, these activities offer an exciting way to experience Langkawi's beautiful coastline. Private transfer from your Langkawi hotel is included."
+         },
+
+         {
+            day: "Day 6",
+            title: "Langkawi City Tour & Crocodile Adventureland",
+            description:
+               "Pick up from your Langkawi beach or city hotel and proceed for a half-day Langkawi Island City Tour. Visit Atma Alam Batik Art Village and experience the traditional Malaysian batik-making process. Continue to Eagle Square, home to Langkawi's iconic eagle statue. Stop at Kuah Town for optional duty-free shopping. Visit Underwater World Langkawi from outside; entrance ticket is not included. Later, enjoy a half-day visit to Crocodile Adventureland, where you can see crocodiles and other wildlife up close and enjoy exciting shows and educational experiences. After the tour, return to your hotel."
+         },
+
+         {
+            day: "Day 7",
+            title: "Departure from Langkawi",
+            description:
+               "After breakfast, check out from your hotel. You will be transferred to Langkawi International Airport to catch your return flight back home. Your memorable Malaysia holiday comes to an end."
+         }
+      ],
+
+      inclusions: [
+         "Kuala Lumpur",
+         "3 nights accommodation in Kuala Lumpur",
+         "Stay at Hotel Sentral Kuala Lumpur – 3 Star",
+         "Breakfast and Free WiFi",
+         "One-way transfer from Kuala Lumpur Airport to Hotel – On your own",
+         "Kuala Lumpur City Tour – Seat-in-Coach Transfers, excluding entrance tickets",
+         "Half-Day Kuala Lumpur Night Tour – Private Transfers with KL Tower Observation Deck Ticket",
+         "Full-Day Genting Highlands Tour including two-way Cable Car – Seat-in-Coach Transfers with en-route Batu Caves photo stop",
+         "One-way transfer from Kuala Lumpur Hotel to Airport – Private, available between 6:00 AM and 11:00 PM",
+
+         "Langkawi",
+         "3 nights accommodation in Langkawi",
+         "Stay at Hotel Grand Continental Langkawi – 3 Star",
+         "Bed and Breakfast",
+         "One-way transfer from Langkawi Airport to Beach or City Hotel – Private Transfers",
+         "Half-Day Water Activities including Jet Ski, Parasailing & Banana Boat – Private Transfer from LGK City or Beach Hotels",
+         "Half-Day Langkawi Island City Tour – Private Transfers, excluding entrance tickets",
+         "Half-Day Crocodile Adventureland Tour – Without Entrance Ticket, with Private Transfers from LGK Beach or City Hotel",
+         "One-way transfer from Hotel to Langkawi Airport – Private Transfers from Beach or City Hotel"
+      ],
+
+      exclusions: [
+         "Airfare",
+         "GST (5%)",
+         "Visa",
+         "TCS (2%)",
+         "Lunch & Dinner except where specifically mentioned in inclusions",
+         "Entrance tickets not specifically mentioned in the inclusions",
+         "Personal expenses such as shopping, phone calls, laundry, etc."
+      ]
+   },
+   {
+      id: 61,
+      destination: "vietnam",
+      thumb: imgvietnam,
+      tag: "Leisure",
+      time: "4 Nights / 5 Days",
+      title: "Vietnam 5 Days & 4 Nights – Phu Quoc Island Escape",
+      location: "Phu Quoc",
+      price: "₹36500/- Per Person X 2 adults / 11500/- Per child",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival at Phu Quoc – Transfer to Hotel",
+            description:
+               "On arrival at Phu Quoc International Airport, our local representative will be waiting outside the customs area to welcome you and transfer you to your hotel. Check-in time is 3:00 PM. The rest of the day is free for you to relax or explore Phu Quoc on your own."
+         },
+
+         {
+            day: "Day 2",
+            title: "Full-Day Vinpearl Safari",
+            description:
+               "Located in the Long Beach area in the northwest of Phu Quoc Island, Vinpearl Safari is Vietnam's first open zoo and conservation park designed according to international safari standards. Explore the Open Zoo, which is home to rare native species and wildlife from different regions including South Africa, Europe, India and Australia. Continue to the Wildlife Park, spread across a large area with diverse plant systems and specially designed habitats. Experience the wildlife through specialized safari vehicles while observing animals in a natural and protected environment."
+         },
+
+         {
+            day: "Day 3",
+            title: "Phu Quoc 4 Islands Day Tour by Speedboat",
+            description:
+               "Get picked up from your hotel lobby at approximately 8:30 AM and travel to Thoi Harbor. Board the speedboat and head towards Buom Island (Finger Nail Island), where you can relax, swim and enjoy the beautiful surroundings. Continue to Gham Ghi Island, known for its beautiful coral reefs and snorkeling opportunities. Visit May Rut Island, where you can enjoy lunch and spend time relaxing on the beach. The tour concludes with a return transfer to your hotel at approximately 4:00 PM."
+         },
+
+         {
+            day: "Day 4",
+            title: "Full-Day Grand World Phu Quoc",
+            description:
+               "Explore Grand World Phu Quoc at your own pace for the entire day. Enjoy colorful streets, entertainment, attractions and famous landmarks. Experience the vibrant atmosphere of this unique entertainment and leisure destination. The package includes tickets for the Teddy Bear Museum and Gondola Ride, along with round-trip private transfers."
+         },
+
+         {
+            day: "Day 5",
+            title: "Departure from Phu Quoc",
+            description:
+               "After breakfast, check out from your hotel. Later, you will be transferred to Phu Quoc International Airport to catch your return flight back home. Your memorable Phu Quoc holiday comes to an end."
+         }
+      ],
+
+      inclusions: [
+         "Phu Quoc",
+         "4 nights accommodation in Phu Quoc",
+         "Stay at Sea Star Resort Phu Quoc – 3 Star",
+         "Breakfast, Parking, Coffee & Tea",
+         "Express Check-in, Free WiFi and Drinking Water",
+         "1 Extra Bed",
+         "One-way transfer from Phu Quoc Airport to Hotel – Private",
+         "Vinpearl Safari – Tickets with Private Transfers",
+         "Phu Quoc 4 Islands Day Tour by Speedboat – Shared Transfers, including Lunch on the Island",
+         "Full-Day Grand World – Round-Trip Private Transfers with Tickets for Teddy Bear Museum & Gondola Ride",
+         "One-way transfer from Phu Quoc Hotel to Airport – Private"
+      ],
+
+      exclusions: [
+         "Airfare",
+         "GST (5%)",
+         "Visa",
+         "TCS (2%)",
+         "Lunch & Dinner except where specifically mentioned in inclusions",
+         "Personal expenses such as shopping, phone calls, laundry, etc."
+      ]
+   },
+   {
+      id: 62,
+      destination: "vietnam",
+      thumb: imghanoi,
+      tag: "Leisure",
+      time: "5 Nights / 6 Days",
+      title:
+         "Vietnam 6 Days & 5 Nights – Hanoi, Halong Bay & Da Nang Discovery",
+      location: "Hanoi & Da Nang",
+      price: "₹34,500/- Per Person X 2 Adults",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival at Hanoi – Transfer to Hotel",
+            description:
+               "On arrival at Noi Bai International Airport, our local representative will be waiting outside the customs area to welcome you and transfer you to your hotel. The rest of the day is free for you to relax or explore Hanoi on your own."
+         },
+
+         {
+            day: "Day 2",
+            title: "Full-Day Tour of Halong Bay",
+            description:
+               "At approximately 8:15–8:50 AM, get picked up from your hotel in Hanoi Old Quarter or Opera House area and depart for Halong Bay. Travel via the Hanoi–Haiphong–Tuan Chau Highway, taking approximately 2.5 hours. Arrive at Tuan Chau Harbor around 12:00 PM and board the boat for your Halong Bay excursion. Enjoy a set-menu lunch featuring local specialties while cruising among the spectacular limestone formations, including Fighting Chicken and Incense Burner Islets. Around 2:00 PM, arrive at Bo Hon Island and visit Sung Sot Cave, famous for its impressive stalactites and stalagmites. Continue with kayaking or a bamboo boat ride through Luon Cave to explore its beautiful lagoon. At approximately 3:15 PM, visit Ti Top Island, where you can relax on the sandy beach, swim or climb to the viewpoint for panoramic views of Halong Bay. Around 4:00 PM, return to the boat and enjoy a sunset party with fruits, biscuits and refreshments while cruising back towards the harbor. Arrive at the harbor around 5:45 PM and return to Hanoi by bus. Drop off at your hotel at approximately 8:30 PM."
+         },
+
+         {
+            day: "Day 3",
+            title: "Half-Day Hanoi City Tour",
+            description:
+               "Choose between the morning or afternoon tour option. Morning option: Pick up from your hotel between 8:00 and 8:30 AM and visit Tran Quoc Pagoda, located on a small island in West Lake. Continue to the Ho Chi Minh Complex, where you can explore the surrounding gardens and see the Ho Chi Minh Mausoleum from outside, subject to opening conditions. Visit the One Pillar Pagoda, one of Hanoi's most distinctive architectural landmarks. Please dress modestly when visiting the mausoleum, temples and pagodas. The Ho Chi Minh Mausoleum is closed on Mondays and Fridays; an alternative attraction may be arranged on these days. Continue to the Vietnam Museum of Ethnology to learn about the diverse cultures of Vietnam's 54 ethnic groups. If the museum is closed on Monday, the Women's Museum will be visited instead. Enjoy lunch at a local Vietnamese restaurant. Afternoon option: Begin with lunch at a local restaurant, followed by a visit to the Temple of Literature, also known as Van Mieu-Quoc Tu Giam, founded in 1070. Explore its historic architecture and gardens before continuing to Hoa Lo Prison, historically known as the Hanoi Hilton. After the tour, return to your hotel."
+         },
+
+         {
+            day: "Day 4",
+            title: "Fly from Hanoi to Da Nang – Half-Day Marble Mountains Tour",
+            description:
+               "After arriving in Da Nang, proceed for your half-day Marble Mountains tour. Begin with hotel pickup and travel towards the Marble Mountains. Explore the scenic landscapes, caves and cultural attractions of this famous destination. Enjoy some time for photography before stopping for lunch at a local restaurant. After lunch, return to your Da Nang hotel and complete the tour."
+         },
+
+         {
+            day: "Day 5",
+            title: "Ba Na Hills Tour with Golden Bridge",
+            description:
+               "Enjoy a full-day excursion to Ba Na Hills, escaping the bustle of Da Nang and heading into the scenic mountains. Visit Linh Ung Pagoda and admire the impressive Bodhisattva statue. Continue through the mountain resort area and learn about its French colonial heritage. Board the cable car to Nui Chua Mountain and enjoy panoramic views of the surrounding region. Visit Nghinh Phong Peak and explore the attractions of Ba Na Hills. Enjoy lunch at a local restaurant before spending time at Fantasy Park, an indoor entertainment area featuring a variety of games and attractions. The tour also includes a visit to the famous Golden Bridge. Later, return to Da Nang with your guide."
+         },
+
+         {
+            day: "Day 6",
+            title: "Departure from Da Nang",
+            description:
+               "After breakfast, check out from your hotel. You will be transferred to Da Nang International Airport to catch your return flight back home. Your memorable Vietnam holiday comes to an end."
+         }
+      ],
+
+      inclusions: [
+         "Hanoi",
+         "3 nights accommodation in Hanoi",
+         "Stay at Hanoi Boutique Hotel & Spa – 3 Star",
+         "Breakfast Buffet",
+         "One-way transfer from Hanoi Airport to Hotel – Private",
+         "Full-Day Halong Bay Tour with Lunch – Shared Transfers",
+         "Half-Day Hanoi City Tour with English-Speaking Guide – Shared Basis with Local Lunch",
+         "One-way transfer from Hanoi Hotel to Airport – Private",
+
+         "Da Nang",
+         "2 nights accommodation in Da Nang",
+         "Stay at Sunny Ocean Hotel & Spa – 4 Star",
+         "Bed and Breakfast",
+         "One-way transfer from Da Nang Airport to Da Nang Hotel – Private",
+         "Half-Day Marble Mountains Tour – Private Basis",
+         "Ba Na Hills Tour with Cable Car – Shared Tour, including Golden Bridge and Lunch",
+         "One-way transfer from Da Nang Hotel to Da Nang Airport – Private"
+      ],
+
+      exclusions: [
+         "Airfare",
+         "GST (5%)",
+         "Visa",
+         "TCS (2%)",
+         "Lunch & Dinner except where specifically mentioned in inclusions",
+         "Personal expenses such as shopping, phone calls, laundry, etc."
+      ]
+   },
+   {
+      id: 63,
+      destination: "vietnam",
+      thumb: imghanlog,
+      tag: "Leisure",
+      time: "5 Nights / 6 Days",
+      title:
+         "Vietnam 6 Days & 5 Nights – Hanoi, Halong Bay, Da Nang & Hoi An Escape",
+      location: "Hanoi & Da Nang",
+      price: "₹33,600/- Per Person X 4 Adults",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival at Hanoi - Transfer to Hotel",
+            description:
+               "On arrival at Noi Bai International Airport, our local representative will be waiting outside the customs area to welcome you and to take you to your hotel. Rest of the day is free for you to explore Hanoi Town on your own. "
+         },
+
+         {
+            day: "Day 2",
+            title: "Full Day Hanoi City Tour ",
+            description:
+               "8.00- 8.30: Get picked up by our friendly guide and start to explore Hanoi City 08.45: Arrive at Tran Quoc Pagoda which built in the 6th century located on Golden Fish IsLand in West Lake 09.30: Visit Ho Chi Minh complex, you have a chance to see the embalmed body of Ho Chi Minh then walk around the garden to see 2 houses where he lived & worked from 1954 to 1969. Then visit One Pillar Pagoda where worships the Godess of Mercy – It is the most unique padoga in the world  Should dress modestly by covering from shoulders to knees when visiting Ho Chi Minh mausoleum, temples, pagodas…  Ho Chi Minh’s Mausoleum is closed on Mondays and Fridays.  Ho Chi Minh’s Mausoleum is closed at least 2 months (15thJune -15thAugust) for the annual maintaining but still can take picture Mausoleum and visit around that area 11.15: Visit Vietnam Ethnology Museum to learn about the culture of 54 ethnic groups living in the whole country of Vietnam Special Note : we will visit Women Museum instead of Ethnology Museum closed on Mondays 12.45: Have lunch at our restaurant. You have an opportunity to enjoy Vietnamese cuisine with 8 delicious dishes. 14.00-14.15 : Continue to visit Temple of Literature – the first university of Vietnam, established in the 11 century 15.15: Leave for Hoa Lo Prison Museum which originally used by the French colonists in Indochina for political prisoners, and later by North Vietnam for U.S. prisoners of war during the Vietnam War. During this later period, it was known to American POWs as the Hanoi Hilton 16.15 -16.30: Tour finishes. Back to hotel or get dropped off at Train Street. "
+         },
+
+         {
+            day: "Day 3",
+            title: "Full Day Tour of Halong Bay",
+            description:
+               "8.15-8.50: Get picked up at the hotel in Hanoi Old Quater/ Opera House to depart for Halong Bay Our journey follows Hanoi – Haiphong- Tuan Chau Highway (about a 2.5-hour drive) 12:00: Arrive at Tuan Chau Harbor, get on the boat to start the excursion discovering the beauty of the world heritage site 12:30: Enjoy set menu lunch on the boat with many special dishes of Halong. While having lunch, you all can see the beautiful scenery on both sides with thousands of limestone such as Fighting Chicken and Incense Buner Islets – 2 symbols of Halong Bay 14.00: Arrive at Bo Hon Island, and you will visit Sung Sot Cave – the most beautiful cave with a lot of stalagmites and stalactites 14.45: Do kayaking or bamboo boat through Luon Cave to discover the beautiful lagoon. 15.15: Visit TiTop Island with its sandy beach. You can go swimming here or trek up to the top of the island for sightseeing all of Halong bay 16.00: Back to the boat for the sunset party (some wine, fruits, and biscuits) meanwhile the boat is cruising back to the harbor 17.45: Arrive back at the harbor. Get on the bus and return to Hanoi 20:30: Get dropped off at the hotel.  "
+         },
+
+         {
+            day: "Day 4",
+            title: "Fly from Hanoi to Da Nang - Half Day Discovery Tour of Hoi An Ancient Town ",
+            description:
+               "The tourguide will pick-up you at hotel in the early morning/afternoon and take you for an interesting walk over the tile-roofed Japanese Bridge, visit taciturn Chinese Assembly Halls, enjoy the attractiveness of ancient houses or listen to folk music of Central Vietnam at old club-houses. Later we can stop at shrines or stroll into the market located by Thu Bon river, where you may find the same feelings of the artists, who see the rooftops of Hoian a magical old world of Oriental feel and source of inspiration. This is also a wonderful town to shop for lanterns, soft silk, raw silk, or get your clothes tailored within a day. "
+         },
+
+         {
+            day: "Day 5",
+            title: "Ba Na Hills Tour ",
+            description:
+               "Leave the bustle of Da Nang for a day and escape to the mountainous serenity of the Ba Na Hills. After visiting the Linh Ung Pagoda, take a cable car to the top of Nui Chua Mountain and grab lunch in a local restaurant. Spend the rest of your afternoon captivated by the attractions at Fantasy Park. Your morning begins with pickup from your hotel. A friendly guide drives you out of the city to Ba Na Hills, a resort founded in the 1920s by French colonists. On the way there, stop at Linh Ung Pagoda to marvel at a 220foot (67-m) statue of a Bodhisattva. Pass by old French villas and a historic wine cellar, learning about the French occupation of Vietnam from your guide. Once in the mountains, board a cable car and ride to the summit of Nui Chua Mountain. Make the easy trek to Nghinh Phong Peak and enjoy a panoramic view of the surrounding region, and then stop in a restaurant for a tasty lunch of Vietnamese cuisine. Later, venture to Ba Na Hill's Fantasy Park, an indoor entertainment zone with thrilling games for the whole family. Following an afternoon of adventure, make your way back to Da Nang with your guide. "
+         },
+
+         {
+            day: "Day 6",
+            title: "Departure from Da Nang",
+            description:
+               "Today morning check-out from your hotel. You will be transferred to the airport to catch your flight back. "
+         }
+      ],
+
+      inclusions: [
+         "Hanoi",
+         "3 nights accommodation in Hanoi",
+         "Stay at Hanoi Boutique Hotel & Spa – 3 Star",
+         "Breakfast, Coffee & tea, Express check-in ",
+         "Free Premium Wifi, Free WiFi, Drinking water",
+         "One-way transfer from Hanoi Airport to Hotel – Private",
+         "Full Day Hanoi City Tour - Shared Transfers (Including Local Lunch) ",
+         "Full Day Tour of Halong Bay with Lunch - Shared Transfers",
+         "One-way transfer from Hanoi Hotel to Airport - Private ",
+
+         "Da Nang",
+         "2 nights in Da Nang",
+         "Stay at Sunny Ocean Hotel & Spa (4 star) ",
+         "Room Included - Superior, Double Or Twin Bed, Superior, Double Or Twin Bed, ",
+         "Bed and Breakfast ",
+         "One-way transfer from Da Nang Airport to Da Nang Hotel – Private",
+         "Half Day Discovery Tour of Hoi An Ancient Town - Private from Da Nang ",
+         "Ba Na Hills Tour with Cable Car - Shared Tour (Includes Golden Bridge) Includes Lunch ",
+         "One-way transfer from Da Nang Hotel to Da Nang Airport – Private "
+      ],
+
+      exclusions: [
+         "Airfare",
+         "GST (5%)",
+         "Visa",
+         "TCS (2%)",
+         "Lunch & Dinner except where specifically mentioned in inclusions",
+         "Personal expenses such as shopping, phone calls, laundry, etc."
+      ]
+   },
+   {
+      id: 67,
+      destination: "thailand",
+      thumb: imgthailand,
+      tag: "Leisure",
+      time: "",
+      title: "Coming Soon...",
+      location: "",
+      price: "",
+      review: 0,
+      total_review: "",
+
+      itinerary: [],
+      inclusions: [],
+      exclusions: []
+   },
+   {
+      id: 69,
+      destination: "singapore",
+      thumb: imgsingapore,
+      tag: "Leisure",
+      time: "4 Nights / 5 Days",
+      title: "Singapore Ultimate City & Island Experience",
+      location: "Singapore",
+      price: "₹41000/- Per Person X 2 Adults",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival in Singapore - Check-in - Night Safari ",
+            description:
+               "On arrival at Singapore Airport, meet our representative and get transferred to hotel. (Check in time 2pm). In the night if you have time, you can visit the Clarke Quay, its a area bustling with eateries and lights. You can have dinner there and return back to your hotel for stay. Come and experience the night life with a difference. The world's first wildlife park built for visits at night, the Night Safari is not like any ordinary zoo illuminated by the night or a modern version of nocturnal houses found in many zoos around the globe. Nestled in 40 hectares of lush secondary forest, the Night Safari offers guests the unique experience of exploring wildlife in a tropical jungle at night. "
+         },
+
+         {
+            day: "Day 2",
+            title: " Full Day Sentosa Island Tour ",
+            description:
+               "Enjoy your day at Sentosa Island. Take a cable car across Sentosa Island. Relish gorgeous, 360-degree views of the country's southern regions with a Singapore Cable Car. The cable car is the most unique way to get to Sentosa – no Singapore trip is complete without it! "
+         },
+
+         {
+            day: "Day 3",
+            title: "Singapore City Tour  ",
+            description:
+               "Proceed for Singapore Half Day City Tour. Drive across Suntec City, Fountain of Wealth. Get clicked with the Merlion Park, Singapore’s most famous tourist spot and enjoy the view of Marina Bay. Next, get clicked in front of The Singapore Flyer, a giant observation wheel that features brilliant engineering breakthroughs a world apart from the traditional ferries wheel. Discover the Sacred Wonder of the Buddha Tooth Relic Temple. Drive-By: Suntec City (Fountain of Wealth), Esplanade Theatre Photo Stops: Merlion Park (15–20 mins), Singapore Flyer (10–20 mins), Chinatown – Buddha Tooth Relic Temple (20–30 mins) Optional (Time Permitting): Sovereign Shopping Centre "
+         },
+
+         {
+            day: "Day 4",
+            title: "Full Day Universal Studios Tour ",
+            description:
+               "Go beyond the screen and jump into the action at Universal Studios Singapore on Sentosa Island. Explore themed areas based on your favorite films, buckle into thrilling rides that make you feel like the star of your very own blockbuster hit, and find out how movie makers create stunning visual effects.Step into a world filled with characters and sets from animated flicks and high-octane hits as you arrive in Universal Studios Singapore. Get greeted like fairy-tale royalty by Shrek and Princess Fiona in the land Far Far Away, scale the walls of The Lost World to explore precious stones and fossilized insects, and join your favorite Madagascar characters aboard a wet-and-wild boat ride. In Sci-Fi City, experience intergalactic battles, then stroll through streets flanked by brownstones and bodegas in New York. Check out the stars Hollywood's Walk of Fame and look for mummies in Ancient Egypt. With 7 different themed areas to explore and 24 different rides to hop on, Universal Studios Singapore offers a slice of the silver screen that everyone can enjoy. "
+         },
+
+         {
+            day: "Day 5",
+            title: "Departure from Singapore ",
+            description:
+               "After check out, please meet our representative who will transfer you to the airport "
+         },
+      ],
+
+      inclusions: [
+         "Singapore",
+         "4 nights in Singapore",
+         "Stay at J8 Hotel (SG Clean) (3 star) ",
+         "Bed and Breakfast ",
+         "One-way Transfer Between Airport And Hotel - Private Vehicle - (6 am - 10 pm) - for Changi Airport ",
+         "Night Safari - Ticket Only",
+         "Full day Sentosa Tour - Shared Transfers (One way Cable Car) ",
+         "Singapore City Tour - Seat in Coach ( Drop off at Little India) ",
+         "Universal Studio Tour with Transfers - Seat in Coach",
+         "One-way Airport Transfer between Hotel and Changi Airport - Private - (6 am - 10 pm) ",
+      ],
+
+      exclusions: [
+         "Airfare",
+         "GST (5%)",
+         "Visa",
+         "TCS (2%)",
+         "Lunch & Dinner except where specifically mentioned in inclusions",
+         "Personal expenses such as shopping, phone calls, laundry, etc."
+      ]
+   },
+   {
+      id: 70,
+      destination: "singapore",
+      thumb: imgsingapore2,
+      tag: "Leisure",
+      time: "4 Nights / 5 Days",
+      title: "Singapore Ultimate Theme Park & Island Escape",
+      location: "Singapore",
+      price: "₹46000/- Per Person X 4 adults",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival in Singapore - Check-in - Night Safari ",
+            description:
+               "On arrival at Singapore Airport, meet our representative and get transferred to hotel. (Check in time 2pm). In the night if you have time, you can visit the Clarke Quay, its a area bustling with eateries and lights. You can have dinner there and return back to your hotel for stay. Come and experience the night life with a difference. The world's first wildlife park built for visits at night, the Night Safari is not like any ordinary zoo illuminated by the night or a modern version of nocturnal houses found in many zoos around the globe. Nestled in 40 hectares of lush secondary forest, the Night Safari offers guests the unique experience of exploring wildlife in a tropical jungle at night.  "
+         },
+
+         {
+            day: "Day 2",
+            title: " Full Day Universal Studios Tour ",
+            description:
+               "Go beyond the screen and jump into the action at Universal Studios Singapore on Sentosa Island. Explore themed areas based on your favorite films, buckle into thrilling rides that make you feel like the star of your very own blockbuster hit, and find out how movie makers create stunning visual effects.Step into a world filled with characters and sets from animated flicks and high-octane hits as you arrive in Universal Studios Singapore. Get greeted like fairy-tale royalty by Shrek and Princess Fiona in the land Far Far Away, scale the walls of The Lost World to explore precious stones and fossilized insects, and join your favorite Madagascar characters aboard a wet-and-wild boat ride. In Sci-Fi City, experience intergalactic battles, then stroll through streets flanked by brownstones and bodegas in New York. Check out the stars Hollywood's Walk of Fame and look for mummies in Ancient Egypt. With 7 different themed areas to explore and 24 different rides to hop on, Universal Studios Singapore offers a slice of the silver screen that everyone can enjoy.  "
+         },
+
+         {
+            day: "Day 3",
+            title: "Full Day Sentosa Island Tour",
+            description:
+               "Enjoy your day at Sentosa Island. Enjoy your day at Sentosa Island. Take a cable car across Sentosa Island. Relish gorgeous, 360-degree views of the country's southern regions with a Singapore Cable Car. The cable car is the most unique way to get to Sentosa – no Singapore trip is complete without it! "
+         },
+
+         {
+            day: "Day 4",
+            title: "Singapore City Tour ",
+            description:
+               "Proceed for Singapore Half Day City Tour. Drive across Suntec City, Fountain of Wealth. Get clicked with the Merlion Park, Singapore’s most famous tourist spot and enjoy the view of Marina Bay. Next, get clicked in front of The Singapore Flyer, a giant observation wheel that features brilliant engineering breakthroughs a world apart from the traditional ferries wheel. Discover the Sacred Wonder of the Buddha Tooth Relic Temple. Drive-By: Suntec City (Fountain of Wealth), Esplanade Theatre Photo Stops: Merlion Park (15–20 mins), Singapore Flyer (10–20 mins), Chinatown – Buddha Tooth Relic Temple (Drive By) Optional (Time Permitting): Sovereign Shopping Centre "
+         },
+
+         {
+            day: "Day 5",
+            title: "Departure from Singapore ",
+            description:
+               "After check out, please meet our representative who will transfer you to the airport "
+         },
+      ],
+
+      inclusions: [
+         "Singapore",
+         "4 nights in Singapore",
+         "Stay at Aqueen Prestige Hotel Lavender (4 star) ",
+         "Room Included - Superior Hollywood Twin (Breakfast), Superior Hollywood Twin (Breakfast), ",
+         "Rooms are Subject to Availability at time of Booking  ",
+         "Breakfast",
+         "One-way Transfer Between Airport And Hotel - Private Vehicle - (6 am - 10 pm) - for Changi Airport ",
+         "Night Safari - Ticket Only ",
+         "Universal Studio Tour with Transfers - Seat in Coach ",
+         "Full day Sentosa Tour - (One-way cable car) - Tickets Only ",
+         "Singapore City Tour - Seat in Coach ( Drop off at Little India) ",
+         "One-way Airport Transfer between Hotel and Changi Airport - Private - (6 am - 10 pm) ",
+      ],
+
+      exclusions: [
+         "Airfare",
+         "GST (5%)",
+         "Visa",
+         "TCS (2%)",
+         "Lunch & Dinner except where specifically mentioned in inclusions",
+      ]
+   },
+   {
+      id: 71,
+      destination: "singapore",
+      thumb: imgsingapore3,
+      tag: "Leisure",
+      time: "3 Nights / 4 Days",
+      title: "Singapore Adventure & Island Escape",
+      location: "Singapore",
+      price: "₹71000/- PER PERSON X 3 ADULTS",
+      review: 4.8,
+      total_review: "(32 Reviews)",
+
+      itinerary: [
+         {
+            day: "Day 1",
+            title: "Arrival in Singapore - Check-in - Night Safari ",
+            description:
+               "On arrival at Singapore Airport, meet our representative and get transferred to hotel. (Check in time 2pm). In the night if you have time, you can visit the Clarke Quay, its a area bustling with eateries and lights. You can have dinner there and return back to your hotel for stay. Come and experience the night life with a difference. The world's first wildlife park built for visits at night, the Night Safari is not like any ordinary zoo illuminated by the night or a modern version of nocturnal houses found in many zoos around the globe. Nestled in 40 hectares of lush secondary forest, the Night Safari offers guests the unique experience of exploring wildlife in a tropical jungle at night."
+         },
+
+         {
+            day: "Day 2",
+            title: " Full Day Universal Studios Tour",
+            description:
+               "Go beyond the screen and jump into the action at Universal Studios Singapore on Sentosa Island. Explore themed areas based on your favorite films, buckle into thrilling rides that make you feel like the star of your very own blockbuster hit, and find out how movie makers create stunning visual effects.Step into a world filled with characters and sets from animated flicks and high-octane hits as you arrive in Universal Studios Singapore. Get greeted like fairy-tale royalty by Shrek and Princess Fiona in the land Far Far Away, scale the walls of The Lost World to explore precious stones and fossilized insects, and join your favorite Madagascar characters aboard a wet-and-wild boat ride. In Sci-Fi City, experience intergalactic battles, then stroll through streets flanked by brownstones and bodegas in New York. Check out the stars Hollywood's Walk of Fame and look for mummies in Ancient Egypt. With 7 different themed areas to explore and 24 different rides to hop on, Universal Studios Singapore offers a slice of the silver screen that everyone can enjoy. "
+         },
+
+         {
+            day: "Day 3",
+            title: "Full Day Sentosa Island Tour",
+            description:
+               "Enjoy your day at Sentosa Island. Take a cable car across Sentosa Island. Relish gorgeous, 360-degree views of the country's southern regions with a Singapore Cable Car. The cable car is the most unique way to get to Sentosa – no Singapore trip is complete without it! There's no better way to complete a fabulous day at Sentosa than to take in a spectacular night show set outdoors against the backdrop of an open sea. Come, discover an awe-inspiring display of water, laser and fire effects, set to majestic music and a panorama of breathtaking vistas - Wings of Time. Weaved together by a tale of friendship and courage that will linger with you long after you leave the magical isle.  "
+         },
+
+         {
+            day: "Day 4",
+            title: "Departure from Singapore",
+            description:
+               "After check out, please meet our representative who will transfer you to the airport "
+         },
+      ],
+
+      inclusions: [
+         "Singapore",
+         "3 nights in Singapore ",
+         "Stay at ibis Singapore Novena (3 star)",
+         "Room Included - Standard Triple & Family (Breakfast,),",
+         "Room are subject to availability at the time of Booking ",
+         "Breakfast",
+         "One-way Transfer Between Airport And Hotel - Private Vehicle - (6 am - 10 pm) - for Changi Airport ",
+         "Night Safari - Ticket Only",
+         "Universal Studio Tour with Transfers - Seat in Coach  ",
+         "Full day Sentosa Tour - Seat in Coach (One way Cable Car and Wings of Time @ 7:30pm) ",
+         "One-way Airport Transfer between Hotel and Changi Airport - Private - (6 am - 10 pm) ",
+      ],
+
+      exclusions: [
+         "Airfare",
+         "GST (5%)",
+         "Visa",
+         "TCS (2%)",
+         "Lunch & Dinner except where specifically mentioned in inclusions",
+         "Other things not mentioned in itinerary ",
+      ]
+   },
+   {
+      id: 72,
+      destination: "bali",
+      thumb: imgbali,
+      tag: "Leisure",
+      time: "",
+      title: "Coming Soon...",
+      location: "",
+      price: "",
+      review: 4.8,
+      total_review: "",
+
+      itinerary: [],
+      inclusions: [],
+      exclusions: []
+   },
+   {
+      id: 73,
+      destination: "europe",
+      thumb: imgeurope,
+      tag: "Leisure",
+      time: "",
+      title: "Coming Soon...",
+      location: "",
+      price: "",
+      review: 4.8,
+      total_review: "",
+
+      itinerary: [],
+      inclusions: [],
+      exclusions: []
    },
 ];
 
