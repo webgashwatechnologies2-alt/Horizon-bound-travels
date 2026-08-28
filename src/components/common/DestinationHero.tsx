@@ -1,10 +1,8 @@
 interface DestinationHeroProps {
   destination: string;
 }
-
 const DestinationHero = ({ destination }: DestinationHeroProps) => {
   const destinationName = destination.charAt(0).toUpperCase() + destination.slice(1);
-
   const heroImages: Record<string, string> = {
     himachal: "/assets/img/hero/tu/herothree.jpg",
     spiti: "/assets/img/hero/tu/spt.jpg",
@@ -26,10 +24,8 @@ const DestinationHero = ({ destination }: DestinationHeroProps) => {
     bali: "/assets/img/listing/listing-3/balihero.jpg",
     europe: "/assets/img/listing/listing-3/europerhero.jpg",
 };
-
 const heroImage =
   heroImages[destinationName?.toLowerCase()] || heroImages.default;
-  
   return (
     <div 
       className="tg-hero-area include-bg" 

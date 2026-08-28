@@ -43,13 +43,14 @@ import imgRediscover from "@/assets/img/listing/listing-3/rediscover.jpg"
 import imgKanyakumari from "@/assets/img/listing/listing-3/Kanyakumari.jpg"
 import imgLadakh from "@/assets/img/listing/listing-3/ladakhnewimage.jpg"
 
+/////Internatinal Destination Images///////
 import imgDubai from "@/assets/img/listing/listing-3/dubaihero.webp"
 import imgDubai2 from "@/assets/img/listing/listing-3/traffic-street-dubai.webp"
 import imgDubai3 from "@/assets/img/listing/listing-3/dubai3.webp"
 import imgDubai4 from "@/assets/img/listing/listing-3/dubainew.webp"
 import imgMaldives from "@/assets/img/listing/listing-3/Holidays-in-Maldives.webp"
 import imgHongkong from "@/assets/img/listing/listing-3/hnkg.webp"
-import imgmauritius from "@/assets/img/listing/listing-3/Mauritius.webp"
+import imgmauritius from "@/assets/img/listing/listing-3/mauritius-pictures.webp"
 import imgMalaysia from "@/assets/img/listing/listing-3/Mauritius.webp"
 import imgMalaysia2 from "@/assets/img/listing/listing-3/ml2.webp"
 import imgvietnam from "@/assets/img/listing/listing-3/vtnm.webp"
@@ -62,13 +63,11 @@ import imgsingapore3 from "@/assets/img/listing/listing-3/merlion-statue.webp"
 import imgbali from "@/assets/img/listing/listing-3/MountBaturSunriseTrekking.webp"
 import imgeurope from "@/assets/img/listing/listing-3/epnew.webp"
 
-
 interface DayItinerary {
    day: string;
    title: string;
    description: string;
 }
-
 interface DestinationPackage {
    id: number;
    destination: string;
@@ -90,7 +89,6 @@ interface DestinationPackage {
 }
 
 const destination_data: DestinationPackage[] = [
-   // Himachal - 14 packages
    {
       id: 1,
       destination: "himachal",

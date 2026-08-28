@@ -6,7 +6,7 @@ interface MenuItem {
     sub_menus?: {
         link: string;
         title: string;
-        comingSoon?: boolean;   // ye line add karo
+        comingSoon?: boolean;
     }[];
 }
 

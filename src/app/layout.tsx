@@ -21,11 +21,9 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="icon" href="/horizon-logo.png" sizes="any" />
-        {/* Google Fonts */}
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" />
-        {/* Core CSS from public (served as static files) */}
-        <link rel="stylesheet" href="/assets/css/animate.min.css" />
+        <link rel="icon" href="/hbtfavicon.png" sizes="any" />
+=        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" />
+=        <link rel="stylesheet" href="/assets/css/animate.min.css" />
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" />
         <link rel="stylesheet" href="/assets/css/flatpicker.css" />
@@ -38,8 +36,6 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
-
-
         <div
           style={{
             position: "fixed",
@@ -51,7 +47,6 @@ export default function RootLayout({
             gap: "12px",
           }}
         >
-          {/* WhatsApp Button */}
           <a
             href="https://wa.me/+918988736000"
             target="_blank"
@@ -99,7 +94,6 @@ export default function RootLayout({
             ></i>
           </a>
         </div>
-
         <style>{`
           @keyframes pulse {
             0% { box-shadow: 0 0 0 0 rgba(13,110,253,0.6); }
@@ -107,10 +101,6 @@ export default function RootLayout({
             100% { box-shadow: 0 0 0 0 rgba(13,110,253,0); }
           }
         `}</style>
-
-
-
-        {/* Tawk.to Live Chat Widget */}
         <Script id="tawk-to-widget" strategy="afterInteractive">
           {`
             var Tawk_API = Tawk_API || {};
