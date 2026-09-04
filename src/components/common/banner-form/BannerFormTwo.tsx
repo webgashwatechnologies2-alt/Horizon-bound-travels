@@ -1,6 +1,8 @@
 "use client"
 import { useEffect, useRef, useState } from "react";
 import Flatpickr from 'react-flatpickr';
+import { useRouter } from "next/navigation";
+import { searchDestinationsAndPackages, getBestSearchUrl } from "@/utils/destinationSearch";
 
 interface DataType {
    id: number;
@@ -27,8 +29,9 @@ const guest_data: DataType[] = [
 ];
 
 const BannerFormTwo = () => {
-
+   const router = useRouter();
    const [location, setLocation] = useState(false);
+   const [searchQuery, setSearchQuery] = useState("");
    const [checkInDate, setCheckInDate] = useState<Date | Date[]>(new Date());
    const [checkOutDate, setCheckOutDate] = useState<Date | Date[]>(new Date());
    const [guest, setGuest] = useState(false);
@@ -36,6 +39,15 @@ const BannerFormTwo = () => {
 
    const locationRef = useRef<HTMLDivElement>(null);
    const guestRef = useRef<HTMLDivElement>(null);
+
+   const suggestions = searchDestinationsAndPackages(searchQuery);
+
+   const handleSearchSubmit = (e?: React.FormEvent) => {
+      if (e) e.preventDefault();
+      const targetUrl = getBestSearchUrl(searchQuery);
+      setLocation(false);
+      router.push(targetUrl);
+   };
 
    useEffect(() => {
       const handleClickOutside = (event: MouseEvent) => {
@@ -78,54 +90,159 @@ const BannerFormTwo = () => {
    };
 
    return (
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={handleSearchSubmit}>
          <div className="tg-booking-form-input-group d-flex flex-column flex-lg-row align-items-start align-items-lg-end justify-content-between">
             <div className="tg-booking-form-parent-inner tg-hero-quantity p-relative mr-15 mb-15">
                <span className="tg-booking-form-title mb-5">Destination:</span>
-               <div ref={locationRef} onClick={() => setLocation((prev) => !prev)} className={`tg-booking-add-input-field tg-booking-quantity-toggle ${location ? "active" : ""} `}>
-                  <span className="tg-booking-title-value">Where are you going . . .</span>
-                  <span className="location">
+               <div
+                  ref={locationRef}
+                  className={`tg-booking-add-input-field tg-booking-quantity-toggle ${location ? "active" : ""}`}
+                  style={{ cursor: "text", position: "relative" }}
+                  onClick={() => setLocation(true)}
+               >
+                  <input
+                     type="text"
+                     placeholder="Where are you going . . ."
+                     value={searchQuery}
+                     onChange={(e) => {
+                        setSearchQuery(e.target.value);
+                        if (!location) setLocation(true);
+                     }}
+                     onFocus={() => setLocation(true)}
+                     onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                           e.preventDefault();
+                           handleSearchSubmit();
+                        }
+                     }}
+                     style={{
+                        border: "none",
+                        background: "transparent",
+                        outline: "none",
+                        width: "calc(100% - 24px)",
+                        fontSize: "13px",
+                        color: "#0b1c3f",
+                        fontWeight: "500",
+                        padding: 0,
+                     }}
+                  />
+                  <span
+                     className="location"
+                     onClick={(e) => {
+                        e.stopPropagation();
+                        setLocation((prev) => !prev);
+                     }}
+                     style={{ cursor: "pointer" }}
+                  >
                      <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.3329 6.7071C12.3329 11.2324 6.55512 15.1111 6.55512 15.1111C6.55512 15.1111 0.777344 11.2324 0.777344 6.7071C0.777344 5.16402 1.38607 3.68414 2.46962 2.59302C3.55316 1.5019 5.02276 0.888916 6.55512 0.888916C8.08748 0.888916 9.55708 1.5019 10.6406 2.59302C11.7242 3.68414 12.3329 5.16402 12.3329 6.7071Z" stroke="currentColor" strokeWidth="1.15556" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M6.55512 8.64649C7.61878 8.64649 8.48105 7.7782 8.48105 6.7071C8.48105 5.636 7.61878 4.7677 6.55512 4.7677C5.49146 4.7677 4.6292 5.636 4.6292 6.7071C4.6292 7.7782 5.49146 8.64649 6.55512 8.64649Z" stroke="currentColor" strokeWidth="1.15556" strokeLinecap="round" strokeLinejoin="round" />
                      </svg>
                   </span>
                </div>
-               <div className={`tg-booking-form-location-list tg-booking-quantity-active ${location ? "tg-list-open" : ""}`}>
-                  <ul className="scrool-bar scrool-height pr-5">
-                     <li>
-                        <i className="fa-regular fa-location-dot"></i>
-                        <span>Himachal</span>
-                     </li>
-                     <li>
-                        <i className="fa-regular fa-location-dot"></i>
-                        <span>Spiti</span>
-                     </li>
-                     <li>
-                        <i className="fa-regular fa-location-dot"></i>
-                        <span>Leh-Ladakh</span>
-                     </li>
-                     <li>
-                        <i className="fa-regular fa-location-dot"></i>
-                        <span>Kashmir</span>
-                     </li>
-                     <li>
-                        <i className="fa-regular fa-location-dot"></i>
-                        <span>Uttarakhand</span>
-                     </li>
-                     <li>
-                        <i className="fa-regular fa-location-dot"></i>
-                        <span>Rajasthan</span>
-                     </li>
-                     <li>
-                        <i className="fa-regular fa-location-dot"></i>
-                        <span>Kerala</span>
-                     </li>
-                     <li>
-                        <i className="fa-regular fa-location-dot"></i>
-                        <span>Goa</span>
-                     </li>
-                  </ul>
+               <div
+                  className={`tg-booking-form-location-list tg-booking-quantity-active ${location ? "tg-list-open" : ""}`}
+                  style={{
+                     width: "300px",
+                     maxHeight: "340px",
+                     overflowY: "auto",
+                     zIndex: 999,
+                     boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
+                     borderRadius: "12px",
+                     padding: "8px",
+                     background: "#ffffff",
+                  }}
+               >
+                  {suggestions.length > 0 ? (
+                     <ul className="scrool-bar pr-5" style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                        {suggestions.map((item) => (
+                           <li
+                              key={item.id}
+                              onClick={() => {
+                                 setSearchQuery(item.title);
+                                 setLocation(false);
+                                 router.push(item.link);
+                              }}
+                              style={{
+                                 display: "flex",
+                                 alignItems: "center",
+                                 justifyContent: "space-between",
+                                 padding: "8px 12px",
+                                 borderRadius: "8px",
+                                 cursor: "pointer",
+                                 transition: "background 0.2s ease",
+                                 marginBottom: "4px",
+                              }}
+                              onMouseEnter={(e) => (e.currentTarget.style.background = "#f8f9fa")}
+                              onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+                           >
+                              <div style={{ display: "flex", alignItems: "center", gap: "10px", minWidth: 0 }}>
+                                 <i
+                                    className={
+                                       item.type === "international"
+                                          ? "fa-solid fa-plane-departure"
+                                          : item.type === "package"
+                                          ? "fa-solid fa-suitcase-rolling"
+                                          : "fa-regular fa-location-dot"
+                                    }
+                                    style={{
+                                       color: item.type === "international" ? "var(--tg-theme-primary)" : "#64748b",
+                                       fontSize: "13px",
+                                       flexShrink: 0,
+                                    }}
+                                 ></i>
+                                 <div style={{ minWidth: 0 }}>
+                                    <span
+                                       style={{
+                                          display: "block",
+                                          fontWeight: "600",
+                                          fontSize: "13px",
+                                          color: "#0b1c3f",
+                                          whiteSpace: "nowrap",
+                                          overflow: "hidden",
+                                          textOverflow: "ellipsis",
+                                          maxWidth: "180px",
+                                       }}
+                                    >
+                                       {item.title}
+                                    </span>
+                                    <span style={{ display: "block", fontSize: "11px", color: "#64748b" }}>
+                                       {item.subtitle}
+                                    </span>
+                                 </div>
+                              </div>
+                              <span
+                                 style={{
+                                    fontSize: "10px",
+                                    fontWeight: "600",
+                                    padding: "2px 6px",
+                                    borderRadius: "4px",
+                                    background:
+                                       item.type === "international"
+                                          ? "rgba(244, 107, 8, 0.1)"
+                                          : item.type === "package"
+                                          ? "#f1f5f9"
+                                          : "#e0f2fe",
+                                    color:
+                                       item.type === "international"
+                                          ? "var(--tg-theme-primary)"
+                                          : item.type === "package"
+                                          ? "#475569"
+                                          : "#0284c7",
+                                    flexShrink: 0,
+                                 }}
+                              >
+                                 {item.badge}
+                              </span>
+                           </li>
+                        ))}
+                     </ul>
+                  ) : (
+                     <div style={{ padding: "16px", textAlign: "center", color: "#64748b", fontSize: "13px" }}>
+                        <i className="fa-solid fa-magnifying-glass mb-2" style={{ display: "block", fontSize: "18px", color: "#94a3b8" }}></i>
+                        No destinations found for &quot;{searchQuery}&quot;
+                     </div>
+                  )}
                </div>
             </div>
             <div className="tg-booking-form-parent-inner mr-15 mb-15">

@@ -61,6 +61,7 @@ import imgsingapore from "@/assets/img/listing/listing-3/singapore.webp"
 import imgsingapore2 from "@/assets/img/listing/listing-3/sp2.webp"
 import imgsingapore3 from "@/assets/img/listing/listing-3/merlion-statue.webp"
 import imgbali from "@/assets/img/listing/listing-3/MountBaturSunriseTrekking.webp"
+import imgbali1 from "@/assets/img/listing/listing-3/ballinewimagae.webp"
 import imgeurope from "@/assets/img/listing/listing-3/epnew.webp"
 
 interface DayItinerary {
@@ -87,6 +88,19 @@ interface DestinationPackage {
    inclusions?: string[];
    exclusions?: string | string[];
 }
+const common_exclusions: string[] = [
+   "Any expenses arising due to flight/train delays, cancellations, natural calamities, roadblocks, strikes, political disturbances, or any unforeseen circumstances.",
+   "Expenses of personal nature like laundry, telephone, fax, internet, beverages, snacks, medical expenses, Minibar of hotels, etc.",
+   "Entry fees to monuments, parks, museums, and sightseeing attractions unless specifically mentioned.",
+   "Supplement for Meals not mentioned in inclusions.",
+   "Permissions of photo/video shooting at the museums and Objects.",
+   "Optional activities/experiences attract supplement charge.",
+   "Any other services not mentioned in Included above.",
+   "Train Tickets / Domestic airfare.",
+   "Any service, facility, or item not specifically mentioned under Package Inclusions.",
+   "Goods and Services Tax (GST) 5% on the package cost."
+];
+
 
 const destination_data: DestinationPackage[] = [
    {
@@ -153,15 +167,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train Fare",
-         "Rohtang Pass permit & vehicle charges (if applicable)",
-         "Adventure activities (Paragliding, ATV Ride, Skiing, etc.)",
-         "Lunch and personal expenses",
-         "Monument entry fees",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 2,
@@ -203,15 +209,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train Fare",
-         "Rohtang Pass permit & vehicle charges (if applicable)",
-         "Adventure activities (Paragliding, ATV Ride, River Rafting, etc.)",
-         "Lunch and personal expenses",
-         "Monument entry fees",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 3,
@@ -265,15 +263,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train Fare",
-         "Adventure activities charges",
-         "Rohtang Pass permit & vehicle charges (if applicable)",
-         "Monument entry fees",
-         "Lunch and personal expenses",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 4,
@@ -318,14 +308,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train Fare",
-         "Lunch and personal expenses",
-         "Monument entry fees",
-         "Travel insurance",
-         "Adventure activities (if any)",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 5,
@@ -384,14 +367,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train Fare",
-         "Adventure activities charges",
-         "Lunch and personal expenses",
-         "Monument entry fees",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 6,
@@ -436,14 +412,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Volvo/Bus or Train fare (unless specified)",
-         "Lunch and personal expenses",
-         "Entry fees to attractions",
-         "Travel insurance",
-         "Adventure activities (if any)",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 26,
@@ -503,14 +472,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking"
       ],
 
-      exclusions: [
-         "Airfare/Train/Volvo tickets",
-         "Lunch & personal expenses",
-         "Adventure activities",
-         "Entry tickets",
-         "Travel insurance",
-         "Anything not mentioned in inclusions"
-      ]
+      exclusions: common_exclusions
    },
 
    {
@@ -556,14 +518,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking"
       ],
 
-      exclusions: [
-         "Airfare/Train/Bus tickets",
-         "Paragliding charges",
-         "Lunch & personal expenses",
-         "Entry fees",
-         "Travel insurance",
-         "Anything not mentioned in inclusions"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 28,
@@ -628,14 +583,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare/Train/Volvo tickets",
-         "Lunch & personal expenses",
-         "Entry fees to monuments & attractions",
-         "Adventure activities",
-         "Travel insurance",
-         "Anything not mentioned under inclusions"
-      ]
+      exclusions: common_exclusions
    },
 
    {
@@ -706,14 +654,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Motorcycle rental & fuel (unless specified)",
-         "Airfare/Train/Bus tickets",
-         "Lunch & personal expenses",
-         "Entry fees",
-         "Travel insurance",
-         "Anything not mentioned under inclusions"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 30,
@@ -768,14 +709,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare/Train/Volvo tickets",
-         "Lunch & personal expenses",
-         "Entry fees to attractions",
-         "Adventure activities",
-         "Travel insurance",
-         "Anything not mentioned under inclusions"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 31,
@@ -825,14 +759,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare/Train/Volvo tickets",
-         "Lunch & personal expenses",
-         "Entry fees to attractions",
-         "Adventure activities",
-         "Travel insurance",
-         "Anything not mentioned under inclusions"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 32,
@@ -877,14 +804,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare/Train/Volvo tickets",
-         "Lunch & personal expenses",
-         "Entry fees to attractions",
-         "Travel insurance",
-         "Adventure activities",
-         "Anything not mentioned under inclusions"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 33,
@@ -928,14 +848,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare/Train/Volvo tickets",
-         "Lunch & personal expenses",
-         "Entry fees to attractions",
-         "Travel insurance",
-         "Adventure activities",
-         "Anything not mentioned under inclusions"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 35,
@@ -975,14 +888,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking"
       ],
 
-      exclusions: [
-         "Personal expenses",
-         "Lunch",
-         "Entry tickets",
-         "Travel insurance",
-         "Adventure activities",
-         "Anything not mentioned in inclusions"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 36,
@@ -1026,14 +932,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking"
       ],
 
-      exclusions: [
-         "Personal expenses",
-         "Lunch",
-         "Temple donations",
-         "Travel insurance",
-         "Adventure activities",
-         "Anything not mentioned in inclusions"
-      ]
+      exclusions: common_exclusions
    },
    // Spiti - 3 packages
    {
@@ -1109,14 +1008,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train Fare / Volvo Tickets",
-         "Lunch and personal expenses",
-         "Adventure activities charges",
-         "Entry fees to monuments and attractions",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 8,
@@ -1189,15 +1081,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train Fare / Volvo Tickets",
-         "Lunch and personal expenses",
-         "Bike security deposit (if applicable)",
-         "Fuel for personal use or detours",
-         "Monument entry fees",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 9,
@@ -1283,14 +1167,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train Fare / Volvo Tickets",
-         "Lunch and personal expenses",
-         "Entry fees to monuments and monasteries",
-         "Adventure activities",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
 
    // Leh - 3 packages
@@ -1343,14 +1220,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare",
-         "Lunch and personal expenses",
-         "Camel ride & adventure activities",
-         "Monument entry fees",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 11,
@@ -1416,14 +1286,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare",
-         "Lunch and personal expenses",
-         "Monument entry fees",
-         "Camel ride & adventure activities",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 12,
@@ -1479,14 +1342,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare",
-         "Lunch and personal expenses",
-         "Camel ride & adventure activities",
-         "Monument entry fees",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 37,
@@ -1554,14 +1410,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare",
-         "Lunch and personal expenses",
-         "Camel ride & adventure activities",
-         "Monument entry fees",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
 
    // Kashmir - 3 packages
@@ -1606,14 +1455,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train tickets",
-         "Helicopter tickets for Vaishno Devi",
-         "Pony, Palki or Battery Car charges",
-         "Lunch and personal expenses",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 14,
@@ -1679,15 +1521,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare",
-         "Gulmarg Gondola tickets",
-         "Local union cab charges in Gulmarg & Pahalgam",
-         "Pony rides & adventure activities",
-         "Lunch and personal expenses",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 15,
@@ -1732,15 +1566,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare",
-         "Gulmarg Gondola tickets",
-         "Local union cab charges in Pahalgam",
-         "Pony rides & adventure activities",
-         "Lunch and personal expenses",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 50,
@@ -1806,16 +1632,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll tax & parking charges"
       ],
 
-      exclusions: [
-         "Airfare / Train tickets",
-         "Helicopter tickets for Vaishno Devi",
-         "Gulmarg Gondola tickets",
-         "Local union cab charges in Pahalgam",
-         "Pony, Palki & Battery Car charges",
-         "Lunch and personal expenses",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
 
    // Uttarakhand - 3 packages
@@ -1867,15 +1684,7 @@ const destination_data: DestinationPackage[] = [
          "All applicable taxes"
       ],
 
-      exclusions: [
-         "Train / Flight fare",
-         "Pony, Palki & Helicopter charges",
-         "VIP Darshan & Temple Puja charges",
-         "Biometric registration fees (if applicable)",
-         "Lunch and personal expenses",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 17,
@@ -1929,14 +1738,7 @@ const destination_data: DestinationPackage[] = [
          "All applicable taxes"
       ],
 
-      exclusions: [
-         "Train / Flight fare",
-         "Auli Ropeway & Chairlift tickets",
-         "Adventure activities",
-         "Lunch and personal expenses",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 18,
@@ -1996,14 +1798,7 @@ const destination_data: DestinationPackage[] = [
          "All applicable taxes"
       ],
 
-      exclusions: [
-         "Train / Flight fare",
-         "River rafting & adventure activities",
-         "Ropeway tickets",
-         "Lunch and personal expenses",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
 
    // Rajasthan - 3 packages
@@ -2067,15 +1862,7 @@ const destination_data: DestinationPackage[] = [
          "All applicable taxes"
       ],
 
-      exclusions: [
-         "Airfare / Train fare",
-         "Monument entry tickets",
-         "Boat ride charges",
-         "Lunch & Dinner (except desert camp dinner)",
-         "Personal expenses",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 20,
@@ -2136,15 +1923,7 @@ const destination_data: DestinationPackage[] = [
          "All Applicable Taxes"
       ],
 
-      exclusions: [
-         "Airfare / Train Fare",
-         "Monument Entry Fees",
-         "Jeep Safari Charges",
-         "Lunch & Dinner (Except Desert Camp Dinner)",
-         "Personal Expenses",
-         "Travel Insurance",
-         "Anything Not Mentioned in Inclusions"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 21,
@@ -2206,8 +1985,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking",
          "All applicable hotel taxes"
       ],
-      exclusions:
-         "Airfare/train fare, entry tickets, personal expenses, boating charges, guide fees, and anything not mentioned in the inclusions."
+      exclusions: common_exclusions
    },
 
    // Kerala - 3 packages
@@ -2264,14 +2042,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare/train fare",
-         "Monument entry fees",
-         "Boating charges (except houseboat stay)",
-         "Personal expenses",
-         "Tips & gratuities",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 23,
@@ -2325,14 +2096,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare/train fare",
-         "Monument entry fees",
-         "Boating charges (except houseboat stay)",
-         "Personal expenses",
-         "Tips & gratuities",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 24,
@@ -2392,14 +2156,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare/train fare",
-         "Monument entry fees",
-         "Boating charges (except houseboat stay)",
-         "Personal expenses",
-         "Tips & gratuities",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 44,
@@ -2459,14 +2216,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare/train fare",
-         "Monument entry fees",
-         "Boating charges (except houseboat stay)",
-         "Personal expenses",
-         "Tips & gratuities",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 47,
@@ -2526,14 +2276,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare/train fare",
-         "Monument entry fees",
-         "Boating charges (except houseboat stay)",
-         "Personal expenses",
-         "Tips & gratuities",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 49,
@@ -2593,14 +2336,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare/train fare",
-         "Monument entry fees",
-         "Boating charges (except houseboat stay)",
-         "Personal expenses",
-         "Tips & gratuities",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
 
    // Goa - 3 packages
@@ -2647,15 +2383,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare/train fare",
-         "Entry tickets",
-         "Dudhsagar jeep safari charges",
-         "Water sports activities",
-         "Personal expenses",
-         "Tips & gratuities",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 39,
@@ -2709,15 +2437,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare/train fare",
-         "Entry tickets",
-         "Water sports charges",
-         "Dudhsagar jeep safari charges",
-         "Personal expenses",
-         "Tips & gratuities",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 40,
@@ -2775,16 +2495,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare or train tickets",
-         "Lunch and dinner",
-         "Entry tickets",
-         "Jeep safari charges (if not included)",
-         "Personal expenses",
-         "Optional adventure activities",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 42,
@@ -2848,16 +2559,7 @@ const destination_data: DestinationPackage[] = [
          "Driver allowance, toll taxes & parking"
       ],
 
-      exclusions: [
-         "Airfare or train tickets",
-         "Lunch and dinner",
-         "Entry tickets",
-         "Jeep safari charges (if not included)",
-         "Personal expenses",
-         "Optional adventure activities",
-         "Travel insurance",
-         "Anything not mentioned under 'Inclusions'"
-      ]
+      exclusions: common_exclusions
    },
    ///////Inernational tours////////////
    {
@@ -2868,7 +2570,7 @@ const destination_data: DestinationPackage[] = [
       time: "4 Nights / 5 Days",
       title: "Dubai Highlights Tour",
       location: "Dubai, UAE",
-      price: "28000/- per person X 2 Adults",
+      price: "30000/- per person X 2 Adults",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -2919,14 +2621,7 @@ const destination_data: DestinationPackage[] = [
 
       ],
 
-      exclusions: [
-         "Airfare , ",
-         "Gst (05%) , ",
-         "Visa , ",
-         "Tcs (02%) , ",
-         "Lunch , ",
-         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 64,
@@ -2936,7 +2631,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Dubai Grand Highlights & Adventure Tour",
       location: "Dubai, UAE",
-      price: "₹32500/- Per Person X 2 Adults",
+      price: "₹34500/- Per Person X 2 Adults",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -2994,12 +2689,7 @@ const destination_data: DestinationPackage[] = [
 
       ],
 
-      exclusions: [
-         "Airfare , ",
-         "Gst (05%) , ",
-         "Lunch & Dinner   , ",
-         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 65,
@@ -3009,7 +2699,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Dubai & Abu Dhabi Ultimate Experience",
       location: "Dubai, UAE",
-      price: "₹32500/- Per Person X 2 Adults",
+      price: "₹34500/- Per Person X 2 Adults",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3076,14 +2766,7 @@ const destination_data: DestinationPackage[] = [
          "One-way Transfer from Dubai Hotel to Airport - Private to Dubai International Airport ",
       ],
 
-      exclusions: [
-         "Airfare , ",
-         "Visa  , ",
-         "Gst (05%) , ",
-         "Tcs (02%) , ",
-         "Lunch & Dinner   , ",
-         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 66,
@@ -3093,7 +2776,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Dubai & Abu Dhabi Ultimate Adventure & Attractions",
       location: "Dubai, UAE",
-      price: "₹32500/- Per Person X 2 Adults",
+      price: "₹34500/- Per Person X 2 Adults",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3157,12 +2840,7 @@ const destination_data: DestinationPackage[] = [
 
       ],
 
-      exclusions: [
-         "Airfare , ",
-         "Gst (05%) , ",
-         "Lunch & Dinner   , ",
-         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 48,
@@ -3172,7 +2850,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Maldives 4 Days & 3 Nights – Tropical Leisure Escape",
       location: "Maldives",
-      price: "₹92000/- Per Person X 2 adulTs",
+      price: "₹94000/- Per Person X 2 adulTs",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3209,12 +2887,7 @@ const destination_data: DestinationPackage[] = [
          ".All Inclusive  ",
       ],
 
-      exclusions: [
-         "Airfare , ",
-         "Gst (05%) , ",
-         "Tcs (02%)  , ",
-         "Tcs (02%)  ",
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 52,
@@ -3224,7 +2897,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Hong Kong 7 Days & 6 Nights – City & Leisure Escape",
       location: "Hong Kong",
-      price: "₹79,000/- per person X 9 Adults / ₹21,500/- per child X 3",
+      price: "₹81,000/- per person X 9 Adults / ₹23,500/- per child X 3",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3287,14 +2960,7 @@ const destination_data: DestinationPackage[] = [
          "Hong Kong Hotel To Airport Transfers - Private Vehicle ",
       ],
 
-      exclusions: [
-         "Airfare , ",
-         "Gst (05%) , ",
-         "Visa   , ",
-         "Tcs (02%) , ",
-         "Lunch & Dinner , ",
-         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 56,
@@ -3304,7 +2970,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Mauritius 7 Days & 6 Nights – Tropical Leisure Escape",
       location: "Mauritius",
-      price: "₹90000/- PeR PeRson X 4 adults / 28000/- PeR child",
+      price: "₹92000/- PeR PeRson X 4 adults / 30000/- PeR child",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3367,14 +3033,7 @@ const destination_data: DestinationPackage[] = [
          "One Way Transfer from Mauritius Hotel to Mauritius Airport - Private Transfers ",
       ],
 
-      exclusions: [
-         "Airfare , ",
-         "Gst (05%) , ",
-         "Visa   , ",
-         "Tcs (02%) , ",
-         "Lunch & Dinner , ",
-         "Personal expenses such as shopping, Phone call, Laundry Etc. ",
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 58,
@@ -3384,7 +3043,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Malaysia 7 Days & 6 Nights – Kuala Lumpur & Langkawi Escape",
       location: "Kuala Lumpur & Langkawi",
-      price: "₹41500/- Per person X 5 Adults / ₹9500 /- Per Child X 4 Child",
+      price: "₹43500/- Per person X 5 Adults / ₹11500 /- Per Child X 4 Child",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3449,14 +3108,7 @@ const destination_data: DestinationPackage[] = [
          "Langkawi Sunset Dinner Cruise with Private Transfers"
       ],
 
-      exclusions: [
-         "Airfare",
-         "GST (5%)",
-         "Visa",
-         "TCS (5%)",
-         "Lunch & Dinner except where specifically mentioned in inclusions",
-         "Personal expenses such as shopping, phone calls, laundry, etc."
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 59,
@@ -3467,7 +3119,7 @@ const destination_data: DestinationPackage[] = [
       title:
          "Malaysia 7 Days & 6 Nights – Kuala Lumpur, Genting & Langkawi Adventure Escape",
       location: "Kuala Lumpur & Langkawi",
-      price: "₹37000/- Per Person X 2 Adults",
+      price: "₹39000/- Per Person X 2 Adults",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3545,15 +3197,7 @@ const destination_data: DestinationPackage[] = [
          "One-way transfer from Hotel to Langkawi Airport – Private Transfers from Beach or City Hotel"
       ],
 
-      exclusions: [
-         "Airfare",
-         "GST (5%)",
-         "Visa",
-         "TCS (2%)",
-         "Lunch & Dinner except where specifically mentioned in inclusions",
-         "Entrance tickets not specifically mentioned in the inclusions",
-         "Personal expenses such as shopping, phone calls, laundry, etc."
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 61,
@@ -3563,7 +3207,7 @@ const destination_data: DestinationPackage[] = [
       time: "4 Nights / 5 Days",
       title: "Vietnam 5 Days & 4 Nights – Phu Quoc Island Escape",
       location: "Phu Quoc",
-      price: "₹36500/- Per Person X 2 adults / 11500/- Per child",
+      price: "₹38500/- Per Person X 2 adults / 13500/- Per child",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3618,14 +3262,7 @@ const destination_data: DestinationPackage[] = [
          "One-way transfer from Phu Quoc Hotel to Airport – Private"
       ],
 
-      exclusions: [
-         "Airfare",
-         "GST (5%)",
-         "Visa",
-         "TCS (2%)",
-         "Lunch & Dinner except where specifically mentioned in inclusions",
-         "Personal expenses such as shopping, phone calls, laundry, etc."
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 62,
@@ -3636,7 +3273,7 @@ const destination_data: DestinationPackage[] = [
       title:
          "Vietnam 6 Days & 5 Nights – Hanoi, Halong Bay & Da Nang Discovery",
       location: "Hanoi & Da Nang",
-      price: "₹34,500/- Per Person X 2 Adults",
+      price: "₹36,500/- Per Person X 2 Adults",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3704,14 +3341,7 @@ const destination_data: DestinationPackage[] = [
          "One-way transfer from Da Nang Hotel to Da Nang Airport – Private"
       ],
 
-      exclusions: [
-         "Airfare",
-         "GST (5%)",
-         "Visa",
-         "TCS (2%)",
-         "Lunch & Dinner except where specifically mentioned in inclusions",
-         "Personal expenses such as shopping, phone calls, laundry, etc."
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 63,
@@ -3722,7 +3352,7 @@ const destination_data: DestinationPackage[] = [
       title:
          "Vietnam 6 Days & 5 Nights – Hanoi, Halong Bay, Da Nang & Hoi An Escape",
       location: "Hanoi & Da Nang",
-      price: "₹33,600/- Per Person X 4 Adults",
+      price: "₹35,600/- Per Person X 4 Adults",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3792,14 +3422,7 @@ const destination_data: DestinationPackage[] = [
          "One-way transfer from Da Nang Hotel to Da Nang Airport – Private "
       ],
 
-      exclusions: [
-         "Airfare",
-         "GST (5%)",
-         "Visa",
-         "TCS (2%)",
-         "Lunch & Dinner except where specifically mentioned in inclusions",
-         "Personal expenses such as shopping, phone calls, laundry, etc."
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 67,
@@ -3825,7 +3448,7 @@ const destination_data: DestinationPackage[] = [
       time: "4 Nights / 5 Days",
       title: "Singapore Ultimate City & Island Experience",
       location: "Singapore",
-      price: "₹41000/- Per Person X 2 Adults",
+      price: "₹43000/- Per Person X 2 Adults",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3879,14 +3502,7 @@ const destination_data: DestinationPackage[] = [
          "One-way Airport Transfer between Hotel and Changi Airport - Private - (6 am - 10 pm) ",
       ],
 
-      exclusions: [
-         "Airfare",
-         "GST (5%)",
-         "Visa",
-         "TCS (2%)",
-         "Lunch & Dinner except where specifically mentioned in inclusions",
-         "Personal expenses such as shopping, phone calls, laundry, etc."
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 70,
@@ -3896,7 +3512,7 @@ const destination_data: DestinationPackage[] = [
       time: "4 Nights / 5 Days",
       title: "Singapore Ultimate Theme Park & Island Escape",
       location: "Singapore",
-      price: "₹46000/- Per Person X 4 adults",
+      price: "₹48000/- Per Person X 4 adults",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -3952,13 +3568,7 @@ const destination_data: DestinationPackage[] = [
          "One-way Airport Transfer between Hotel and Changi Airport - Private - (6 am - 10 pm) ",
       ],
 
-      exclusions: [
-         "Airfare",
-         "GST (5%)",
-         "Visa",
-         "TCS (2%)",
-         "Lunch & Dinner except where specifically mentioned in inclusions",
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 71,
@@ -3968,7 +3578,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Singapore Adventure & Island Escape",
       location: "Singapore",
-      price: "₹71000/- PER PERSON X 3 ADULTS",
+      price: "₹73000/- PER PERSON X 3 ADULTS",
       review: 4.8,
       total_review: "(32 Reviews)",
 
@@ -4016,30 +3626,154 @@ const destination_data: DestinationPackage[] = [
          "One-way Airport Transfer between Hotel and Changi Airport - Private - (6 am - 10 pm) ",
       ],
 
-      exclusions: [
-         "Airfare",
-         "GST (5%)",
-         "Visa",
-         "TCS (2%)",
-         "Lunch & Dinner except where specifically mentioned in inclusions",
-         "Other things not mentioned in itinerary ",
-      ]
+      exclusions: common_exclusions
    },
    {
       id: 72,
       destination: "bali",
       thumb: imgbali,
       tag: "Leisure",
-      time: "",
-      title: "Coming Soon...",
-      location: "",
-      price: "",
+      time: "6 Days / 5 Nights",
+      title: "Bali Wonders – Island, Waterfalls & Adventure",
+      location: "Bali, Indonesia",
+      price: "25500/- Per Person X  2 adults",
       review: 4.8,
       total_review: "",
 
-      itinerary: [],
-      inclusions: [],
-      exclusions: []
+      itinerary: [{
+         day: "Day 1",
+         title: "Arrival at Bali ",
+         description:
+            "Upon your arrival at Ngurah Rai Airport in Denpasar, Bali, our representative will meet and welcome you. You will then be taken to the hotel for your refreshment. "
+      },
+
+      {
+         day: "Day 2",
+         title: " Nusa Penida Island Day Trip ",
+         description:
+            "Experience the magic of Nusa Penida Island on our Full Day West Penida Tour. Begin your day with convenient private transfers to the pier, where you'll board a shared fastboat to this enchanting destination. Explore the island’s breathtaking landscapes, including the iconic Broken Beach and the majestic Kelingking Cliff. Swim in crystal-clear waters and relax on pristine beaches, immersing yourself in the natural beauty that surrounds you. Indulge in a delicious local lunch, savoring the unique flavors of the island. With knowledgeable guides ensuring a seamless experience, this tour offers the perfect mix of adventure and leisure in one of Bali's hidden gems. "
+      },
+
+      {
+         day: "Day 3",
+         title: "Full Day North Bali Tour ",
+         description:
+            "Proceed for a full day tour of North Bali starting with Bedugul fruit and vegetable market where local products are supplied. We move on to visit Ulun danu Temple – a peaceful Hindu temple on the banks of Lake Beratan. We then head north to cross the ridge of Bali’s central mountain range on the way to Lovina, north Bali most famous and exotic beach resort, while seeing Gitgit waterfalls enroute. On the way back, a stop will be be made at Banjar village hot spring.  "
+      },
+
+      {
+         day: "Day 4",
+         title: " Water Sports Half Day ",
+         description:
+            "Dive into adventure with our thrilling Water Sports package, featuring an exhilarating Banana Boat Ride, a breathtaking Parasailing Adventure, high-speed Jet Ski rides, and vibrant Snorkeling experiences. Enjoy the convenience of private transfers to the beach, ensuring a seamless start to your day of excitement. Feel the rush as you zoom across the waves on a Jet Ski or soar high above the ocean while parasailing, taking in stunning views of the coastline. Explore the underwater world while snorkeling, discovering colorful marine life in crystal-clear waters. Whether you're seeking adrenaline or relaxation, this action-packed day promises unforgettable memories on the water!  "
+      },
+      {
+         day: "Day 5",
+         title: "  Full Day Ubud Village, Tegalalang Rice Terraces with Bali Swing and Teggunangan Waterfalls ",
+         description:
+            "Proceed for a full day tour of Ubud. Visit Celuk the center of gold and silver works, Mas the center of woodcarvings, Ubud the center of Balinese paintings. In the surrounding area, numerous villages are scattered across a landscape of rice terraces, lush valleys and forests. At the iconic Tegalalang Rice Terraces, we can photograph the emerald rice fields that cascade down the mountain sides. Next stop, get your cameras and phones ready for some highly Instagram-worthy pictures at Aloha swing at Tegalalang, with spectacular rice paddies view, agriculture activities, coffee Luwak plantation and shop. It is one of the hottest Instagram spots in Bali! You can experience incredible views and an exciting adventure at Aloha Swing. The Aloha Swing of Bali invites you into a tropical haven. Suspended from lush palm trees, this swing features intricately woven rattan, adorned with vibrant Balinese patterns. Embrace the island breeze as you sway over breathtaking landscapes, capturing the essence of Bali's serene beauty and laid-back charm. Pure bliss awaits. As we walk down the many stairs to the temple, we can enjoy the views of the terraced rice fields. We will end the tour with a visit to Teggunagan Waterfalls. "
+      },
+      {
+         day: "Day 6",
+         title: "  Departure from Bali  ",
+         description:
+            "After a hearty breakfast you are transferred in time to the airport to board your flight."
+      },],
+      inclusions: [
+         'Bali ',
+         '3 nights in Bali ',
+         'Stay at EDEN Hotel Kuta Bali (4 star) ',
+         'Private Transfer from Airport to Hotel - Kuta, Legian, Tuban Kuta  ',
+         'Full Day Nusa Penida Island Trip with Local Lunch - (West Tour) Private Transfers to the Pier ( Shared Fastboat)  ',
+         'Full Day Nusa Penida Island Trip with Local Lunch - (West Tour) Private Transfers to the Pier ( Shared Fastboat)  ',
+         'Bali ',
+         '2 nights in Bali  ',
+         'Stay at Champlung Sari Hotel and Spa Ubud (3 star) ',
+         'Meal Plan: Room Only  ',
+         'Transfer from one hotel to another - Jimbaran / Tuban / Kuta / Legian / Sanur to Ubud  ',
+         'Water Sports - Banana Boat Ride + Parasailing Adventure + Jet Ski + Snorkeling (Private Transfers) ',
+         'Full Day Ubud Village + Tegalalang Rice Terraces + Teggunangan Waterfalls + Bali Swing (Aloha) - Private Transfer  ',
+         'Private Transfer from Hotel to Airport - Keramas, Saba, Sukawati, Ubud, Tanah Lot ',
+      ],
+      exclusions: common_exclusions
+   },
+   {
+      id: 74,
+      destination: "bali",
+      thumb: imgbali1,
+      tag: "Leisure",
+      time: "7 Days / 6 Nights",
+      title: "Bali Grand Discovery – Island, Temple & Adventure Package",
+      location: "Bali, Indonesia",
+      price: "27000/- Per Person X 2 adults & 10000/- Per child",
+      review: 4.8,
+      total_review: "",
+
+      itinerary: [{
+         day: "Day 1",
+         title: "Arrival at Bali ",
+         description:
+            "Upon your arrival at Ngurah Rai Airport in Denpasar, Bali, our representative will meet and welcome you. You will then be taken to the hotel for your refreshment.  "
+      },
+
+      {
+         day: "Day 2",
+         title: " Nusa Penida Island Day Trip ",
+         description:
+            "Experience the magic of Nusa Penida Island on our Full Day West Penida Tour. Begin your day with convenient private transfers to the pier, where you'll board a shared fastboat to this enchanting destination. Explore the island’s breathtaking landscapes, including the iconic Broken Beach and the majestic Kelingking Cliff. Swim in crystal-clear waters and relax on pristine beaches, immersing yourself in the natural beauty that surrounds you. Indulge in a delicious local lunch, savoring the unique flavors of the island. With knowledgeable guides ensuring a seamless experience, this tour offers the perfect mix of adventure and leisure in one of Bali's hidden gems. "
+      },
+
+      {
+         day: "Day 3",
+         title: "Water Sports Half Day - Half Day Tanah Lot ",
+         description:
+            "Get ready for an unforgettable day on the water with our exciting Water Sports package! Experience the thrill of a Banana Boat Ride, where you'll bounce across the waves with friends and family. Feel the adrenaline rush as you take control of a Jet Ski, speeding through the ocean and enjoying the wind in your hair. Cap off your adventure with a breathtaking Parasailing Adventure, soaring high above the coastline and taking in stunning panoramic views. With private transfers included, your journey to adventure is smooth and hassle-free. Whether you're seeking excitement or unforgettable memories, this package has it all! Visit a spectacular Tanah Lot Temple which stands proudly on the rock inside the ocean. Shopping time is available on this visit for any kind of Balinese handicraft products good for souvenirs and or for collection. Visit a spectacular Tanah Lot Temple which stands proudly on the rock inside the ocean. Shopping time is available on this visit for any kind of Balinese handicraft products good for souvenirs and or for collection.   "
+      },
+
+      {
+         day: "Day 4",
+         title: " Full Day North Bali Tour",
+         description:
+            "Proceed for a full day tour of North Bali starting with Bedugul fruit and vegetable market where local products are supplied. We move on to visit Ulun danu Temple – a peaceful Hindu temple on the banks of Lake Beratan. We then head north to cross the ridge of Bali’s central mountain range on the way to Lovina, north Bali most famous and exotic beach resort, while seeing Gitgit waterfalls enroute. On the way back, a stop will be be made at Banjar village hot spring. "
+      },
+      {
+         day: "Day 5",
+         title: "  Bali - Day at leisure",
+         description:
+            "After breakfast check-out from your hotel. You will be transfered to your other hotel in Bali. Check-in at the hotel. Today you are free to explore on your own. Overnight stay at Champlung Sari Hotel and Spa Ubud "
+      },
+      {
+         day: "Day 6",
+         title: " Full Day Ubud Kintamani Tour with Tukad Cepung Waterfalls ",
+         description:
+            "After breakfast proceed for Kintamani tours which will guide you around some of the most desirable and beautiful areas located in the northeast of Bali including incredible views of the Mount Batur volcano and the lakes of the area. As with most tours the eight hour tour begins at 9am at your personal hotel where air conditioned transport to the first locations that are traditional markets where cheap and beautiful gold and sliver where can be purchased and examined as well as carving of grand size and smaller examples that may make practical gifts or souvenirs. The Tukad Cepung Waterfall is one of the best among Bali waterfalls. You will be captivated by the beauty of the waterfall. A beautiful sight that you will see when you visit the waterfall, is the sun rays reflecting in the glistening water projecting a rainbow, which seems absolutely ethereal. The waterfall is well hidden between rocks and once you visit the place, you will be filled with a sense of peace of tranquility in the cool atmosphere of the Tukad Cepung Waterfall. Overnight stay at hotel. "
+      },
+      {
+         day: "Day 7",
+         title: " Departure from Bali ",
+         description:
+            "After a hearty breakfast you are transferred in time to the airport to board your flight.  "
+      },],
+      inclusions: [
+         'Bali ',
+         '4 nights in Bali  ',
+         'Stay at EDEN Hotel Kuta Bali (4 star)  ',
+         'Bed And Breakfast  ',
+         'Private Transfer from Airport to Hotel - Kuta, Legian, Tuban Kuta ',
+         'Full Day Nusa Penida Island Trip with Local Lunch - (West Tour) Private Transfers to the Pier ( Shared Fastboat) ',
+         'Water Sports - Banana Boat Ride + Jet Ski + Parasailing Adventure (Private Transfers)  ',
+         'Half Day Tanah Lot Tour - Private Transfer',
+         'North Bali with Waterfall and Hotsprings (Bedugul, Ulun Danu, Gitgit Waterfalls and Banjar Hot Springs) - Private Transfer',
+         'Bali  ',
+         '2 nights in Bali ',
+         'Stay at Champlung Sari Hotel and Spa Ubud (3 star) ',
+         'Breakfast for 3  ',
+         '1 Double or 1 Twin Bed  ',
+         'Transfer from one hotel to another - Jimbaran / Tuban / Kuta / Legian / Sanur to Ubud ',
+         'Ubud and Kintamani with Tukad Cepung Waterfall - Private Transfer  ',
+         'Private Transfer from Hotel to Airport - Keramas, Saba, Sukawati, Ubud, Tanah Lot  ',
+      ],
+      exclusions: common_exclusions
    },
    {
       id: 73,

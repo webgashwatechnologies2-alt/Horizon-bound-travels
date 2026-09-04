@@ -9817,3 +9817,443 @@ textarea {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* =========================================================
+   PAYMENT POLICY AREA
+========================================================= */
+
+.payment-policy-area {
+   background: #ffffff;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.payment-policy-header {
+   max-width: 850px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.payment-policy-subtitle {
+   display: inline-block;
+   margin-bottom: 10px;
+   color: #f46b08;
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.payment-policy-title {
+   margin: 0 0 14px;
+   color: #222222;
+   font-size: 38px;
+   line-height: 1.2;
+   font-weight: 700;
+}
+
+.payment-policy-description {
+   max-width: 680px;
+   margin-bottom: 0;
+   color: #777777;
+   font-size: 16px;
+   line-height: 1.7;
+}
+
+
+/* =========================================================
+   POLICY CARD
+========================================================= */
+
+.payment-policy-card {
+   overflow: hidden;
+   background: #ffffff;
+   border: 1px solid #e8e8e8;
+   border-radius: 12px;
+   box-shadow: 0 8px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.payment-policy-card-header {
+   padding: 22px 25px;
+   background: #f8f9fa;
+   border-bottom: 1px solid #e5e5e5;
+}
+
+.payment-policy-card-title {
+   color: #222222;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 1.4;
+}
+
+.payment-policy-note {
+   color: #f46b08;
+   font-size: 14px;
+   font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.payment-policy-table-wrapper {
+   width: 100%;
+   overflow-x: auto;
+   -webkit-overflow-scrolling: touch;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.payment-policy-table {
+   width: 100%;
+   min-width: 1000px;
+   margin: 0;
+   border-color: #dcdcdc !important;
+   color: #333333;
+   table-layout: fixed;
+}
+
+
+/* Table Header */
+
+.payment-policy-table thead th {
+   padding: 16px 14px;
+   background: #222222;
+   color: #ffffff;
+   border-color: #444444 !important;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 1.35;
+   text-transform: uppercase;
+   vertical-align: middle;
+}
+
+
+/* Table Body */
+
+.payment-policy-table tbody td {
+   padding: 17px 14px;
+   background: #ffffff;
+   color: #444444;
+   border-color: #dddddd !important;
+   font-size: 15px;
+   line-height: 1.55;
+   vertical-align: middle;
+}
+
+
+/* Alternate Rows */
+
+.payment-policy-table tbody tr:nth-child(even) td {
+   background: #fafafa;
+}
+
+
+/* Hover */
+
+.payment-policy-table tbody tr {
+   transition: all 0.2s ease;
+}
+
+.payment-policy-table tbody tr:hover td {
+   background: #fff8f2;
+}
+
+
+/* =========================================================
+   TABLE COLUMN WIDTHS
+========================================================= */
+
+.payment-policy-table th:nth-child(1),
+.payment-policy-table td:nth-child(1) {
+   width: 15%;
+}
+
+.payment-policy-table th:nth-child(2),
+.payment-policy-table td:nth-child(2) {
+   width: 34%;
+}
+
+.payment-policy-table th:nth-child(3),
+.payment-policy-table td:nth-child(3) {
+   width: 18%;
+}
+
+.payment-policy-table th:nth-child(4),
+.payment-policy-table td:nth-child(4) {
+   width: 16%;
+}
+
+.payment-policy-table th:nth-child(5),
+.payment-policy-table td:nth-child(5) {
+   width: 17%;
+}
+
+
+/* =========================================================
+   TABLE CONTENT
+========================================================= */
+
+.policy-period {
+   color: #222222 !important;
+   font-weight: 700;
+}
+
+.policy-payment strong {
+   color: #222222;
+   font-weight: 700;
+}
+
+.policy-balance {
+   font-weight: 500;
+}
+
+.policy-amendment {
+   font-weight: 500;
+}
+
+
+/* =========================================================
+   CHARGE BADGE
+========================================================= */
+
+.charge-badge {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 58px;
+   padding: 6px 12px;
+   border-radius: 30px;
+   background: #fff1e8;
+   color: #f46b08;
+   font-size: 14px;
+   font-weight: 700;
+}
+
+.empty-value {
+   color: #999999;
+   font-weight: 500;
+}
+
+
+/* =========================================================
+   FOOTER NOTE
+========================================================= */
+
+.payment-policy-footer {
+   padding: 20px 25px;
+   background: #fafafa;
+   border-top: 1px solid #e5e5e5;
+}
+
+.payment-policy-footer p {
+   color: #666666;
+   font-size: 14px;
+   line-height: 1.65;
+}
+
+.policy-info-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 30px;
+   height: 30px;
+   border: 1px solid #f46b08;
+   border-radius: 50%;
+   color: #f46b08;
+   font-size: 15px;
+   font-weight: 700;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (max-width: 1199px) {
+
+   .payment-policy-title {
+      font-size: 34px;
+   }
+
+   .payment-policy-table {
+      min-width: 950px;
+   }
+
+   .payment-policy-table thead th {
+      padding: 14px 11px;
+      font-size: 13px;
+   }
+
+   .payment-policy-table tbody td {
+      padding: 15px 11px;
+      font-size: 14px;
+   }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+   .payment-policy-area {
+      padding-top: 90px;
+      padding-bottom: 90px;
+   }
+
+   .payment-policy-title {
+      font-size: 32px;
+   }
+
+   .payment-policy-card-header {
+      padding: 20px;
+   }
+
+   .payment-policy-note {
+      margin-top: 8px;
+   }
+
+   .payment-policy-table {
+      min-width: 900px;
+   }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+   .payment-policy-area {
+      padding-top: 65px;
+      padding-bottom: 65px;
+   }
+
+   .payment-policy-header {
+      padding: 0 10px;
+      margin-bottom: 28px !important;
+   }
+
+   .payment-policy-subtitle {
+      font-size: 12px;
+      letter-spacing: 0.8px;
+   }
+
+   .payment-policy-title {
+      font-size: 26px;
+      line-height: 1.3;
+   }
+
+   .payment-policy-description {
+      font-size: 14px;
+      line-height: 1.6;
+   }
+
+   .payment-policy-card {
+      border-radius: 8px;
+   }
+
+   .payment-policy-card-header {
+      padding: 18px;
+   }
+
+   .payment-policy-card-title {
+      font-size: 17px;
+   }
+
+   .payment-policy-note {
+      font-size: 13px;
+      margin-top: 5px;
+   }
+
+   .payment-policy-table {
+      min-width: 850px;
+   }
+
+   .payment-policy-table thead th {
+      padding: 13px 10px;
+      font-size: 12px;
+   }
+
+   .payment-policy-table tbody td {
+      padding: 13px 10px;
+      font-size: 13px;
+      line-height: 1.5;
+   }
+
+   .charge-badge {
+      min-width: 50px;
+      padding: 5px 10px;
+      font-size: 12px;
+   }
+
+   .payment-policy-footer {
+      padding: 16px;
+   }
+
+   .payment-policy-footer p {
+      font-size: 12px;
+      line-height: 1.55;
+   }
+
+   .policy-info-icon {
+      width: 27px;
+      height: 27px;
+      font-size: 13px;
+   }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+   .payment-policy-area {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   .payment-policy-title {
+      font-size: 23px;
+   }
+
+   .payment-policy-card-header {
+      padding: 16px;
+   }
+
+   .payment-policy-card-title {
+      font-size: 16px;
+   }
+
+   .payment-policy-table {
+      min-width: 820px;
+   }
+
+   .payment-policy-table thead th {
+      font-size: 11px;
+      padding: 11px 8px;
+   }
+
+   .payment-policy-table tbody td {
+      font-size: 12px;
+      padding: 11px 8px;
+   }
+}

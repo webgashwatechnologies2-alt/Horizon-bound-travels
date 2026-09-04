@@ -3,6 +3,8 @@ import Link from "next/link"
 
 import MobileMenu from "./MobileMenu";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { getBestSearchUrl } from "@/utils/destinationSearch";
 
 interface MobileSidebarProps {
    offCanvas: boolean;
@@ -10,7 +12,7 @@ interface MobileSidebarProps {
 }
 
 const Offcanvas = ({ offCanvas, setOffCanvas }: MobileSidebarProps) => {
-
+   const router = useRouter();
    const [searchValue, setSearchValue] = useState("");
 
    const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,8 +21,14 @@ const Offcanvas = ({ offCanvas, setOffCanvas }: MobileSidebarProps) => {
 
    const handleSubmit = (e: React.FormEvent) => {
       e.preventDefault();
-      setSearchValue('');
-      setOffCanvas(false);
+      if (searchValue.trim()) {
+         const targetUrl = getBestSearchUrl(searchValue);
+         setOffCanvas(false);
+         setSearchValue("");
+         router.push(targetUrl);
+      } else {
+         setOffCanvas(false);
+      }
    };
 
    return (

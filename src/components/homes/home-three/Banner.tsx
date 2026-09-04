@@ -101,17 +101,12 @@ const Banner = () => {
          >
             {banner_data.map((item, i) => (
                <SwiperSlide key={i}>
-                  {/* Full-screen slide wrapper */}
                   <div className="tg-hero-slide-wrapper">
-                     {/* Background Image */}
                      <div
                         className="tg-hero-thumb"
                         style={{ backgroundImage: `url(${item.image})` }}
                      />
-                     {/* Dark overlay */}
                      <div className="tg-hero-overlay" />
-
-                     {/* Content */}
                      <div className="tg-hero-content-area">
                         <div className="container">
                            <div className="row justify-content-center">
@@ -142,13 +137,9 @@ const Banner = () => {
                </SwiperSlide>
             ))}
          </Swiper>
-
-         {/* Pagination dots */}
          <div className="tg-hero-dots-wrap">
             <div className="tg-hero-dots"></div>
          </div>
-
-         {/* Navigation Arrows */}
          <div className="tg-hero-nav-wrap d-none">
             <button
                className="tg-hero-nav-btn tg-hero-nav-prev"
@@ -169,8 +160,6 @@ const Banner = () => {
                </svg>
             </button>
          </div>
-
-         {/* Decorative Shapes */}
          <div className="tg-hero-bottom-shape d-none d-md-block">
             <span>
                <svg width="432" height="298" viewBox="0 0 432 298" fill="none" xmlns="http://www.w3.org/2000/svg">

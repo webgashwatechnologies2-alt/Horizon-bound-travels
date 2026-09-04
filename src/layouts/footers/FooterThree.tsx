@@ -95,6 +95,7 @@ const FooterThree = () => {
                               <h3 className="tg-footer-widget-title mb-25">Policies</h3>
                               <ul>
                                  <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+                                 <li><Link href="/payment-policy">Payment Policy</Link></li>
                                  <li><Link href="/terms-conditions">Terms & conditions</Link></li>
                                  <li><Link href="/vision-mission">Vision And Mission</Link></li>
                               </ul>

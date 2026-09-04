@@ -6,6 +6,8 @@ import destination_data from "@/data/DestinationData";
 import Image from "next/image";
 import Link from "next/link";
 import BookForm from "@/components/forms/BookForm";
+import VisaAssistanceForm from "@/components/forms/VisaAssistanceForm";
+import { isInternationalDestination, getDestinationDisplayName } from "@/utils/destinationClassifier";
 
 interface TourDetailsClientProps {
   id: string;
@@ -14,6 +16,9 @@ interface TourDetailsClientProps {
 const TourDetailsClient = ({ id }: TourDetailsClientProps) => {
   const packageId = parseInt(id);
   const pkg = destination_data.find(p => p.id === packageId);
+  const isInternational = isInternationalDestination(pkg?.destination);
+  const destinationDisplayName = getDestinationDisplayName(pkg?.destination);
+  const [activeTab, setActiveTab] = useState<'book' | 'visa'>('book');
   const [expandedDays, setExpandedDays] = useState<Set<number>>(new Set());
 
   const toggleDay = (index: number) => {
@@ -44,12 +49,10 @@ const TourDetailsClient = ({ id }: TourDetailsClientProps) => {
       </>
     );
   }
-
   return (
     <>
       <HeaderThree />
       <main>
-        {/* Custom Breadcrumb */}
         <div className="tg-breadcrumb-spacing-3 include-bg p-relative fix" style={{ backgroundImage: `url(${pkg.thumb.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="tg-hero-top-shadow"></div>
         </div>
@@ -68,8 +71,6 @@ const TourDetailsClient = ({ id }: TourDetailsClientProps) => {
             </div>
           </div>
         </div>
-        
-        {/* Package Details Section */}
         <section className="pt-120 pb-120">
           <div className="container">
             <div className="row">
@@ -77,9 +78,9 @@ const TourDetailsClient = ({ id }: TourDetailsClientProps) => {
                 {/* Package Image */}
                 <div className="mb-30">
                   <div className="tg-package-thumb p-relative">
-                    <Image 
-                      src={pkg.thumb} 
-                      alt={pkg.title} 
+                    <Image
+                      src={pkg.thumb}
+                      alt={pkg.title}
                       className="w-100"
                       style={{ borderRadius: '8px', objectFit: 'cover', height: '450px' }}
                     />
@@ -132,8 +133,8 @@ const TourDetailsClient = ({ id }: TourDetailsClientProps) => {
                   <div className="tg-package-description mb-30">
                     <h4 className="mb-15">About This Package</h4>
                     <p style={{ lineHeight: '1.8', color: 'var(--tg-grey-1)' }}>
-                      Experience the beauty of {pkg.location} with our carefully curated tour package. 
-                      This {pkg.time} journey takes you through the most stunning landscapes and cultural highlights 
+                      Experience the beauty of {pkg.location} with our carefully curated tour package.
+                      This {pkg.time} journey takes you through the most stunning landscapes and cultural highlights
                       of the region. Perfect for {pkg.guest || 'travelers'} seeking adventure and memorable experiences.
                     </p>
                   </div>
@@ -178,8 +179,6 @@ const TourDetailsClient = ({ id }: TourDetailsClientProps) => {
                       <span style={{ marginLeft: '10px', color: 'var(--tg-grey-4)' }}>{pkg.total_review}</span>
                     </div>
                   </div>
-
-                  {/* Day-wise Itinerary */}
                   {pkg.itinerary && pkg.itinerary.length > 0 && (
                     <div className="tg-package-itinerary mb-40">
                       <h4 className="mb-20">Day-wise Itinerary</h4>
@@ -279,10 +278,12 @@ const TourDetailsClient = ({ id }: TourDetailsClientProps) => {
                     <div className="tg-package-exclusions mb-40">
                       <h4 className="mb-20">Exclusions</h4>
                       <ul style={{ listStyle: 'none', padding: 0 }}>
-                        <li style={{ marginBottom: '12px', display: 'flex', alignItems: 'flex-start' }}>
-                          <i className="fa-solid fa-times-circle" style={{ color: '#dc3545', marginRight: '12px', marginTop: '4px' }}></i>
-                          <span style={{ lineHeight: '1.6' }}>{pkg.exclusions}</span>
-                        </li>
+                        {(Array.isArray(pkg.exclusions) ? pkg.exclusions : [pkg.exclusions]).map((item, index) => (
+                          <li key={index} style={{ marginBottom: '12px', display: 'flex', alignItems: 'flex-start' }}>
+                            <i className="fa-solid fa-times-circle" style={{ color: '#dc3545', marginRight: '12px', marginTop: '4px' }}></i>
+                            <span style={{ lineHeight: '1.6' }}>{item}</span>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   )}
@@ -298,29 +299,206 @@ const TourDetailsClient = ({ id }: TourDetailsClientProps) => {
                     boxShadow: '0 5px 20px rgba(0,0,0,0.1)',
                     padding: '30px'
                   }}>
-                    <h4 className="mb-20">Book This Package</h4>
-                    
-                    <div className="tg-package-price mb-25" style={{
-                      background: 'var(--tg-grey-7)',
-                      padding: '20px',
-                      borderRadius: '8px',
-                      textAlign: 'center'
-                    }}>
-                      <p className="mb-5" style={{ fontSize: '14px', color: 'var(--tg-grey-4)' }}>Starting From</p>
-                      <div className="d-flex align-items-center justify-content-center">
-                        <span style={{ fontSize: '24px', fontWeight: '700', color: 'var(--tg-theme-primary)' }}></span>
-                        <span style={{ fontSize: '20px', fontWeight: '700', color: 'var(--tg-theme-primary)', marginLeft: '5px' }}>{pkg.price}</span>
+                    {/* Conditional Tabs for International Packages */}
+                    {isInternational && (
+                      <div
+                        className="d-flex mb-25"
+                        style={{
+                          background: "#f1f5f9",
+                          borderRadius: "8px",
+                          padding: "4px",
+                          gap: "4px",
+                        }}
+                      >
+                        <button
+                          type="button"
+                          onClick={() => setActiveTab("book")}
+                          style={{
+                            flex: 1,
+                            padding: "10px 12px",
+                            borderRadius: "6px",
+                            border: "none",
+                            background: activeTab === "book" ? "#fff" : "transparent",
+                            color: activeTab === "book" ? "var(--tg-theme-primary)" : "#64748b",
+                            fontWeight: "600",
+                            fontSize: "13px",
+                            boxShadow:
+                              activeTab === "book"
+                                ? "0 2px 6px rgba(0,0,0,0.08)"
+                                : "none",
+                            cursor: "pointer",
+                            transition: "all 0.2s ease",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            gap: "6px",
+                          }}
+                        >
+                          <i className="fa-solid fa-calendar-check"></i> Book Package
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setActiveTab("visa")}
+                          style={{
+                            flex: 1,
+                            padding: "10px 12px",
+                            borderRadius: "6px",
+                            border: "none",
+                            background: activeTab === "visa" ? "#fff" : "transparent",
+                            color: activeTab === "visa" ? "var(--tg-theme-primary)" : "#64748b",
+                            fontWeight: "600",
+                            fontSize: "13px",
+                            boxShadow:
+                              activeTab === "visa"
+                                ? "0 2px 6px rgba(0,0,0,0.08)"
+                                : "none",
+                            cursor: "pointer",
+                            transition: "all 0.2s ease",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            gap: "6px",
+                          }}
+                        >
+                          <i className="fa-solid fa-passport"></i> Visa Assistance
+                        </button>
                       </div>
-                      {pkg.delete_price && (
-                        <del style={{ color: 'var(--tg-grey-4)', fontSize: '14px' }}>₹{pkg.delete_price}</del>
-                      )}
-                    </div>
+                    )}
 
-                    <BookForm packageTitle={pkg.title} />
+                    {/* Booking View */}
+                    {activeTab === "book" ? (
+                      <>
+                        <h4 className="mb-20">Book This Package</h4>
 
-                    <div className="tg-package-contact" style={{ textAlign: 'center' }}>
-                      <p style={{ marginBottom: '10px', color: 'var(--tg-grey-4)' }}>Need help?</p>
-                      <Link href="/contact" style={{ color: 'var(--tg-theme-primary)', fontWeight: '600' }}>Contact Us</Link>
+                        <div
+                          className="tg-package-price mb-25"
+                          style={{
+                            background: "var(--tg-grey-7)",
+                            padding: "20px",
+                            borderRadius: "8px",
+                            textAlign: "center",
+                          }}
+                        >
+                          <p
+                            className="mb-5"
+                            style={{ fontSize: "14px", color: "var(--tg-grey-4)" }}
+                          >
+                            Starting From
+                          </p>
+                          <div className="d-flex align-items-center justify-content-center">
+                            <span
+                              style={{
+                                fontSize: "24px",
+                                fontWeight: "700",
+                                color: "var(--tg-theme-primary)",
+                              }}
+                            ></span>
+                            <span
+                              style={{
+                                fontSize: "20px",
+                                fontWeight: "700",
+                                color: "var(--tg-theme-primary)",
+                                marginLeft: "5px",
+                              }}
+                            >
+                              {pkg.price}
+                            </span>
+                          </div>
+                          {pkg.delete_price && (
+                            <del
+                              style={{ color: "var(--tg-grey-4)", fontSize: "14px" }}
+                            >
+                              ₹{pkg.delete_price}
+                            </del>
+                          )}
+                        </div>
+
+                        <BookForm packageTitle={pkg.title} />
+
+                        {/* Visa Assistance Callout Banner for International Packages */}
+                        {isInternational && (
+                          <div
+                            style={{
+                              marginTop: "15px",
+                              marginBottom: "20px",
+                              padding: "12px 14px",
+                              background: "rgba(244, 107, 8, 0.06)",
+                              border: "1px dashed var(--tg-theme-primary)",
+                              borderRadius: "6px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "space-between",
+                              gap: "10px",
+                            }}
+                          >
+                            <div style={{ fontSize: "13px", color: "#1e293b" }}>
+                              <strong style={{ display: "block", color: "#0b1c3f" }}>
+                                Need Visa Assistance?
+                              </strong>
+                              <span style={{ fontSize: "12px", color: "#64748b" }}>
+                                For {destinationDisplayName || "this destination"}
+                              </span>
+                            </div>
+                            <button
+                              type="button"
+                              onClick={() => setActiveTab("visa")}
+                              style={{
+                                background: "var(--tg-theme-primary)",
+                                color: "#fff",
+                                border: "none",
+                                padding: "7px 12px",
+                                borderRadius: "4px",
+                                fontSize: "12px",
+                                fontWeight: "600",
+                                cursor: "pointer",
+                                whiteSpace: "nowrap",
+                              }}
+                            >
+                              Inquire Now
+                            </button>
+                          </div>
+                        )}
+                      </>
+                    ) : (
+                      /* Visa Assistance View (International Only) */
+                      <>
+                        <div className="d-flex align-items-center justify-content-between mb-15">
+                          <h4 className="mb-0" style={{ fontSize: "18px", fontWeight: "700" }}>
+                            Visa Assistance
+                          </h4>
+                          <span
+                            style={{
+                              fontSize: "12px",
+                              background: "rgba(244, 107, 8, 0.1)",
+                              color: "var(--tg-theme-primary)",
+                              padding: "3px 8px",
+                              borderRadius: "4px",
+                              fontWeight: "600",
+                            }}
+                          >
+                            International
+                          </span>
+                        </div>
+                        <VisaAssistanceForm
+                          defaultDestination={destinationDisplayName || pkg.location || ""}
+                          packageTitle={pkg.title}
+                        />
+                      </>
+                    )}
+
+                    <div className="tg-package-contact" style={{ textAlign: "center" }}>
+                      <p style={{ marginBottom: "10px", color: "var(--tg-grey-4)" }}>
+                        Need help?
+                      </p>
+                      <Link
+                        href="/contact"
+                        style={{
+                          color: "var(--tg-theme-primary)",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Contact Us
+                      </Link>
                     </div>
                   </div>
                 </div>
