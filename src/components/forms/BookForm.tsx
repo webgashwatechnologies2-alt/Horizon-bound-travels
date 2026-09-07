@@ -116,6 +116,7 @@ const BookForm = ({ packageTitle }: BookFormProps) => {
         <label style={{ display: "block", marginBottom: "8px", fontWeight: "500" }}>Travel Date *</label>
         <input
           type="date"
+          lang="en-US"
           name="date"
           value={formData.date}
           onChange={handleChange}

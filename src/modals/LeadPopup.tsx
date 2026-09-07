@@ -11,7 +11,6 @@ interface FormErrors {
   destination?: string;
   travelers?: string;
 }
-
 const LeadPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -24,70 +23,54 @@ const LeadPopup = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
-
   useEffect(() => {
-    // Check if user has already closed the popup in the current session
     const isClosedThisSession = sessionStorage.getItem("lead_popup_session_closed");
-
     if (!isClosedThisSession) {
       const timer = setTimeout(() => {
         setIsOpen(true);
-      }, 3000); // 3 seconds delay
+      }, 3000);
       return () => clearTimeout(timer);
     }
   }, []);
-
   const handleClose = () => {
     setIsOpen(false);
     sessionStorage.setItem("lead_popup_session_closed", "true");
   };
-
   const handleOpen = () => {
     setIsOpen(true);
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    // Clear validation error on change
     if (errors[name as keyof FormErrors]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
   };
-
   const validate = (): boolean => {
     const tempErrors: FormErrors = {};
-
     if (!formData.name.trim()) {
       tempErrors.name = "Name is required";
     }
-
     if (!formData.email.trim()) {
       tempErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       tempErrors.email = "Please enter a valid email address";
     }
-
     if (!formData.phone.trim()) {
       tempErrors.phone = "Phone number is required";
     } else if (!/^\+?[0-9\s-]{10,15}$/.test(formData.phone.replace(/\s+/g, ""))) {
       tempErrors.phone = "Please enter a valid phone number (10-15 digits)";
     }
-
     if (!formData.destination) {
       tempErrors.destination = "Please select a destination";
     }
-
     setErrors(tempErrors);
     return Object.keys(tempErrors).length === 0;
   };
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!validate()) return;
-
     setIsSubmitting(true);
-
     sendLead({
       form_type: "Lead Popup Enquiry",
       name: formData.name,
@@ -114,10 +97,8 @@ const LeadPopup = () => {
         setIsSubmitting(false);
       });
   };
-
   return (
     <>
-      {/* Floating Badge (Trigger) */}
       <button
         className={styles.leadBadgeTrigger}
         onClick={handleOpen}
@@ -126,15 +107,12 @@ const LeadPopup = () => {
         <i className="fa-solid fa-paper-plane"></i>
         <span style={{ marginTop: '5px' }}>Plan Your Trip</span>
       </button>
-
-      {/* Modal Popup */}
       {isOpen && (
         <div className={styles.leadPopupBackdrop} onClick={handleClose}>
           <div
             className={styles.leadPopupDialog}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button */}
             <button
               className={styles.leadPopupCloseBtn}
               onClick={handleClose}
@@ -143,7 +121,6 @@ const LeadPopup = () => {
               <i className="fa-solid fa-xmark"></i>
             </button>
 
-            {/* Left Image Section (Hidden on mobile) */}
             <div
               className={styles.leadPopupLeft}
               style={{ backgroundImage: `url('/assets/img/hero/herobanerthree.jpg')` }}
@@ -156,8 +133,6 @@ const LeadPopup = () => {
                 </p>
               </div>
             </div>
-
-            {/* Right Form Section */}
             <div className={styles.leadPopupRight}>
               <div className={styles.leadPopupRightHeader}>
                 <h4 className={styles.leadPopupRightTitle}>Plan Your Dream Trip</h4>
@@ -165,13 +140,9 @@ const LeadPopup = () => {
                   Provide your details and we will create a perfect, customized itinerary for your trip!
                 </p>
               </div>
-
               <form ref={formRef} onSubmit={handleSubmit} className={styles.leadPopupForm}>
-                {/* Hidden fields for EmailJS context matching templates */}
                 <input type="hidden" name="web" value={`Lead Form: Destination - ${formData.destination}, Travelers - ${formData.travelers}`} />
                 <input type="hidden" name="message" value={`Contact phone: ${formData.phone}. Destination of interest: ${formData.destination} for ${formData.travelers} travelers.`} />
-
-                {/* Name */}
                 <div className={styles.formGroup}>
                   <input
                     type="text"
@@ -182,12 +153,9 @@ const LeadPopup = () => {
                     onChange={handleChange}
                   />
                   <i className={`form-icon fa-solid fa-user ${styles.formIcon}`}></i>
-                  {/* Keep name="user_name" for EmailJS */}
                   <input type="hidden" name="user_name" value={formData.name} />
                   {errors.name && <span className={styles.errorMessage}>{errors.name}</span>}
                 </div>
-
-                {/* Email */}
                 <div className={styles.formGroup}>
                   <input
                     type="email"
@@ -198,12 +166,9 @@ const LeadPopup = () => {
                     onChange={handleChange}
                   />
                   <i className={`form-icon fa-solid fa-envelope ${styles.formIcon}`}></i>
-                  {/* Keep name="user_email" for EmailJS */}
                   <input type="hidden" name="user_email" value={formData.email} />
                   {errors.email && <span className={styles.errorMessage}>{errors.email}</span>}
                 </div>
-
-                {/* Phone */}
                 <div className={styles.formGroup}>
                   <input
                     type="tel"
@@ -234,12 +199,20 @@ const LeadPopup = () => {
                     <option value="Kerala">Kerala</option>
                     <option value="Goa">Goa</option>
                     <option value="Rajasthan">Rajasthan</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Vietnam">Vietnam</option>
                   </select>
                   <i className={`form-icon fa-solid fa-map-location-dot ${styles.formIcon}`}></i>
                   {errors.destination && <span className={styles.errorMessage}>{errors.destination}</span>}
                 </div>
-
-                {/* Number of Travelers */}
                 <div className={styles.formGroup}>
                   <select
                     name="travelers"
@@ -255,8 +228,6 @@ const LeadPopup = () => {
                   </select>
                   <i className={`form-icon fa-solid fa-users ${styles.formIcon}`}></i>
                 </div>
-
-                {/* Submit button */}
                 <button
                   type="submit"
                   className={styles.leadPopupSubmitBtn}
@@ -280,5 +251,4 @@ const LeadPopup = () => {
     </>
   );
 };
-
 export default LeadPopup;

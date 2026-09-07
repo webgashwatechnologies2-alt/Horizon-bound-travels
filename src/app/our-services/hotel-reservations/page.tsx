@@ -303,6 +303,7 @@ const HotelServicePage = () => {
                       <label className="service-form-label">Check-In Date *</label>
                       <input
                         type="date"
+                        lang="en-US"
                         name="checkIn"
                         value={formData.checkIn}
                         onChange={handleChange}
@@ -314,6 +315,7 @@ const HotelServicePage = () => {
                       <label className="service-form-label">Check-Out Date *</label>
                       <input
                         type="date"
+                        lang="en-US"
                         name="checkOut"
                         value={formData.checkOut}
                         onChange={handleChange}

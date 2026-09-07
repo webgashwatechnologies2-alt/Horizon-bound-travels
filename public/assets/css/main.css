@@ -4030,15 +4030,14 @@ textarea {
   border-radius: 15px;
 }
 .flatpickr-calendar.open {
-  padding: 30px;
-  width: 384px;
+  padding: 16px 20px 24px 20px;
+  width: 350px;
   margin-top: 5px;
-  padding-top: 20px;
-  padding-bottom: 35px;
 }
 @media (max-width: 575px) {
   .flatpickr-calendar.open {
-    width: 340px;
+    width: 308px;
+    padding: 12px 10px 18px 10px;
   }
 }
 .flatpickr-calendar.open::after {
@@ -4052,7 +4051,7 @@ textarea {
   padding: 0;
 }
 .flatpickr-calendar.open .flatpickr-months .flatpickr-prev-month {
-  top: 20px;
+  top: 0px;
   left: 35px;
   transition: 0.3s;
 }
@@ -4068,7 +4067,7 @@ textarea {
   fill: var(--tg-common-black);
 }
 .flatpickr-calendar.open .flatpickr-months .flatpickr-next-month {
-  top: 20px;
+  top: 0px;
   right: 35px;
   transition: 0.3s;
 }
@@ -4111,34 +4110,72 @@ textarea {
   background: transparent;
 }
 .flatpickr-calendar.open .flatpickr-innerContainer {
-  justify-content: center;
+  width: 100%;
+  display: block;
 }
-.flatpickr-calendar.open .dayContainer {
-  justify-content: center;
+.flatpickr-calendar.open .flatpickr-rContainer {
+  width: 100%;
+  display: block;
 }
 .flatpickr-calendar.open .flatpickr-days {
-  padding-top: 2px;
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+.flatpickr-calendar.open .dayContainer {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flatpickr-calendar.open .flatpickr-weekdays {
+  display: flex;
+  width: 100%;
+  padding: 6px 0;
+  box-sizing: border-box;
+  background: #f8fafc;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+.flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-weekdaycontainer {
+  display: flex;
+  width: 100%;
 }
 .flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-weekdaycontainer span {
-  color: #57595F;
-  font-size: 15px;
-  font-weight: 400;
+  flex: 0 0 calc(100% / 7);
+  width: calc(100% / 7);
+  max-width: calc(100% / 7);
+  text-align: center;
+  color: #0b1c3f;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 20px;
 }
 .flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.flatpickr-disabled, .flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.flatpickr-disabled:hover, .flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.prevMonthDay, .flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.nextMonthDay, .flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.notAllowed, .flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.notAllowed.prevMonthDay, .flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.notAllowed.nextMonthDay {
   color: #9d9c9d;
 }
 .flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day {
-  border: 1px solid var(--tg-border-2);
-  border-radius: 0;
-  width: 46px;
-  max-width: 46px;
-  margin-right: -1px;
-  height: 44px;
-  margin-top: -1px;
-  font-weight: 400;
+  flex: 0 0 calc(100% / 7);
+  width: calc(100% / 7);
+  max-width: calc(100% / 7);
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 600;
   font-size: 14px;
-  letter-spacing: -0.02em;
   text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
   color: var(--tg-common-black);
 }
 @media (max-width: 575px) {
@@ -4163,7 +4200,7 @@ textarea {
   border: none;
 }
 .flatpickr-calendar .flatpickr-weekdays {
-  display: none;
+  display: flex;
 }
 .flatpickr-calendar.arrowTop::before {
   content: none;

@@ -284,6 +284,7 @@ const VisaAssistanceForm = ({
           </label>
           <input
             type="date"
+            lang="en-US"
             name="travelDate"
             value={formData.travelDate}
             onChange={handleChange}

@@ -160,7 +160,7 @@
     }
   }
   & .flatpickr-weekdays {
-    display: none;
+    display: flex;
   }
   &.arrowTop{
     &::before{

@@ -329,6 +329,7 @@ const FlightServicePage = () => {
                       <label className="service-form-label">Departure Date *</label>
                       <input
                         type="date"
+                        lang="en-US"
                         name="depDate"
                         value={formData.depDate}
                         onChange={handleChange}
@@ -341,6 +342,7 @@ const FlightServicePage = () => {
                         <label className="service-form-label">Return Date *</label>
                         <input
                           type="date"
+                          lang="en-US"
                           name="retDate"
                           value={formData.retDate}
                           onChange={handleChange}

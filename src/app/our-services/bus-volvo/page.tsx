@@ -282,6 +282,7 @@ const BusVolvoServicePage = () => {
                       <label className="service-form-label">Journey Date *</label>
                       <input
                         type="date"
+                        lang="en-US"
                         name="date"
                         value={formData.date}
                         onChange={handleChange}

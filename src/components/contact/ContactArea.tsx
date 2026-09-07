@@ -30,7 +30,7 @@ const ContactArea = () => {
                            </div>
                            <div className="item">
                               <span>Address :</span>
-                              <Link href="https://www.google.com/maps/search/?api=1&query=Karsog+District+Mandi+Himachal+Pradesh+175011"> Karsog District Mandi Himachal Pradesh 175011 </Link>
+                              <Link href="https://www.google.com/maps/search/?api=1&query=Karsog+District+Mandi+Himachal+Pradesh+175011"> Narash (534), Karsog, District Mandi, Himachal Pradesh – 175011 </Link>
                            </div>
                         </div>
                      </div>

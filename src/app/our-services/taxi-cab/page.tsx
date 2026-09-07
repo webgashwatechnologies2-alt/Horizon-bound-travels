@@ -295,6 +295,7 @@ const TaxiCabServicePage = () => {
                       <label className="service-form-label">Travel Date *</label>
                       <input
                         type="date"
+                        lang="en-US"
                         name="date"
                         value={formData.date}
                         onChange={handleChange}

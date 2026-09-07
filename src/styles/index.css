@@ -956,5 +956,191 @@
   }
 }
 
+/* ══════════════════════════════════════════
+   PAYMENT SECTION (PAY-NOW PAGE)
+══════════════════════════════════════════ */
+.tg-payment-method-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px 12px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.tg-payment-method-card:hover {
+  transform: translateY(-4px);
+  border-color: #0d6efd;
+  box-shadow: 0 12px 28px rgba(13, 110, 253, 0.12);
+}
+
+/* ══════════════════════════════════════════
+   GREGORIAN CALENDAR STYLING (PERFECT 7-COLUMN ALIGNMENT)
+══════════════════════════════════════════ */
+.flatpickr-calendar {
+  font-family: inherit;
+  box-shadow: 0 16px 40px rgba(11, 28, 63, 0.12) !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  padding: 16px !important;
+  width: 336px !important;
+  box-sizing: border-box !important;
+}
+
+.flatpickr-calendar .flatpickr-innerContainer {
+  width: 100% !important;
+  display: block !important;
+}
+
+.flatpickr-calendar .flatpickr-rContainer {
+  width: 100% !important;
+  display: block !important;
+}
+
+.flatpickr-calendar .flatpickr-days {
+  width: 100% !important;
+  display: block !important;
+  padding: 0 !important;
+}
+
+.flatpickr-calendar .dayContainer {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  padding: 0 !important;
+}
+
+/* Ensure Gregorian Weekday Headers (7 columns: Sun to Sat) */
+.flatpickr-calendar .flatpickr-weekdays {
+  display: flex !important;
+  width: 100% !important;
+  background: #f8fafc !important;
+  border-radius: 8px !important;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  padding: 6px 0 !important;
+  height: 32px !important;
+  box-sizing: border-box !important;
+}
+
+.flatpickr-calendar .flatpickr-weekdaycontainer {
+  display: flex !important;
+  width: 100% !important;
+}
+
+.flatpickr-calendar span.flatpickr-weekday {
+  display: block !important;
+  width: calc(100% / 7) !important;
+  max-width: calc(100% / 7) !important;
+  flex: 0 0 calc(100% / 7) !important;
+  color: #0b1c3f !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  text-align: center !important;
+  line-height: 20px !important;
+}
+
+/* Month & Year header */
+.flatpickr-calendar .flatpickr-months {
+  margin-bottom: 4px !important;
+  position: relative !important;
+}
+
+.flatpickr-calendar .flatpickr-current-month {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #0b1c3f !important;
+  padding: 4px 0 0 0 !important;
+}
+
+.flatpickr-calendar .flatpickr-current-month .cur-month {
+  font-weight: 700 !important;
+  color: #0b1c3f !important;
+}
+
+.flatpickr-calendar .flatpickr-current-month input.cur-year {
+  font-weight: 700 !important;
+  color: #0b1c3f !important;
+}
+
+/* Exact 1/7th width for every single day to guarantee 7 days per row */
+.flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day,
+.flatpickr-calendar .dayContainer .flatpickr-day {
+  width: calc(100% / 7) !important;
+  max-width: calc(100% / 7) !important;
+  flex: 0 0 calc(100% / 7) !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 8px !important;
+  border: 1px solid transparent !important;
+  color: #0b1c3f !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  transition: all 0.15s ease !important;
+}
+
+/* Hover state */
+.flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day:hover,
+.flatpickr-calendar .dayContainer .flatpickr-day:hover {
+  color: #ffffff !important;
+  background-color: #ff7c08 !important;
+  border-color: #ff7c08 !important;
+}
+
+/* Highlight today clearly */
+.flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.today,
+.flatpickr-calendar .dayContainer .flatpickr-day.today {
+  color: #ffffff !important;
+  background-color: #0b2545 !important;
+  border-color: #0b2545 !important;
+  font-weight: 700 !important;
+}
+
+.flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.today:hover,
+.flatpickr-calendar .dayContainer .flatpickr-day.today:hover {
+  color: #ffffff !important;
+  background-color: #ff7c08 !important;
+  border-color: #ff7c08 !important;
+}
+
+/* Selected day */
+.flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.selected,
+.flatpickr-calendar .dayContainer .flatpickr-day.selected {
+  color: #ffffff !important;
+  background-color: #ff7c08 !important;
+  border-color: #ff7c08 !important;
+  font-weight: 700 !important;
+}
+
+/* Other month days & disabled */
+.flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.flatpickr-disabled,
+.flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.prevMonthDay,
+.flatpickr-calendar.open .flatpickr-innerContainer .flatpickr-days .flatpickr-day.nextMonthDay,
+.flatpickr-calendar .dayContainer .flatpickr-day.prevMonthDay,
+.flatpickr-calendar .dayContainer .flatpickr-day.nextMonthDay {
+  color: #94a3b8 !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  opacity: 0.6 !important;
+}
+
 
 

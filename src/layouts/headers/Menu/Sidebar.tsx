@@ -19,7 +19,7 @@ const Sidebar = ({ sidebar, setSidebar }: SidebarProps) => {
             <div className="offCanvas__side-info mb-30">
                <div className="contact-list mb-30">
                   <h4>Office Address</h4>
-                  <p>Karsog District Mandi Himachal Pradesh 175011</p>
+                  <p>Narash (534), Karsog, District Mandi, Himachal Pradesh – 175011</p>
                </div>
                <div className="contact-list mb-30">
                   <h4>Phone Number</h4>
