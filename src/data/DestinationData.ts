@@ -111,7 +111,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Manali Chandratal Kaza Safari",
       location: "Shimla & Manali, Himachal Pradesh",
-      price: "Startng From ₹32,199/Adult",
+      price: "Starting From ₹32,199/Adult",
       review: 4.8,
       total_review: "(45 Reviews)",
 
@@ -177,7 +177,7 @@ const destination_data: DestinationPackage[] = [
       time: "2 Nights / 3 Days",
       title: "Tirthan Valley Tour Package",
       location: "Kullu & Manali, Himachal Pradesh",
-      price: "Startng From ₹5,799/Adult",
+      price: "Starting From ₹5,799/Adult",
       review: 4.7,
       total_review: "(38 Reviews)",
 
@@ -218,7 +218,7 @@ const destination_data: DestinationPackage[] = [
       time: " 5 Nights / 6 Days",
       title: "Shimla Kullu Manali Honeymoon Package",
       location: "Shimla, Manali & Dharamshala, Himachal Pradesh",
-      price: "Startng From ₹21,499/Adult",
+      price: "Starting From ₹21,499/Adult",
       review: 4.9,
       total_review: "(52 Reviews)",
 
@@ -273,7 +273,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Dharamshala Dalhousie Tour",
       location: "Amritsar, Dalhousie & Dharamshala",
-      price: "Startng From ₹9,999/Adult",
+      price: "Starting From ₹9,999/Adult",
       review: 4.6,
       total_review: "(31 Reviews)",
 
@@ -317,7 +317,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Spiti Valley Tour Package From Manali",
       location: "Shimla, Manali & Kasol, Himachal Pradesh",
-      price: "Startng From ₹26,699/Adult",
+      price: "Starting From ₹26,699/Adult",
       review: 4.8,
       total_review: "(28 Reviews)",
 
@@ -377,7 +377,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Jibhi, Tirthan Valley Tour Package",
       location: "Tirthan Valley & Jibhi, Himachal Pradesh",
-      price: "Startng From ₹7,799/Adult",
+      price: "Starting From ₹7,799/Adult",
       review: 4.7,
       total_review: "(22 Reviews)",
 
@@ -422,7 +422,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Manali Shimla Honeymoon Package",
       location: "Shimla & Manali, Himachal Pradesh",
-      price: "Startng From ₹27,199/Adult",
+      price: "Starting From ₹27,199/Adult",
       review: 4.8,
       total_review: "(36 Reviews)",
 
@@ -483,7 +483,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Bir Billing With Barot Valley Tour Plan",
       location: "Bir Billing & Barot Valley, Himachal Pradesh",
-      price: "Startng From ₹13,499/Adult",
+      price: "Starting From ₹13,499/Adult",
       review: 4.8,
       total_review: "(28 Reviews)",
 
@@ -528,7 +528,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Shimla Manali Dalhousie Package From Delhi",
       location: "Shimla, Manali & Dalhousie, Himachal Pradesh",
-      price: "Startng From ₹16,799/Adult",
+      price: "Starting From ₹16,799/Adult",
       review: 4.8,
       total_review: "(34 Reviews)",
 
@@ -594,7 +594,7 @@ const destination_data: DestinationPackage[] = [
       time: "8 Nights / 9 Days",
       title: "Spiti Valley Bike Trip",
       location: "Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹34,699/Adult",
+      price: "Starting From ₹34,699/Adult",
       review: 4.9,
       total_review: "(48 Reviews)",
 
@@ -664,7 +664,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Shimla Manali Tour Package",
       location: "Shimla & Manali, Himachal Pradesh",
-      price: "Startng From ₹18,799/Adult",
+      price: "Starting From ₹18,799/Adult",
       review: 4.8,
       total_review: "(42 Reviews)",
 
@@ -719,7 +719,7 @@ const destination_data: DestinationPackage[] = [
       time: "4 Nights / 5 Days",
       title: "Dharamshala Dalhousie Honeymoon Tour",
       location: "Dharamshala & Dalhousie, Himachal Pradesh",
-      price: "Startng From ₹34,199/Adult",
+      price: "Starting From ₹34,199/Adult",
       review: 4.9,
       total_review: "(30 Reviews)",
 
@@ -769,7 +769,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Spiti Valley Tour Package From Shimla",
       location: "Shimla & Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹16,199/Adult",
+      price: "Starting From ₹16,199/Adult",
       review: 4.9,
       total_review: "(40 Reviews)",
 
@@ -814,7 +814,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Karsog Valley Tour from Shimla",
       location: "Karsog Valley, Himachal Pradesh",
-      price: "Startng From ₹14,999/Adult",
+      price: "Starting From ₹14,999/Adult",
       review: 4.8,
       total_review: "(27 Reviews)",
       itinerary: [
@@ -858,7 +858,7 @@ const destination_data: DestinationPackage[] = [
       time: "2 Nights / 3 Days",
       title: "Imla - Vimla Valley Tour From Shimla",
       location: "Imla & Vimla Valley, Shimla, Himachal Pradesh",
-      price: "Startng From ₹9,999/Adult",
+      price: "Starting From ₹9,999/Adult",
       review: 4.7,
       total_review: "(22 Reviews)",
 
@@ -943,7 +943,7 @@ const destination_data: DestinationPackage[] = [
       time: "9 Nights / 10 Days",
       title: "Best of Spiti Valley Tour Package",
       location: "Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹23,999/ Adult",
+      price: "Starting From ₹23,999/ Adult",
       review: 4.9,
       total_review: "(67 Reviews)",
 
@@ -1017,7 +1017,7 @@ const destination_data: DestinationPackage[] = [
       time: "8 Nights / 9 Days",
       title: "Chandigarh To Spiti Bike Expedition",
       location: "Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹25,799/ Adult",
+      price: "Starting From ₹25,799/ Adult",
       review: 4.8,
       total_review: "(41 Reviews)",
 
@@ -1091,7 +1091,7 @@ const destination_data: DestinationPackage[] = [
       time: "11 Nights / 12 Days",
       title: "Kinnaur Spiti Road Trip",
       location: "Kinnaur & Spiti Valley, Himachal Pradesh",
-      price: "Startng From ₹22,500/ Adult",
+      price: "Starting From ₹22,500/ Adult",
       review: 4.9,
       total_review: "(35 Reviews)",
 
@@ -1179,7 +1179,7 @@ const destination_data: DestinationPackage[] = [
       time: "4 Nights / 5 Days",
       title: "Majestic Ladakh Escape",
       location: "Leh, Nubra Valley & Pangong Lake",
-      price: "Startng From ₹ 5,899/Person Twin Sharing",
+      price: "Starting From ₹ 5,899/Person Twin Sharing",
       review: 4.9,
       total_review: "(89 Reviews)",
 
@@ -1230,7 +1230,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Grand Ladakh Expedition",
       location: "Leh, Sham Valley, Nubra Valley & Pangong Lake",
-      price: "Startng From ₹35,999/Person Twin Sharing",
+      price: "Starting From ₹35,999/Person Twin Sharing",
       review: 4.8,
       total_review: "(56 Reviews)",
 
@@ -1296,7 +1296,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Nights / 6 Days",
       title: "Ladakh Bliss",
       location: "Leh, Nubra Valley & Pangong Lake",
-      price: "Startng From ₹ 19,299/Person Twin Sharing",
+      price: "Starting From ₹ 19,299/Person Twin Sharing",
       review: 4.9,
       total_review: "(34 Reviews)",
 
@@ -1352,7 +1352,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Rediscover Ladakh",
       location: "Leh, Nubra Valley & Pangong Lake",
-      price: "Startng From ₹22,599/Person Twin Sharing",
+      price: "Starting From ₹22,599/Person Twin Sharing",
       review: 4.9,
       total_review: "(34 Reviews)",
 
@@ -1644,7 +1644,7 @@ const destination_data: DestinationPackage[] = [
       time: "4 Night / 5 Days",
       title: "Kedarnath Group Tour from Haridwar with Rishikesh Stay",
       location: "Haridwar, Kedarnath & Rishikesh, Uttarakhand",
-      price: "Startng From ₹20,500 / Adult",
+      price: "Starting From ₹20,500 / Adult",
       review: 4.7,
       total_review: "(91 Reviews)",
 
@@ -1693,7 +1693,7 @@ const destination_data: DestinationPackage[] = [
       time: "5 Night / 6 Days ",
       title: "Escape to Uttarakhand | From Sacred Streams to Alpine Dreams",
       location: "Haridwar, Rishikesh & Auli, Uttarakhand",
-      price: "Startng From  ₹18,599/ Adult",
+      price: "Starting From  ₹18,599/ Adult",
       review: 4.8,
       total_review: "(54 Reviews)",
 
@@ -1748,7 +1748,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Night / 7 Days",
       title: "Dehradun, Haridwar, Rishikesh & Mussoorie Winter Special",
       location: "Dehradun, Haridwar, Rishikesh & Mussoorie, Uttarakhand",
-      price: "Startng From ₹22,999/ Adult",
+      price: "Starting From ₹22,999/ Adult",
       review: 4.9,
       total_review: "(38 Reviews)",
 
@@ -1810,7 +1810,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Vacation In Rajasthan",
       location: "Jaipur, Udaipur, Jodhpur & Jaisalmer, Rajasthan",
-      price: "Startng From ₹19,500 / Adult",
+      price: "Starting From ₹19,500 / Adult",
       review: 4.8,
       total_review: "(73 Reviews)",
 
@@ -1871,7 +1871,7 @@ const destination_data: DestinationPackage[] = [
       time: "6 Nights / 7 Days",
       title: "Deserts Of Rajasthan With Bikaner",
       location: "Jaipur, Bikaner, Jaisalmer & Jodhpur, Rajasthan",
-      price: "Startng From  ₹16,500 / Adult",
+      price: "Starting From  ₹16,500 / Adult",
       review: 4.7,
       total_review: "(48 Reviews)",
 
@@ -1933,7 +1933,7 @@ const destination_data: DestinationPackage[] = [
       time: "7 Nights / 8 Days",
       title: "Udaipur Mount Abu Tour",
       location: "Udaipur & Mount Abu, Rajasthan",
-      price: "Startng From  ₹21,499 / Adult",
+      price: "Starting From  ₹21,499 / Adult",
       review: 4.9,
       total_review: "(41 Reviews)",
       itinerary: [
@@ -2348,7 +2348,7 @@ const destination_data: DestinationPackage[] = [
       time: "3 Nights / 4 Days",
       title: "Goa Package For Friends",
       location: "North Goa & South Goa",
-      price: "Startng From ₹12,999/Adult",
+      price: "Starting From ₹12,999/Adult",
       review: 4.7,
       total_review: "(112 Reviews)",
 
