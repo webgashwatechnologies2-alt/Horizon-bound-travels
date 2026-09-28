@@ -65,7 +65,9 @@ const FooterThree = () => {
                                              <path d="M10.3346 12.9699C11.9301 12.9699 13.2235 11.6674 13.2235 10.0608C13.2235 8.45412 11.9301 7.15168 10.3346 7.15168C8.73915 7.15168 7.44575 8.45412 7.44575 10.0608C7.44575 11.6674 8.73915 12.9699 10.3346 12.9699Z" stroke="white" strokeWidth="1.73333" strokeLinecap="round" strokeLinejoin="round" />
                                           </svg>
                                        </div>
-                                       Narash (534), Karsog, District Mandi, Himachal Pradesh – 175011
+                                       Horizon Bound Travels
+Near PNB Bank ,
+Karsog, District Mandi, Himachal Pradesh – 175011
                                     </Link>
                                  </li>
                                  <li>
