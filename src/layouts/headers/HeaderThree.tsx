@@ -52,20 +52,62 @@ const HeaderThree = () => {
                                  <span>Call Us:</span>
                                  <Link href="tel:+918988736000">+91 89887-36000</Link>
                               </div>
+                              
                            </div>
                            <div className="tg-header-btn ml-20 d-none d-sm-block">
                               <Link className="tg-btn-header" href="/pay-now">
                                  Pay Now
                               </Link>
                            </div>
-                           <div className="tg-header-menu-bar lh-1 p-relative ml-20 pl-20">
-                              <span className="tg-header-border d-none d-xl-block"></span>
-                              <button onClick={() => setSidebar(true)} style={{ cursor: "pointer" }} className="tgmenu-offcanvas-open-btn menu-tigger d-none d-xl-block">
+                           <div className="tg-header-menu-bar p-relative ml-20 pl-20 d-flex flex-column align-items-center justify-content-center">
+                              <span 
+                                 className="tg-header-border d-none d-xl-block"
+                                 style={{ top: "50%", transform: "translateY(-50%)", height: "36px" }}
+                              ></span>
+                              <div
+                                 className="himachal-logo-badge"
+                                 style={{
+                                    backgroundColor: "#ffffff",
+                                    borderRadius: "8px",
+                                    padding: "4px 6px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    boxShadow: "0 2px 10px rgba(0, 0, 0, 0.15)",
+                                    border: "1px solid rgba(0, 0, 0, 0.06)",
+                                    marginBottom: "7px",
+                                    lineHeight: 0
+                                 }}
+                              >
+                                 <Image
+                                    src="/assets/img/tourisamlogo/himachal-tourism-logo.png"
+                                    alt="Himachal Tourism Logo"
+                                    width={48}
+                                    height={48}
+                                    style={{
+                                       width: "48px",
+                                       height: "48px",
+                                       objectFit: "contain",
+                                       display: "block"
+                                    }}
+                                 />
+                              </div>
+                              <button 
+                                 onClick={() => setSidebar(true)} 
+                                 style={{ cursor: "pointer", background: "none", border: "none", padding: 0 }} 
+                                 className="tgmenu-offcanvas-open-btn menu-tigger d-none d-xl-block"
+                                 aria-label="Open Menu"
+                              >
                                  <span></span>
                                  <span></span>
                                  <span></span>
                               </button>
-                              <button onClick={() => setOffCanvas(true)} style={{ cursor: "pointer" }} className="tgmenu-offcanvas-open-btn mobile-nav-toggler d-block d-xl-none">
+                              <button 
+                                 onClick={() => setOffCanvas(true)} 
+                                 style={{ cursor: "pointer", background: "none", border: "none", padding: 0 }} 
+                                 className="tgmenu-offcanvas-open-btn mobile-nav-toggler d-block d-xl-none"
+                                 aria-label="Open Mobile Menu"
+                              >
                                  <span></span>
                                  <span></span>
                                  <span></span>
