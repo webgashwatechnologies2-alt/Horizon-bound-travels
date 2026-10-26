@@ -1,7 +1,7 @@
 <?php
 /**
  * PHP Mailer script for Horizon Bound Travels leads.
- * Uses PHPMailer to send emails to info@horizonboundtravels.com and sales@horizonboundtravels.com.
+ * Uses PHPMailer to send emails to query@horizonboundtravels.com and sales@horizonboundtravels.com.
  */
 
 // Allow CORS only for specific trusted origins
@@ -76,14 +76,14 @@ $mail = new PHPMailer;
 $mail->isSMTP();
 $mail->Host = 'smtp.hostinger.com';                  // Hostinger SMTP host
 $mail->SMTPAuth = true;
-$mail->Username = 'info@horizonboundtravels.com';       // Your Hostinger email
+$mail->Username = 'query@horizonboundtravels.com';       // Your Hostinger email
 $mail->Password = SMTP_PASSWORD;                     // Loaded from mail-config.php
 $mail->SMTPSecure = 'ssl';                           // Hostinger secure protocol
 $mail->Port = 465;                                   // Hostinger SSL port
 
 // Set From and Recipient emails
-$mail->setFrom('info@horizonboundtravels.com', 'Horizon Bound Travels Website');
-$mail->addAddress('info@horizonboundtravels.com');
+$mail->setFrom('query@horizonboundtravels.com', 'Horizon Bound Travels Website');
+$mail->addAddress('query@horizonboundtravels.com');
 $mail->addAddress('sales@horizonboundtravels.com');
 
 $mail->isHTML(true);

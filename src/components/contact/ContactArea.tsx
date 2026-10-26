@@ -26,7 +26,7 @@ const ContactArea = () => {
                            </div>
                            <div className="item">
                               <span>E-mail : </span>
-                              <Link href="mailto: info@horizonboundtravels.com"  style={{ textTransform: "lowercase" }}>info@horizonboundtravels.com</Link>
+                              <Link href="mailto: query@horizonboundtravels.com"  style={{ textTransform: "lowercase" }}>query@horizonboundtravels.com</Link>
                            </div>
                            <div className="item">
                               <span>Address :</span>

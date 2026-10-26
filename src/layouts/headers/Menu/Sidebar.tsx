@@ -29,7 +29,7 @@ Karsog, District Mandi, Himachal Pradesh – 175011</p>
                </div>
                <div className="contact-list mb-30">
                   <h4>Email Address</h4>
-                  <p>info@horizonboundtravels.com</p>
+                  <p>query@horizonboundtravels.com</p>
                </div>
             </div>
             <div className="offCanvas__social-icon mt-30">

@@ -11,7 +11,7 @@ export const EMAIL_CONFIG = {
   PREFERRED_SERVICE: 'php' as 'php' | 'web3forms' | 'emailjs' | 'simulated',
 
   // Recipient Emails (used for PHP mailer)
-  RECIPIENT_EMAILS: ['info@horizonboundtravels.com', 'sales@horizonboundtravels.com'],
+  RECIPIENT_EMAILS: ['query@horizonboundtravels.com', 'sales@horizonboundtravels.com'],
 
   // Web3Forms keys (Go to https://web3forms.com to get keys for each email)
   WEB3FORMS_INFO_KEY: 'YOUR_WEB3FORMS_INFO_KEY',
